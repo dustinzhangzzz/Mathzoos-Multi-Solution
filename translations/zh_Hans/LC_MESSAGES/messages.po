@@ -1,0 +1,1904 @@
+# Chinese (Simplified) translations for PROJECT.
+# Copyright (C) 2024 ORGANIZATION
+# This file is distributed under the same license as the PROJECT project.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2024.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
+"POT-Creation-Date: 2024-10-03 01:53-0400\n"
+"PO-Revision-Date: 2024-10-03 00:27-0400\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: zh_Hans\n"
+"Language-Team: zh_Hans <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.16.0\n"
+
+#: Solution.py:22
+msgid "No solution found for this knowledge point."
+msgstr ""
+
+#: Solution.py:31
+msgid "No solution generator available for this knowledge point."
+msgstr ""
+
+#: SolutionGenerator/SolutionGenerator.py:40
+msgid "Error: {error}"
+msgstr "错误: {error}"
+
+#: SolutionGenerator/SolutionGenerator.py:61
+msgid "zero"
+msgstr "零"
+
+#: SolutionGenerator/SolutionGenerator.py:63
+msgid "thousand"
+msgstr "千"
+
+#: SolutionGenerator/SolutionGenerator.py:63
+msgid "hundred"
+msgstr "百"
+
+#: SolutionGenerator/SolutionGenerator.py:63
+msgid "ninety"
+msgstr "九十"
+
+#: SolutionGenerator/SolutionGenerator.py:63
+msgid "eighty"
+msgstr "八十"
+
+#: SolutionGenerator/SolutionGenerator.py:64
+msgid "seventy"
+msgstr "七十"
+
+#: SolutionGenerator/SolutionGenerator.py:64
+msgid "sixty"
+msgstr "六十"
+
+#: SolutionGenerator/SolutionGenerator.py:64
+msgid "fifty"
+msgstr "五十"
+
+#: SolutionGenerator/SolutionGenerator.py:64
+msgid "forty"
+msgstr "四十"
+
+#: SolutionGenerator/SolutionGenerator.py:64
+msgid "thirty"
+msgstr "三十"
+
+#: SolutionGenerator/SolutionGenerator.py:65
+msgid "twenty"
+msgstr "二十"
+
+#: SolutionGenerator/SolutionGenerator.py:65
+msgid "nineteen"
+msgstr "十九"
+
+#: SolutionGenerator/SolutionGenerator.py:65
+msgid "eighteen"
+msgstr "十八"
+
+#: SolutionGenerator/SolutionGenerator.py:65
+msgid "seventeen"
+msgstr "十七"
+
+#: SolutionGenerator/SolutionGenerator.py:65
+msgid "sixteen"
+msgstr "十六"
+
+#: SolutionGenerator/SolutionGenerator.py:66
+msgid "fifteen"
+msgstr "十五"
+
+#: SolutionGenerator/SolutionGenerator.py:66
+msgid "fourteen"
+msgstr "十四"
+
+#: SolutionGenerator/SolutionGenerator.py:66
+msgid "thirteen"
+msgstr "十三"
+
+#: SolutionGenerator/SolutionGenerator.py:66
+msgid "twelve"
+msgstr "十二"
+
+#: SolutionGenerator/SolutionGenerator.py:66
+msgid "eleven"
+msgstr "十一"
+
+#: SolutionGenerator/SolutionGenerator.py:67
+msgid "ten"
+msgstr "十"
+
+#: SolutionGenerator/SolutionGenerator.py:67
+msgid "nine"
+msgstr "九"
+
+#: SolutionGenerator/SolutionGenerator.py:67
+msgid "eight"
+msgstr "八"
+
+#: SolutionGenerator/SolutionGenerator.py:67
+msgid "seven"
+msgstr "七"
+
+#: SolutionGenerator/SolutionGenerator.py:67
+msgid "six"
+msgstr "六"
+
+#: SolutionGenerator/SolutionGenerator.py:67
+msgid "five"
+msgstr "五"
+
+#: SolutionGenerator/SolutionGenerator.py:67
+msgid "four"
+msgstr "四"
+
+#: SolutionGenerator/SolutionGenerator.py:68
+msgid "three"
+msgstr "三"
+
+#: SolutionGenerator/SolutionGenerator.py:68
+msgid "two"
+msgstr "二"
+
+#: SolutionGenerator/SolutionGenerator.py:68
+msgid "one"
+msgstr "一"
+
+#: SolutionGenerator/SolutionGenerator.py:99
+#: SolutionGenerator/SolutionGenerator.py:111
+msgid "Since the result is 0, we can ignore 0 in the tens place."
+msgstr "因为结果是0，我们可以忽略十位上的0。"
+
+#: SolutionGenerator/SolutionGenerator.py:101
+#: SolutionGenerator/SolutionGenerator.py:113
+msgid "Write down the {num} in the tens place."
+msgstr "在十位写下 {num}。"
+
+#: SolutionGenerator/SolutionGenerator.py:128
+msgid "class=\"number-line-circle\""
+msgstr "class=\"number-line-circle\""
+
+#: SolutionGenerator/SolutionGenerator.py:140
+msgid ""
+"You see that the number {arg2} is on the right of {arg1}, so {arg2} is "
+"greater than {arg1}."
+msgstr "你看到数字 {arg2} 在 {arg1} 的右边，因此 {arg2} 大于 {arg1}。"
+
+#: SolutionGenerator/SolutionGenerator.py:142
+msgid ""
+"You see that the number {arg2} is on the left of {arg1}, so {arg2} is "
+"smaller than {arg1}."
+msgstr "你看到数字 {arg2} 在 {arg1} 的左边，因此 {arg2} 小于 {arg1}。"
+
+#: SolutionGenerator/SolutionGenerator.py:143
+msgid ""
+"You see that the number {arg1} is equal to itself, so {arg1} is equal to "
+"{arg2}."
+msgstr "你看到数字 {arg1} 等于它自己，因此 {arg1} 等于 {arg2}。"
+
+#: SolutionGenerator/SolutionGenerator.py:155
+msgid ""
+"In this case, because there are no ones in {arg1}, the \"__ones\" part of"
+" the question is 0, and we can also simplify the question to \"{arg1} = "
+"{arg1 // 10} tens\"."
+msgstr ""
+"在这种情况下，因为 {arg1} 中没有个位数，问题中的“__ones”部分为0，我们还可以将问题简化为“{arg1} = {arg1 // "
+"10} 个十”。"
+
+#: SolutionGenerator/SolutionGenerator.py:163
+#, python-format
+msgid "$+$ ${\\color{Salmon} %i }$ ones"
+msgstr "$+$ ${\\color{Salmon} %i }$ 个位数"
+
+#: SolutionGenerator/SolutionGenerator.py:187
+#: SolutionGenerator/SolutionGenerator.py:212
+msgid "{num} has 1 digit and We put {num} in the ones place"
+msgstr "{num} 是一位数，我们将 {num} 放在个位。"
+
+#: SolutionGenerator/SolutionGenerator.py:188
+#: SolutionGenerator/SolutionGenerator.py:213
+msgid ""
+"{num} has digits in both the ones and tens places, so we write {num} in "
+"the correct columns based on its ones and tens digits."
+msgstr "{num} 有个位和十位数字，因此我们根据其个位和十位的数字将其写在正确的列中。"
+
+#: SolutionGenerator/SolutionGenerator.py:263
+msgid ""
+"**Step {step}:** Now we need to find the number that comes after {num}. "
+"We know the numbers are going up by {diff} each time, so the number after"
+" {num} should be {num_after}."
+msgstr ""
+"**步骤 {step}:** 现在我们需要找到 {num} 后面的数字。我们知道每次数字增加 {diff}，因此 {num} 后面的数字应该是 "
+"{num_after}。"
+
+#: SolutionGenerator/SolutionGenerator.py:270
+msgid ""
+"**Step 2:** We know that the numbers are going up by {diff} each time, so"
+" the number that comes after {num} should be {num_after}."
+msgstr "**步骤2:** 我们知道数字每次增加 {diff}，因此 {num} 后面的数字应该是 {num_after}。"
+
+#: SolutionGenerator/SolutionGenerator.py:273
+msgid ""
+"**Step 2:** We know that the numbers are going up by {diff} each time, so"
+" the number that comes before {num} should be {num_before}."
+msgstr "**步骤2:** 我们知道数字每次减少 {diff}，因此 {num} 前面的数字应该是 {num_before}。"
+
+#: SolutionGenerator/SolutionGenerator.py:307
+msgid "So the missing number is {num}"
+msgstr "所以缺失的数字是 {num}"
+
+#: SolutionGenerator/SolutionGenerator.py:308
+msgid "So the missing numbers are "
+msgstr "所以缺失的数字是 "
+
+#: SolutionGenerator/SolutionGenerator.py:312
+msgid "and {last_num}."
+msgstr "和 {last_num}。"
+
+#: SolutionGenerator/SolutionGenerator.py:335
+msgid "The leftmost digit"
+msgstr "最左边的数字"
+
+#: SolutionGenerator/SolutionGenerator.py:336
+msgid "The second digit from the left"
+msgstr "从左边数第二个数字"
+
+#: SolutionGenerator/SolutionGenerator.py:337
+msgid "We compare the third digit from the left"
+msgstr "我们比较从左边数第三个数字"
+
+#: SolutionGenerator/SolutionGenerator.py:341
+msgid "{} in both numbers is {}, which is the same."
+msgstr "两个数字中的 {} 是 {}，它们相同。"
+
+#: SolutionGenerator/SolutionGenerator.py:343
+msgid "{} in the first number is {}, and in the second number is {}."
+msgstr "第一个数字中的 {} 是 {}，第二个数字中的 {} 是 {}。"
+
+#: SolutionGenerator/SolutionGenerator.py:347
+msgid ""
+"Since both numbers have the same number of digits, compare the digits "
+"from left to right, taking into account their place value.\n"
+msgstr "由于这两个数字位数相同，我们从左到右比较每位数字，考虑它们的位置值。\n"
+
+#: SolutionGenerator/SolutionGenerator.py:353
+msgid "**Step {}:** "
+msgstr "**步骤 {}:** "
+
+#: SolutionGenerator/SolutionGenerator.py:360
+msgid ""
+"**Step {}:** Since {} is less than {}, we can conclude that the number {}"
+" is less than the number {}."
+msgstr "**步骤 {}:** 由于 {} 小于 {}，我们可以得出结论，数字 {} 小于数字 {}。"
+
+#: SolutionGenerator/SolutionGenerator.py:363
+msgid ""
+"**Step {}:** Since {} is greater than {}, we can conclude that the number"
+" {} is greater than the number {}."
+msgstr "**步骤 {}:** 由于 {} 大于 {}，我们可以得出结论，数字 {} 大于数字 {}。"
+
+#: SolutionGenerator/SolutionGenerator.py:372
+msgid ""
+"\n"
+"Since all digits are the same, we can conclude that the number {} is "
+"equal to the number {}.\n"
+msgstr ""
+"\n"
+"由于所有数字都相同，我们可以得出结论，数字 {} 等于数字 {}。\n"
+
+#: SolutionGenerator/SolutionGenerator.py:381
+msgid ""
+"Since {} has {} digits, while {} has {} digits, we know that {} is larger"
+" than {}. Therefore, the answer is\n"
+"$$\n"
+"{} {{\\color{{Salmon}}\\:>\\:}} {}\n"
+"$$"
+msgstr ""
+"由于 {} 有 {} 位，而 {} 有 {} 位，我们知道 {} 大于 {}。因此，答案是\n"
+"$$\n"
+"{} {{\\color{{Salmon}}\\:>\\:}} {}\n"
+"$$"
+
+#: SolutionGenerator/SolutionGenerator.py:384
+msgid ""
+"Since {} has {} digits, while {} has {} digits, we know that {} is less "
+"than {}. Therefore, the answer is\n"
+"$$\n"
+"{} {{\\color{{Salmon}}\\:>\\:}} {}\n"
+"$$"
+msgstr ""
+"由于 {} 有 {} 位，而 {} 有 {} 位，我们知道 {} 小于 {}。因此，答案是\n"
+"$$\n"
+"{} {{\\color{{Salmon}}\\:>\\:}} {}\n"
+"$$"
+
+#: SolutionGenerator/SolutionGenerator.py:396
+msgid "Solution"
+msgstr "解答"
+
+#: SolutionGenerator/SolutionGenerator.py:421
+msgid "What is {} in word form?"
+msgstr "{} 的文字形式是什么？"
+
+#: SolutionGenerator/SolutionGenerator.py:423
+msgid "What number is **{}**"
+msgstr "**{}** 是什么数字"
+
+#: SolutionGenerator/SolutionGenerator.py:438
+msgid "apples"
+msgstr "苹果"
+
+#: SolutionGenerator/SolutionGenerator.py:438
+msgid "cupcakes"
+msgstr "纸杯蛋糕"
+
+#: SolutionGenerator/SolutionGenerator.py:438
+msgid "bananas"
+msgstr "香蕉"
+
+#: SolutionGenerator/SolutionGenerator.py:438
+msgid "cookies"
+msgstr "饼干"
+
+#: SolutionGenerator/SolutionGenerator.py:438
+msgid "books"
+msgstr "书"
+
+#: SolutionGenerator/SolutionGenerator.py:438
+msgid "toys"
+msgstr "玩具"
+
+#: SolutionGenerator/SolutionGenerator.py:438
+msgid "flowers"
+msgstr "花"
+
+#: SolutionGenerator/SolutionGenerator.py:473
+msgid "So the answer is $[[arg1//arg2]]$."
+msgstr "所以答案是 $[[arg1//arg2]]$。"
+
+#: SolutionGenerator/SolutionGenerator.py:509
+msgid ""
+"First compare the numbers, {} equals {}. Place the first number as the "
+"**multiplicand** and the second number as the **multiplier**."
+msgstr "首先比较这两个数字，{} 等于 {}。将第一个数字作为 **被乘数**，第二个数字作为 **乘数**。"
+
+#: SolutionGenerator/SolutionGenerator.py:511
+msgid ""
+"First compare the numbers, {} is greater than {} **because in units place"
+" digits {} is greater than {}**. First place the bigger number as "
+"**multiplicand** and then second number as **multiplier**."
+msgstr ""
+"首先比较这两个数字，{} 大于 {} **因为个位数 {} 大于 {}**。首先将较大的数字作为 **被乘数**，然后将第二个数字作为 "
+"**乘数**。"
+
+#: SolutionGenerator/SolutionGenerator.py:514
+msgid ""
+"First compare the numbers, {} is greater than {} **because in tens place "
+"digits {} is greater than {}**. First place the bigger number as "
+"**multiplicand** and then second number as **multiplier**."
+msgstr ""
+"首先比较这两个数字，{} 大于 {} **因为十位数 {} 大于 {}**。首先将较大的数字作为 **被乘数**，然后将第二个数字作为 "
+"**乘数**。"
+
+#: SolutionGenerator/SolutionGenerator.py:530
+msgid "{}/{} is a proper fraction because {} < {}."
+msgstr "{}/{} 是一个真分数，因为 {} < {}。"
+
+#: SolutionGenerator/SolutionGenerator.py:532
+msgid "{}/{} is an improper fraction because {} > {}."
+msgstr "{}/{} 是一个假分数，因为 {} > {}。"
+
+#: SolutionGenerator/SolutionGenerator.py:563
+msgid ""
+"\n"
+"**Step 1:**\n"
+"In this question, you divide the **hundreds** first. You divide {} "
+"hundreds into {} groups of 100.\n"
+"\n"
+"**Step 1.1:** Write {} above the hundreds' place to show you have put 100"
+" in each group.\n"
+msgstr ""
+"\n"
+"**步骤 1:**\n"
+"在这个问题中，你首先将 **百位** 进行划分。将 {} 个百划分为 {} 个100的组。\n"
+"\n"
+"**步骤 1.1:** 在百位上方写下 {}，表示你已经将100放入每一组。\n"
+
+#: SolutionGenerator/SolutionGenerator.py:570
+msgid ""
+"\n"
+"**Step 1.2:** Write {} underneath to show {} hundreds have been used.\n"
+msgstr ""
+"\n"
+"**步骤 1.2:** 在下方写下 {}，表示已经使用了 {} 个百。\n"
+
+#: SolutionGenerator/SolutionGenerator.py:574
+msgid ""
+"\n"
+"**Step 1.3:** You subtract {} from {} to see how many blocks are left "
+"that need to be grouped equally.\n"
+msgstr ""
+"\n"
+"**步骤 1.3:** 将 {} 减去 {}，以确定剩下多少个需要均等分组的块。\n"
+
+#: SolutionGenerator/SolutionGenerator.py:580
+msgid ""
+"\n"
+"**Step 2:**\n"
+"Let’s look at the {} tens. When you divide them into {} equal groups, you"
+" can put {} tens in each group.\n"
+"\n"
+"**Step 2.1:** Write {} above the tens' place to show you have put {} tens"
+" in each group.\n"
+msgstr ""
+"\n"
+"**步骤 2:**\n"
+"让我们看看 {} 个十位。当你将它们分为 {} 等组时，每组可以放入 {} 个十位。\n"
+"\n"
+"**步骤 2.1:** 在十位上方写下 {}，表示你已经在每组放入了 {} 个十位。\n"
+
+#: SolutionGenerator/SolutionGenerator.py:587
+msgid ""
+"\n"
+"**Step 2.2:** Write {} underneath to show that {} groups of {} tens have "
+"been used.\n"
+msgstr ""
+"\n"
+"**步骤 2.2:** 在下方写下 {}，表示已经使用了 {} 组 {} 个十位。\n"
+
+#: SolutionGenerator/SolutionGenerator.py:593
+msgid ""
+"\n"
+"**Step 3:**\n"
+"Now you need to group the {} ones that are left into {} equal groups.\n"
+"\n"
+"**Step 3.1:** Write {} above the ones' place to show you have put {} ones"
+" in each group.\n"
+msgstr ""
+"\n"
+"**步骤 3:**\n"
+"现在你需要将剩下的 {} 个个位分成 {} 等组。\n"
+"\n"
+"**步骤 3.1:** 在个位上方写下 {}，表示你已经在每组放入了 {} 个个位。\n"
+
+#: SolutionGenerator/SolutionGenerator.py:600
+msgid ""
+"\n"
+"**Step 3.2:** Write {} underneath to show {} groups of {} have been used."
+"\n"
+msgstr ""
+"\n"
+"**步骤 3.2:** 在下方写下 {}，表示已经使用了 {} 组 {}。\n"
+
+#: SolutionGenerator/SolutionGenerator.py:604
+msgid ""
+"\n"
+"**Step 3.3:** Subtract {} from {} to see how many blocks are left.\n"
+msgstr ""
+"\n"
+"**步骤 3.3:** 将 {} 减去 {}，以查看剩下多少块。\n"
+
+#: SolutionGenerator/SolutionGenerator.py:610
+msgid ""
+"\n"
+"**Step 4: Write the remainder near the quotient and check**\n"
+"As you can see, {} cannot be divided equally into {} equal groups. There "
+"is {} unit left over, and it can be represented as R (remainder).\n"
+msgstr ""
+"\n"
+"**步骤 4：在商的旁边写下余数并检查**\n"
+"如你所见，{} 不能被均分为 {} 等组。剩下 {} 个单位，表示为 R（余数）。\n"
+
+#: SolutionGenerator/SolutionGenerator.py:616
+msgid ""
+"\n"
+"When you come across a step in long division where the divisor is larger "
+"than the current working dividend, you need to put a zero in the "
+"quotient.\n"
+msgstr ""
+"\n"
+"当你在长除法中遇到除数大于当前被除数的情况时，你需要在商中写入一个零。\n"
+
+#: SolutionGenerator/SolutionGenerator.py:620
+msgid ""
+"\n"
+"**Step 1:**\n"
+"How many {}s are there in {}? Since the answer is 0, we move on to the "
+"next place value.\n"
+msgstr ""
+"\n"
+"**步骤 1:**\n"
+"{} 中有多少个 {}？因为答案是 0，我们继续下一个位值。\n"
+
+#: SolutionGenerator/SolutionGenerator.py:625
+msgid ""
+"\n"
+"**Step 1.2:** We calculate {} × {} = {} and write it below {}.\n"
+msgstr ""
+"\n"
+"**步骤 1.2:** 我们计算 {} × {} = {}，并将其写在 {} 下方。\n"
+
+#: SolutionGenerator/SolutionGenerator.py:629
+msgid ""
+"\n"
+"**Step 1.3:** We subtract {} from {} and write {}.\n"
+msgstr ""
+"\n"
+"**步骤 1.3:** 我们将 {} 减去 {}，并写下 {}。\n"
+
+#: SolutionGenerator/SolutionGenerator.py:635
+msgid ""
+"\n"
+"**Step 2:**\n"
+"We bring down the number in the ones’ place.\n"
+msgstr ""
+"\n"
+"**步骤 2:**\n"
+"我们将个位上的数字带下来。\n"
+
+#: SolutionGenerator/SolutionGenerator.py:640
+msgid ""
+"\n"
+"**Step 2.2:** How many {}s are there in {}? We estimate {} and write it "
+"above the ones' place.\n"
+msgstr ""
+"\n"
+"**步骤 2.2:** {} 中有多少个 {}？我们估算出 {}，并将其写在个位上方。\n"
+
+#: SolutionGenerator/SolutionGenerator.py:644
+msgid ""
+"\n"
+"**Step 2.3:** We calculate {} × {} = {} and write it below {}.\n"
+msgstr ""
+"\n"
+"**步骤 2.3:** 我们计算 {} × {} = {}，并将其写在 {} 下方。\n"
+
+#: SolutionGenerator/SolutionGenerator.py:650
+msgid ""
+"\n"
+"**Step 3: Write the remainder near the quotient and check**\n"
+msgstr ""
+"\n"
+"**步骤 3：在商的旁边写下余数并检查**\n"
+
+#: SolutionGenerator/SolutionGenerator.py:657
+#: SolutionGenerator/SolutionGenerator.py:773
+msgid "Unsupported number of digits"
+msgstr "不支持的位数"
+
+#: SolutionGenerator/SolutionGenerator.py:712
+#: SolutionGenerator/SolutionGenerator.py:748
+msgid ""
+"\n"
+"**Step 2:**\n"
+"**Step 2.1:** How many {}s are there in {}? We estimate {} and write it "
+"above the ten's place.\n"
+msgstr ""
+"\n"
+"**步骤 2:**\n"
+"**步骤 2.1:** {} 中有多少个 {}？我们估算出 {} 并将其写在十位上方。\n"
+
+#: SolutionGenerator/SolutionGenerator.py:717
+msgid ""
+"\n"
+"**Step 2.2:** We calculate ${} \times {} = {}$ and write {} below {}.\n"
+msgstr ""
+"\n"
+"**步骤 2.2:** 我们计算 ${} \times {} = {}$ 并将 {} 写在 {} 下方。\n"
+
+#: SolutionGenerator/SolutionGenerator.py:721
+msgid ""
+"\n"
+"**Step 2.3:** We subtract {} from {} and write {}.\n"
+msgstr ""
+"\n"
+"**步骤 2.3:** 我们从 {} 中减去 {} 并写下 {}。\n"
+
+#: SolutionGenerator/SolutionGenerator.py:727
+msgid ""
+"\n"
+"**Step 3:**\n"
+"**Step 3.1:** How many {}s are there in {}? We estimate {} and write it "
+"above the one's place.\n"
+msgstr ""
+"\n"
+"**步骤 3:**\n"
+"**步骤 3.1:** {} 中有多少个 {}？我们估算出 {} 并将其写在个位上方。\n"
+
+#: SolutionGenerator/SolutionGenerator.py:732
+#: SolutionGenerator/SolutionGenerator.py:758
+msgid ""
+"\n"
+"**Step 3.2:** We calculate ${} \times {} = {}$ and write {} below {}.\n"
+msgstr ""
+"\n"
+"**步骤 3.2:** 我们计算 ${} \times {} = {} 并将 {} 写在 {} 下方。\n"
+
+#: SolutionGenerator/SolutionGenerator.py:736
+#: SolutionGenerator/SolutionGenerator.py:762
+msgid ""
+"\n"
+"**Step 3.3:** We subtract {} from {} and write {}.\n"
+msgstr ""
+"\n"
+"**步骤 3.3:** 我们从 {} 中减去 {} 并写下 {}。\n"
+
+#: SolutionGenerator/SolutionGenerator.py:742
+#: SolutionGenerator/SolutionGenerator.py:768
+msgid ""
+"\n"
+"**Step 4: Write the remainder near the quotient and check**\n"
+msgstr ""
+"\n"
+"**步骤 4：在商的旁边写下余数并检查**\n"
+
+#: SolutionGenerator/SolutionGenerator.py:753
+msgid ""
+"\n"
+"**Step 3:**\n"
+"**Step 3.1:** How many {}s are there in {}? We estimate {} and write it "
+"above the ten's place.\n"
+msgstr ""
+"\n"
+"**步骤 3:**\n"
+"**步骤 3.1:** {} 中有多少个 {}？我们估算出 {} 并将其写在十位上方。\n"
+
+#: SolutionGenerator/SolutionGenerator.py:821
+msgid "Division by zero is undefined."
+msgstr "除以零是未定义的。"
+
+#: SolutionGenerator/SolutionGenerator.py:841
+msgid ""
+"\n"
+"**Step 3:** Since we have no leftovers, we have finished the calculation."
+"\n"
+"$$\n"
+"\\begin{{aligned}}\n"
+"&\\underline{{\\: 0.{{\\color {{Salmon}} {} }}\\:}} \\\\[-5pt]\n"
+"{} &\\big){} \\:0 \\\\[-4pt]\n"
+"-&{{\\:{{\\color {{Salmon}} {} }}{{\\:\\!\\color {{Salmon}} {} }}\\:}} "
+"\\\\[-4pt]\n"
+"\\hline\n"
+"&\\text{{ }}\\: \\:\\:{{\\!\\color {{Salmon}} {}}}\\[-4pt]\n"
+"\\end{{aligned}}\n"
+"\\: \\longrightarrow \\:\n"
+"{}\n"
+"$$\n"
+"Therefore, the final solution is {}"
+msgstr ""
+"\n"
+"**步骤 3:** 由于没有剩余，我们已经完成了计算。\n"
+"$$\n"
+"\\begin{{aligned}}\n"
+"&\\underline{{\\: 0.{{\\color {{Salmon}} {} }}\\:}} \\\\[-5pt]\n"
+"{} &\\big){} \\:0 \\\\[-4pt]\n"
+"-&{{\\:{{\\color {{Salmon}} {} }}{{\\:\\!\\color {{Salmon}} {} }}\\:}} "
+"\\\\[-4pt]\n"
+"\\hline\n"
+"&\\text{{ }}\\: \\:\\:{{\\!\\color {{Salmon}} {}}}\\[-4pt]\n"
+"\\end{{aligned}}\n"
+"\\: \\longrightarrow \\:\n"
+"{}\n"
+"$$\n"
+"因此，最终答案是 {}\n"
+
+#: SolutionGenerator/SolutionGenerator.py:861
+msgid ""
+"\n"
+"**Step 3:** Since we obtained a non-zero remainder in the previous step, "
+"the calculation isn't complete. Because the remainder {} can't be divided"
+" evenly by {}, we need to form a new number to continue the division "
+"process.\n"
+"$$\n"
+"\\begin{{aligned}}\n"
+"&\\underline{{\\: 0.{{\\color {{Salmon}} {} }}\\:}} \\\\[-5pt]\n"
+"{} &\\big){} \\:0 \\\\[-4pt]\n"
+"-&{{\\:{{\\color {{Salmon}} {} }}{{\\:\\!\\color {{Salmon}} {} }}\\:}} "
+"\\\\[-4pt]\n"
+"\\hline\n"
+"&\\text{{ }}\\: \\:\\:{{\\!\\color {{Salmon}} {}}}\\[-4pt]\n"
+"\\end{{aligned}}\n"
+"$$"
+msgstr ""
+"\n"
+"**步骤 3:** 由于在上一步中得到的余数不为零，计算尚未完成。由于余数 {} 不能被 {} 平均分割，我们需要组成一个新数字继续进行除法运算。"
+"\n"
+"$$\n"
+"\\begin{{aligned}}\n"
+"&\\underline{{\\: 0.{{\\color {{Salmon}} {} }}\\:}} \\\\[-5pt]\n"
+"{} &\\big){} \\:0 \\\\[-4pt]\n"
+"-&{{\\:{{\\color {{Salmon}} {} }}{{\\:\\!\\color {{Salmon}} {} }}\\:}} "
+"\\\\[-4pt]\n"
+"\\hline\n"
+"&\\text{{ }}\\: \\:\\:{{\\!\\color {{Salmon}} {}}}\\[-4pt]\n"
+"\\end{{aligned}}\n"
+"$$\n"
+
+#: SolutionGenerator/SolutionGenerator.py:873
+msgid ""
+"\n"
+"**Step 4:** How many times does {} go into {}? ${}\times{} = {}$, we "
+"place the number {} in the quotient, next to the {}.\n"
+"$$\n"
+"\\begin{{aligned}}\n"
+"&\\underline{{\\text{{ }} \\:{}\\text{{ }} }}\\[-5pt]\n"
+"{} &\\big){} \\:0 \\\\[-4pt]\n"
+"\\end{{aligned}}\n"
+"$$"
+msgstr ""
+"\n"
+"**步骤 4:** {} 可以整除 {} 多少次？${}\times{} = {}$，我们将数字 {} 放在商的旁边，紧挨着 {}。\n"
+"$$\n"
+"\\begin{{aligned}}\n"
+"&\\underline{{\\text{{ }} \\:{}\\text{{ }} }}\\[-5pt]\n"
+"{} &\\big){} \\:0 \\\\[-4pt]\n"
+"\\end{{aligned}}\n"
+"$$"
+
+#: SolutionGenerator/SolutionGenerator.py:883
+msgid "Unsupported number of decimal digits"
+msgstr "不支持的小数位数"
+
+#: SolutionGenerator/SolutionGenerator.py:927
+msgid ""
+"\n"
+"**Step 2:** We start with the rightmost column. In this case, it's the "
+"tenths column. We add the digits in that column: ${} + {} = {}$ and write"
+" {} in the tenths column.\n"
+"$$\n"
+"\\begin{{array}}{{r c r}}\n"
+"&0.{}\\\n"
+"+&0.{}\\\n"
+"\\hline\n"
+"&\\phantom{{0}}\\,{}{}\n"
+"\\end{{array}}\n"
+"$$\n"
+msgstr ""
+"\n"
+"**步骤 2:** 我们从最右边的列开始。在这个例子中，它是十分位。我们将该列中的数字相加：${} + {} = {}$ 并将 {} 写在十分位。"
+"\n"
+"$$\n"
+"\\begin{{array}}{{r c r}}\n"
+"&0.{}\\\n"
+"+&0.{}\\\n"
+"\\hline\n"
+"&\\phantom{{0}}\\,{}{}\n"
+"\\end{{array}}\n"
+"$$\n"
+
+#: SolutionGenerator/SolutionGenerator.py:939
+msgid ""
+"\n"
+"**Step 3:** Then, we move to the left column, the ones column. We add the"
+" digits in that column: ${} + {} = {}$. Write the result in the ones "
+"column and add the decimal point.\n"
+"$$\n"
+"\\begin{{array}}{{r c r}}\n"
+"&{}\\\n"
+"+&{}\\\n"
+"\\hline\n"
+"&{}{}\\\n"
+"\\end{{array}}\n"
+"$$\n"
+msgstr ""
+"\n"
+"**步骤 3:** 接下来，我们移动到左边的列，即个位列。我们将该列中的数字相加：${} + {} = {}$。将结果写在个位列，并加上小数点。\n"
+"$$\n"
+"\\begin{{array}}{{r c r}}\n"
+"&{}\\\n"
+"+&{}\\\n"
+"\\hline\n"
+"&{}{}\\\n"
+"\\end{{array}}\n"
+"$$\n"
+
+#: SolutionGenerator/SolutionGenerator.py:960
+msgid ""
+"\n"
+"**Step 2:** Align the decimal points by adding zeros where necessary to "
+"equalize the number of decimal places.\n"
+"$$\n"
+"\\begin{{array}}{{r c r}}\n"
+"&0.{}\\\n"
+"+&0.{}0\\\n"
+"\\hline\n"
+"\\end{{array}}\n"
+"$$\n"
+msgstr ""
+"\n"
+"**步骤 2:** 通过必要时添加零来对齐小数点，以使小数位数相等。\n"
+"$$\n"
+"\\begin{{array}}{{r c r}}\n"
+"&0.{}\\\n"
+"+&0.{}0\\\n"
+"\\hline\n"
+"\\end{{array}}\n"
+"$$\n"
+
+#: SolutionGenerator/SolutionGenerator.py:971
+msgid ""
+"\n"
+"**Step 3:** Start with the hundredths column. Add the digits: $0 + {} = "
+"{}$. Write {} in the hundredths column.\n"
+"$$\n"
+"\\begin{{array}}{{r c r}}\n"
+"&0.{}0\\\n"
+"+&0.{}\\\n"
+"\\hline\n"
+"\\end{{array}}\n"
+"$$\n"
+msgstr ""
+"\n"
+"**步骤 3:** 从百分位开始。将数字相加：$0 + {} = {}$。将 {} 写在百分位。\n"
+"$$\n"
+"\\begin{{array}}{{r c r}}\n"
+"&0.{}0\\\n"
+"+&0.{}\\\n"
+"\\hline\n"
+"\\end{{array}}\n"
+"$$\n"
+
+#: SolutionGenerator/SolutionGenerator.py:982
+msgid ""
+"\n"
+"**Step 4:** Move to the tenths column. Add the digits: ${} + {} = {}$. "
+"Write {} in the tenths column.\n"
+"$$\n"
+"\\begin{{array}}{{r c r}}\n"
+"&0.{}\\\n"
+"+&0.{}\\\n"
+"\\hline\n"
+"\\end{{array}}\n"
+"$$\n"
+msgstr ""
+"\n"
+"**步骤 4:** 移动到十分位。将数字相加：${} + {} = {}$。将 {} 写在十分位。\n"
+"$$\n"
+"\\begin{{array}}{{r c r}}\n"
+"&0.{}\\\n"
+"+&0.{}\\\n"
+"\\hline\n"
+"\\end{{array}}\n"
+"$$\n"
+
+#: SolutionGenerator/SolutionGenerator.py:998
+msgid ""
+"\n"
+"**Step 2:** Start with the rightmost column, the hundredths. Add the "
+"digits: ${} + {} = {}$ and write {} in the hundredths column.\n"
+"$$\n"
+"\\begin{{array}}{{r c r}}\n"
+"&0.{}\\\n"
+"+&0.{}\\\n"
+"\\hline\n"
+"\\end{{array}}\n"
+"$$\n"
+msgstr ""
+"\n"
+"**步骤 2:** 从最右边的列开始，即百分位。将数字相加：${} + {} = {}$，并将 {} 写在百分位。\n"
+"$$\n"
+"\\begin{{array}}{{r c r}}\n"
+"&0.{}\\\n"
+"+&0.{}\\\n"
+"\\hline\n"
+"\\end{{array}}\n"
+"$$\n"
+
+#: SolutionGenerator/SolutionGenerator.py:1009
+msgid ""
+"\n"
+"**Step 3:** Move to the tenths column. Add the digits: ${} + {} = {}$. "
+"Write {} in the tenths column.\n"
+"$$\n"
+"\\begin{{array}}{{r c r}}\n"
+"&0.{}\\\n"
+"+&0.{}\\\n"
+"\\hline\n"
+"\\end{{array}}\n"
+"$$\n"
+msgstr ""
+"\n"
+"**步骤 3:** 移动到十分位。将数字相加：${} + {} = {}$。将 {} 写在十分位。\n"
+"$$\n"
+"\\begin{{array}}{{r c r}}\n"
+"&0.{}\\\n"
+"+&0.{}\\\n"
+"\\hline\n"
+"\\end{{array}}\n"
+"$$\n"
+
+#: SolutionGenerator/SolutionGenerator.py:1020
+msgid ""
+"\n"
+"**Step 4:** Carry over if necessary. Then, move to the whole number "
+"column. Add the whole number part and place the result in the final "
+"answer.\n"
+"$$\n"
+"\\begin{{array}}{{r c r}}\n"
+"&{}\\\n"
+"+&{}\\\n"
+"\\hline\n"
+"&{}{}\\\n"
+"\\end{{array}}\n"
+"$$\n"
+msgstr ""
+"\n"
+"**步骤 4:** 如果有必要，进位。然后，移动到整数位，将整数部分相加并将结果写在最终答案中。\n"
+"$$\n"
+"\\begin{{array}}{{r c r}}\n"
+"&{}\\\n"
+"+&{}\\\n"
+"\\hline\n"
+"&{}{}\\\n"
+"\\end{{array}}\n"
+"$$\n"
+
+#: SolutionGenerator/SolutionGenerator.py:1033
+#: SolutionGenerator/SolutionGenerator.py:1239
+msgid "Unexpected number of fraction digits in arguments"
+msgstr "参数中出现了意外的小数位数"
+
+#: SolutionGenerator/SolutionGenerator.py:1076
+msgid ""
+"\n"
+"**Step 2:** We start with the rightmost column. In the rightmost column, "
+"we have ${0} - {1} = {2}$. Write the result in the tenths column.\n"
+"$$\n"
+"\\begin{{array}}{{r c r}}\n"
+"&0.{3}\\\n"
+"-&0.{4}\\\n"
+"\\hline\n"
+"\\end{{array}}\n"
+"\\:\\:\\longrightarrow\\:\\:  \n"
+"\\begin{{array}}{{r c r}}\n"
+"\\\n"
+"&0.{{\\color{{Salmon}} {0}}}\\\n"
+"-&0.{{\\color{{Salmon}} {1}}} \\\n"
+"\\hline\n"
+"&\\phantom{{0}}\\,{{\\color{{Salmon}} {2}}}\n"
+"\\end{{array}}\n"
+"$$\n"
+msgstr ""
+"\n"
+"**步骤 2:** 我们从最右边的列开始。在最右边的列中，我们有 ${0} - {1} = {2}$。将结果写在十分位。\n"
+"$$\n"
+"\\begin{{array}}{{r c r}}\n"
+"&0.{3}\\\n"
+"-&0.{4}\\\n"
+"\\hline\n"
+"\\end{{array}}\n"
+"\\:\\:\\longrightarrow\\:\\:  \n"
+"\\begin{{array}}{{r c r}}\n"
+"&0.{{\\color{{Salmon}} {0}}}\\\n"
+"-&0.{{\\color{{Salmon}} {1}}} \\\n"
+"\\hline\n"
+"&\\phantom{{0}}\\,{{\\color{{Salmon}} {2}}}\n"
+"\\end{{array}}\n"
+"$$\n"
+
+#: SolutionGenerator/SolutionGenerator.py:1095
+msgid ""
+"\n"
+"**Step 3:** Move to the ones column. In this column, we have $0 - 0 = 0$."
+" Write the result in the ones column and remember to place the decimal "
+"point.\n"
+"$$\n"
+"\\begin{{array}}{{l l}}\\\n"
+"&0.{0}\\\n"
+"-&0.{1}\\\n"
+"\\hline\n"
+"&\\:\\,\\,.{2}\\\n"
+"\\end{{array}}\n"
+"\\:\\:\\longrightarrow\\:\\:  \n"
+"\\begin{{array}}{{l l}}\\\n"
+"&0.{0}\\\n"
+"-&0.{1}\\\n"
+"\\hline\n"
+"&{3}\\\n"
+"\\end{{array}}\n"
+"$$\n"
+msgstr ""
+"\n"
+"**步骤 3:** 移动到个位。在此列中，我们有 $0 - 0 = 0$。将结果写在个位列，并记得加上小数点。\n"
+"$$\n"
+"\\begin{{array}}{{l l}}\\\n"
+"&0.{0}\\\n"
+"-&0.{1}\\\n"
+"\\hline\n"
+"&\\:\\,\\,.{2}\\\n"
+"\\end{{array}}\n"
+"\\:\\:\\longrightarrow\\:\\:  \n"
+"\\begin{{array}}{{l l}}\\\n"
+"&0.{0}\\\n"
+"-&0.{1}\\\n"
+"\\hline\n"
+"&{3}\\\n"
+"\\end{{array}}\n"
+"$$\n"
+
+#: SolutionGenerator/SolutionGenerator.py:1126
+msgid ""
+"\n"
+"**Step 2:** Align the decimal points by adding zeros where necessary.\n"
+"$$\n"
+"\\begin{{array}}{{r c r}}\n"
+"&{0}\\phantom{{0}}\\\n"
+"-&{1} \\\n"
+"\\hline\n"
+"\\end{{array}}\n"
+"\\:\\:\\longrightarrow\\:\\:  \n"
+"\\begin{{array}}{{r c r}}\n"
+"&{0}{{\\color{{Salmon}} 0}}\\\n"
+"-&{1} \\\n"
+"\\hline\n"
+"\\end{{array}}\n"
+"$$\n"
+"*Note: Align the decimal points and add zeros where needed to ensure "
+"accurate subtraction.*\n"
+msgstr ""
+"\n"
+"**步骤 2:** 通过必要时添加零来对齐小数点。\n"
+"$$\n"
+"\\begin{{array}}{{r c r}}\n"
+"&{0}\\phantom{{0}}\\\n"
+"-&{1} \\\n"
+"\\hline\n"
+"\\end{{array}}\n"
+"\\:\\:\\longrightarrow\\:\\:  \n"
+"\\begin{{array}}{{r c r}}\n"
+"&{0}{{\\color{{Salmon}} 0}}\\\n"
+"-&{1} \\\n"
+"\\hline\n"
+"\\end{{array}}\n"
+"$$\n"
+"*注意：对齐小数点，并在必要时添加零以确保准确减法。*\n"
+
+#: SolutionGenerator/SolutionGenerator.py:1144
+msgid ""
+"\n"
+"**Step 3:** Start with the rightmost column. Since 0 is smaller than {1},"
+" we need to borrow from the left column, making it 10. Now we have $10 - "
+"{1} = {2}$. Write the result in the hundredths column.\n"
+"$$\n"
+"\\begin{{array}}{{r c r}}\n"
+"&0.00\\\n"
+"-&{3} \\\n"
+"\\hline\n"
+"\\end{{array}}\n"
+"\\:\\:\\longrightarrow\\:\\:  \n"
+"\\begin{{array}}{{r c r}}\n"
+"&0.{{\\color{{Salmon}} \\cancel{4} }}{{\\color{{Salmon}}\\cancel0 }}\\\n"
+"-&0.{5}{{\\color{{Salmon}} {1}}} \\\n"
+"\\hline\n"
+"&\\phantom{{0}}\\phantom{{0}}\\,{{\\color{{Salmon}} {2}}}\n"
+"\\end{{array}}\n"
+"$$\n"
+msgstr ""
+"\n"
+"**步骤 3:** 从最右边的列开始。由于 0 小于 {1}，我们需要从左边的列借位，使其变成 10。现在我们有 $10 - {1} = "
+"{2}$。将结果写在百分位列。\n"
+"$$\n"
+"\\begin{{array}}{{r c r}}\n"
+"&0.00\\\n"
+"-&{3} \\\n"
+"\\hline\n"
+"\\end{{array}}\n"
+"\\:\\:\\longrightarrow\\:\\:  \n"
+"\\begin{{array}}{{r c r}}\n"
+"&0.{{\\color{{Salmon}} \\cancel{4} }}{{\\color{{Salmon}}\\cancel0 }}\\\n"
+"-&0.{5}{{\\color{{Salmon}} {1}}} \\\n"
+"\\hline\n"
+"&\\phantom{{0}}\\phantom{{0}}\\,{{\\color{{Salmon}} {2}}}\n"
+"\\end{{array}}\n"
+"$$\n"
+
+#: SolutionGenerator/SolutionGenerator.py:1162
+msgid ""
+"\n"
+"**Step 4:** Move to the left column. After borrowing 1, we subtract ${0} "
+"- {1} = {2}$ in this column and write the result in the tenths column.\n"
+"$$\n"
+"\\begin{{array}}{{r c r}}\n"
+"&0.{{\\cancel{0} }}{{\\cancel0}}\\\n"
+"-&{3}\\\n"
+"\\hline\n"
+"\\end{{array}}\n"
+"\\:\\:\\longrightarrow\\:\\:  \n"
+"\\begin{{array}}{{r c r}}\n"
+"&0.{{\\color{{Salmon}} {0}}}{6}\\\n"
+"-&0.{{\\color{{Salmon}} {1}}}{7} \\\n"
+"\\hline\n"
+"&\\,\\,{{\\color{{Salmon}} {2}}}{5}\\\n"
+"\\end{{array}}\n"
+"$$\n"
+msgstr ""
+"\n"
+"**步骤 4:** 移动到左边的列。借位 1 后，我们在该列中减去 ${0} - {1} = {2}$，并将结果写在十分位列。\n"
+"$$\n"
+"\\begin{{array}}{{r c r}}\n"
+"&0.{{\\cancel{0} }}{{\\cancel0}}\\\n"
+"-&{3}\\\n"
+"\\hline\n"
+"\\end{{array}}\n"
+"\\:\\:\\longrightarrow\\:\\:  \n"
+"\\begin{{array}}{{r c r}}\n"
+"&0.{{\\color{{Salmon}} {0}}}{6}\\\n"
+"-&0.{{\\color{{Salmon}} {1}}}{7} \\\n"
+"\\hline\n"
+"&\\,\\,{{\\color{{Salmon}} {2}}}{5}\\\n"
+"\\end{{array}}\n"
+"$$\n"
+
+#: SolutionGenerator/SolutionGenerator.py:1180
+msgid ""
+"\n"
+"**Step 5:** The first number in the leftmost column is 0. We have $0 - 0 "
+"= 0$ in this column. Write the result in the ones column and place the "
+"decimal point.\n"
+"$$\n"
+"\\begin{{array}}{{l l}}\n"
+"&0.{{ \\cancel{1} }}{{\\cancel0}}\\\n"
+"-&{2} \\\n"
+"\\hline\n"
+"&\\,\\,{3} \\\n"
+"\\end{{array}}\n"
+"$$\n"
+msgstr ""
+"\n"
+"**步骤 5:** 左边第一列中的数字是 0。在此列中，我们有 $0 - 0 = 0$。将结果写在个位列并加上小数点。\n"
+"$$\n"
+"\\begin{{array}}{{l l}}\n"
+"&0.{{ \\cancel{1} }}{{\\cancel0}}\\\n"
+"-&{2} \\\n"
+"\\hline\n"
+"&\\,\\,{3} \\\n"
+"\\end{{array}}\n"
+"$$\n"
+
+#: SolutionGenerator/SolutionGenerator.py:1197
+msgid ""
+"\n"
+"**Step 2:** Start with the rightmost column. Subtract ${0} - {1} = {2}$ "
+"in the hundredths column and write the result.\n"
+"$$\n"
+"\\begin{{array}}{{r c r}}\n"
+"&0.{3}\\\n"
+"-&0.{4}\\\n"
+"\\hline\n"
+"\\end{{array}}\n"
+"\\:\\:\\longrightarrow\\:\\:  \n"
+"\\begin{{array}}{{r c r}}\n"
+"&0.{{\\color{{Salmon}} {0}}}\\\n"
+"-&0.{{\\color{{Salmon}} {1}}} \\\n"
+"\\hline\n"
+"&\\phantom{{0}}\\,{{\\color{{Salmon}} {2}}}\n"
+"\\end{{array}}\n"
+"$$\n"
+msgstr ""
+"\n"
+"**步骤 2:** 从最右边的列开始。在百分位中减去 ${0} - {1} = {2}$，并将结果写下。\n"
+"$$\n"
+"\\begin{{array}}{{r c r}}\n"
+"&0.{3}\\\n"
+"-&0.{4}\\\n"
+"\\hline\n"
+"\\end{{array}}\n"
+"\\:\\:\\longrightarrow\\:\\:  \n"
+"\\begin{{array}}{{r c r}}\n"
+"&0.{{\\color{{Salmon}} {0}}}\\\n"
+"-&0.{{\\color{{Salmon}} {1}}} \\\n"
+"\\hline\n"
+"&\\phantom{{0}}\\,{{\\color{{Salmon}} {2}}}\n"
+"\\end{{array}}\n"
+"$$\n"
+
+#: SolutionGenerator/SolutionGenerator.py:1215
+msgid ""
+"\n"
+"**Step 3:** Move to the tenths column. Subtract ${0} - {1} = {2}$ and "
+"write the result in the tenths column.\n"
+"$$\n"
+"\\begin{{array}}{{r c r}}\n"
+"&0.{{{3}}}\\\n"
+"-&0.{{{4}}}\\\n"
+"\\hline\n"
+"\\end{{array}}\n"
+"$$\n"
+msgstr ""
+"\n"
+"**步骤 3:** 移动到十分位。减去 ${0} - {1} = {2}$，并将结果写在十分位。\n"
+"$$\n"
+"\\begin{{array}}{{r c r}}\n"
+"&0.{{{3}}}\\\n"
+"-&0.{{{4}}}\\\n"
+"\\hline\n"
+"\\end{{array}}\n"
+"$$\n"
+
+#: SolutionGenerator/SolutionGenerator.py:1226
+msgid ""
+"\n"
+"**Step 4:** Move to the ones column. Subtract $0 - 0 = 0$ and write the "
+"result in the ones column. Place the decimal point.\n"
+"$$\n"
+"\\begin{{array}}{{l l}}\n"
+"&0.{{{0}}}\\\n"
+"-&0.{{{1}}}\\\n"
+"\\hline\n"
+"&{2}\n"
+"\\end{{array}}\n"
+"$$\n"
+msgstr ""
+"\n"
+"**步骤 4:** 移动到个位。减去 $0 - 0 = 0$ 并将结果写在个位列。加上小数点。\n"
+"$$\n"
+"\\begin{{array}}{{l l}}\n"
+"&0.{{{0}}}\\\n"
+"-&0.{{{1}}}\\\n"
+"\\hline\n"
+"&{2}\n"
+"\\end{{array}}\n"
+"$$\n"
+
+#: SolutionGenerator/SolutionGenerator.py:1279
+#: SolutionGenerator/SolutionGenerator.py:1310
+msgid "**Step 3:** The fraction {}/{} is already in its lowest term."
+msgstr "**步骤 3:** 分数 {}/{} 已经是最简形式。"
+
+#: SolutionGenerator/SolutionGenerator.py:1283
+#: SolutionGenerator/SolutionGenerator.py:1314
+msgid ""
+"**Step 3:** Simplify the fraction {}/{} by dividing both the numerator "
+"and denominator by {}: $\\frac{{{}}}{{{}}} = \\frac{{{}}}{{{}}}$"
+msgstr ""
+"**步骤 3:** 通过将分子和分母同时除以 {} 来简化分数 {}/{}: $\\frac{{{}}}{{{}}} = "
+"\\frac{{{}}}{{{}}}$"
+
+#: SolutionGenerator/SolutionGenerator.py:1292
+#: SolutionGenerator/SolutionGenerator.py:1323
+msgid ""
+"**Step 4:** Convert the improper fraction to a mixed number: "
+"$\\frac{{{}}}{{{}}} = {} \\frac{{{}}}{{{}}}$"
+msgstr "**步骤 4:** 将假分数转换为带分数: $\\frac{{{}}}{{{}}} = {} \\frac{{{}}}{{{}}}$"
+
+#: SolutionGenerator/SolutionGenerator.py:1296
+#: SolutionGenerator/SolutionGenerator.py:1327
+msgid ""
+"**Step 4:** The fraction is already a proper fraction: "
+"$\\frac{{{}}}{{{}}}$"
+msgstr "**步骤 4:** 该分数已经是一个真分数: $\\frac{{{}}}{{{}}}$"
+
+#: SolutionGenerator/SolutionGenerator.py:1393
+#: SolutionGenerator/SolutionGenerator.py:1521
+msgid "    - {} is prime. So it is the only factor"
+msgstr "    - {} 是质数，因此它是唯一的因数"
+
+msgid ""
+"    - Start from small, the smallest number that can divide {} is {}, so "
+"we write down {}. Then ${} / {} = {}$.\n"
+msgstr ""
+"    - 从小的开始，能整除 {} 的最小数是 {}，所以我们写下 {}。然后 ${} / {} = {}$。\n"
+
+msgid ""
+"    - Now, the smallest number that can divide {} is {}, so we write down"
+" {}. Then ${} / {} = {}$.\n"
+msgstr ""
+"    - 现在，能整除 {} 的最小数是 {}，所以我们写下 {}。然后 ${} / {} = {}$。\n"
+
+msgid "    - Notice {} is also a prime number, so we write down {}.\n"
+msgstr "    - 注意 {} 也是一个质数，因此我们写下 {}。\n"
+
+msgid "    - So, the prime factors of {} are {} and {}. (${} = "
+msgstr "    - 因此，{} 的质因数是 {} 和 {}。(${} = "
+
+msgid "    - There are no common prime factors of {} and {}.\n"
+msgstr "    - {} 和 {} 没有共同的质因数。\n"
+
+msgid "    - The common prime factor of {} and {} is {}.\n"
+msgstr "    - {} 和 {} 的共同质因数是 {}。\n"
+
+msgid "    - The common prime factors of {} and {} are "
+msgstr "    - {} 和 {} 的共同质因数是 "
+
+msgid " and {}"
+msgstr " 和 {}"
+
+msgid "    - There are no unique prime factors of {} and {}.\n"
+msgstr "    - {} 和 {} 没有唯一的质因数。\n"
+
+msgid "    - The unique prime factor of {} and {} is {}.\n"
+msgstr "    - {} 和 {} 的唯一质因数是 {}。\n"
+
+msgid "    - The unique prime factors of {} and {} are "
+msgstr "    - {} 和 {} 的唯一质因数是 "
+
+msgid "factors"
+msgstr "因数"
+
+#: SolutionGenerator/SolutionGenerator.py:1568
+#, fuzzy
+msgid "factor"
+msgstr "四"
+
+#: SolutionGenerator/SolutionGenerator.py:1572
+#, fuzzy
+msgid "is {}"
+msgstr " = {}"
+
+#: SolutionGenerator/SolutionGenerator.py:1573
+#, fuzzy
+msgid "are {}"
+msgstr "是 {} 个数字"
+
+#: SolutionGenerator/SolutionGenerator.py:1599
+#: SolutionGenerator/SolutionGenerator.py:1682
+msgid " \\times \\frac{{{}}}{{{}}}"
+msgstr " \\times \\frac{{{}}}{{{}}}"
+
+#: SolutionGenerator/SolutionGenerator.py:1619
+msgid "The result cannot be simplified."
+msgstr "结果无法再简化。"
+
+#: SolutionGenerator/SolutionGenerator.py:1623
+#: SolutionGenerator/SolutionGenerator.py:1706
+msgid ""
+"Since the answer is an improper fraction, we can simplify it into the "
+"mixed number ${}\\frac{{{}}}{{{}}}$"
+msgstr "由于答案是一个假分数，我们可以将其简化为带分数 ${}\\frac{{{}}}{{{}}}$"
+
+#: SolutionGenerator/SolutionGenerator.py:1627
+#: SolutionGenerator/SolutionGenerator.py:1710
+msgid ""
+"The result can be simplified. When we divide both {} and {} by their "
+"greatest common divisor {}, we get {} and {}, respectively."
+msgstr "结果可以简化。当我们用最大公约数 {} 同时除以 {} 和 {} 时，得到 {} 和 {}。"
+
+#: SolutionGenerator/SolutionGenerator.py:1633
+#: SolutionGenerator/SolutionGenerator.py:1716
+msgid ""
+" Since the answer is an improper fraction, we can simplify it into the "
+"mixed number ${}\\frac{{{}}}{{{}}}$"
+msgstr " 由于答案是一个假分数，我们可以将其简化为带分数 ${}\\frac{{{}}}{{{}}}$"
+
+#: SolutionGenerator/SolutionGenerator.py:1643
+#: SolutionGenerator/SolutionGenerator.py:1726
+msgid ""
+"\\:\\:\\:\\longrightarrow    \\:\\: \\frac{{{}\\color "
+"{{Salmon}}\\div{}}}{{{}\\color {{Salmon}}\\div{}}} = \\frac{{\\color "
+"{{Salmon}}{}}}{{\\color {{Salmon}}{{{}}}}}"
+msgstr ""
+"\\:\\:\\:\\longrightarrow    \\:\\: \\frac{{{}\\color "
+"{{Salmon}}\\div{}}}{{{}\\color {{Salmon}}\\div{}}} = \\frac{{\\color "
+"{{Salmon}}{}}}{{\\color {{Salmon}}{{{}}}}}"
+
+#: SolutionGenerator/SolutionGenerator.py:1649
+#: SolutionGenerator/SolutionGenerator.py:1732
+msgid ""
+" = {{\\color {{Salmon}}{}}}\\frac{{\\color {{Salmon}}{}}}{{\\color "
+"{{Salmon}}{}}}"
+msgstr ""
+" = {{\\color {{Salmon}}{}}}\\frac{{\\color {{Salmon}}{}}}{{\\color "
+"{{Salmon}}{}}}"
+
+#: SolutionGenerator/SolutionGenerator.py:1702
+msgid "The result cannot be simplified further."
+msgstr "结果无法进一步简化。"
+
+#: SolutionGenerator/SolutionGenerator.py:1797
+msgid "{}"
+msgstr "{}"
+
+#: SolutionGenerator/SolutionGenerator.py:1800
+msgid "-\\frac{{{}}}{{{}}}"
+msgstr "-\\frac{{{}}}{{{}}}"
+
+#: SolutionGenerator/SolutionGenerator.py:1801
+msgid "\\frac{{{}}}{{{}}}"
+msgstr "\\frac{{{}}}{{{}}}"
+
+#: SolutionGenerator/SolutionGenerator.py:1802
+msgid "{}\\frac{{{}}}{{{}}}"
+msgstr "{}\\frac{{{}}}{{{}}}"
+
+#: SolutionGenerator/SolutionGenerator.py:1813
+msgid "Add"
+msgstr "加"
+
+#: SolutionGenerator/SolutionGenerator.py:1814
+msgid "Subtract"
+msgstr "减"
+
+#: SolutionGenerator/SolutionGenerator.py:1823
+msgid "- {}"
+msgstr "- {}"
+
+#: SolutionGenerator/SolutionGenerator.py:1824
+msgid "+ {}"
+msgstr "+ {}"
+
+#: SolutionGenerator/SolutionGenerator.py:1857
+#: SolutionGenerator/SolutionGenerator.py:1971
+#: SolutionGenerator/SolutionGenerator.py:2001
+#: SolutionGenerator/SolutionGenerator.py:2031
+msgid "places"
+msgstr "位"
+
+#: SolutionGenerator/SolutionGenerator.py:1858
+#: SolutionGenerator/SolutionGenerator.py:1970
+#: SolutionGenerator/SolutionGenerator.py:2000
+#: SolutionGenerator/SolutionGenerator.py:2032
+msgid "place"
+msgstr "位"
+
+#: SolutionGenerator/SolutionGenerator.py:1874
+#: SolutionGenerator/SolutionGenerator.py:2048
+msgid " or $ {} $"
+msgstr " 或 $ {} $"
+
+#: SolutionGenerator/SolutionGenerator.py:1909
+msgid "**Step {}:**"
+msgstr "**步骤 {}:**"
+
+#: SolutionGenerator/SolutionGenerator.py:1911
+msgid " Start with {} divided by {}, "
+msgstr " 从 {} 除以 {} 开始，"
+
+#: SolutionGenerator/SolutionGenerator.py:1913
+msgid " Bring down {} "
+msgstr " 放下 {} "
+
+#: SolutionGenerator/SolutionGenerator.py:1915
+msgid ""
+"but {} does not divide {} so we write zero, and move to the right.\n"
+"$$\n"
+msgstr ""
+"但是 {} 不能整除 {}，所以我们写下零，然后向右移动。\n"
+"$$\n"
+
+#: SolutionGenerator/SolutionGenerator.py:1920
+msgid "so we get {} divided by {}"
+msgstr "所以我们得到 {} 除以 {}"
+
+#: SolutionGenerator/SolutionGenerator.py:1922
+msgid " because we had a remainder in the prior step"
+msgstr " 因为我们在上一步有一个余数"
+
+#: SolutionGenerator/SolutionGenerator.py:1923
+msgid ""
+". {} divided by {} equals {}, so we write that down.\n"
+"$$\n"
+msgstr ""
+"{} 除以 {} 等于 {}，所以我们写下这个。\n"
+"$$\n"
+
+#: SolutionGenerator/SolutionGenerator.py:2068
+msgid " + {}"
+msgstr " + {}"
+
+#: SolutionGenerator/SolutionGenerator.py:2069
+msgid " = {}"
+msgstr " = {}"
+
+#: SolutionGenerator/SolutionGenerator.py:2075
+msgid "are {} numbers"
+msgstr "是 {} 个数字"
+
+#: SolutionGenerator/SolutionGenerator.py:2076
+msgid "is 1 number"
+msgstr "是 1 个数字"
+
+#: SolutionGenerator/SolutionGenerator.py:2082
+msgid "{} \\div {} = {}"
+msgstr "{} \\div {} = {}"
+
+#: SolutionGenerator/SolutionGenerator.py:2115
+#: SolutionGenerator/SolutionGenerator.py:2121
+#, python-format
+msgid "{\\color{salmon}%s},"
+msgstr "{\\color{salmon}%s},"
+
+#: SolutionGenerator/SolutionGenerator.py:2130
+#, python-format
+msgid "In this case, the middle number is at position %s."
+msgstr "在这种情况下，中间数在位置 %s。"
+
+#: SolutionGenerator/SolutionGenerator.py:2131
+#, python-format
+msgid "In this case, the middle numbers are at positions %s and %s."
+msgstr "在这种情况下，中间数在位置 %s 和 %s。"
+
+#: SolutionGenerator/SolutionGenerator.py:2140
+#, python-format
+msgid ""
+"Because the list is of even length, we must take the mean of the two "
+"middle numbers, %s and %s. The mean of %s and %s is %s."
+msgstr "由于列表的长度为偶数，我们必须取两个中间数 %s 和 %s 的平均值。%s 和 %s 的平均值是 %s。"
+
+#: SolutionGenerator/SolutionGenerator.py:2175
+#, python-format
+msgid ", %s"
+msgstr ", %s"
+
+#: SolutionGenerator/SolutionGenerator.py:2185
+#, python-format
+msgid "{\\color{salmon}%s}, "
+msgstr "{\\color{salmon}%s}, "
+
+#: SolutionGenerator/SolutionGenerator.py:2189
+#, python-format
+msgid "{\\color{salmon}%s}"
+msgstr "{\\color{salmon}%s}"
+
+#: SolutionGenerator/SolutionGenerator.py:2204
+#, python-format
+msgid "or \"%s squared\""
+msgstr "或 “%s 的平方”"
+
+#: SolutionGenerator/SolutionGenerator.py:2206
+#, python-format
+msgid "or \"%s cubed\""
+msgstr "或 “%s 的立方”"
+
+#: SolutionGenerator/SolutionGenerator.py:2214
+#, python-format
+msgid "×%s"
+msgstr "×%s"
+
+#: SolutionGenerator/SolutionGenerator.py:2252
+#: SolutionGenerator/SolutionGenerator.py:2711
+msgid ""
+"**Step 1:** Based on the **Order of Operations**, we evaluate the "
+"equation inside the parenthesis first."
+msgstr "**步骤 1:** 根据 **运算顺序**，我们首先计算括号内的表达式。"
+
+#: SolutionGenerator/SolutionGenerator.py:2256
+#: SolutionGenerator/SolutionGenerator.py:2714
+#: SolutionGenerator/SolutionGenerator.py:2909
+msgid ""
+"In this case, there are no parenthesis.\n"
+"\n"
+msgstr ""
+"在这种情况下，没有括号。\n"
+"\n"
+
+#: SolutionGenerator/SolutionGenerator.py:2262
+#, python-format
+msgid "**Step %s:** We now check for exponents within the parenthesis. "
+msgstr "**步骤 %s:** 我们现在检查括号内是否有指数。"
+
+#: SolutionGenerator/SolutionGenerator.py:2265
+#: SolutionGenerator/SolutionGenerator.py:2915
+msgid ""
+"In this case there are no exponents within the parenthesis.\n"
+"\n"
+msgstr ""
+"在这种情况下，括号内没有指数。\n"
+"\n"
+
+#: SolutionGenerator/SolutionGenerator.py:2268
+msgid "In this case there is 1 exponent within the parenthesis. "
+msgstr "在这种情况下，括号内有 1 个指数。"
+
+#: SolutionGenerator/SolutionGenerator.py:2270
+#, python-format
+msgid "In this case there are %s exponents within the parenthesis. "
+msgstr "在这种情况下，括号内有 %s 个指数。"
+
+#: SolutionGenerator/SolutionGenerator.py:2288
+#, python-format
+msgid ""
+"**Step %s:** We now check for multiplication and division operations "
+"within the parenthesis. "
+msgstr "**步骤 %s:** 我们现在检查括号内是否有乘法和除法操作。"
+
+#: SolutionGenerator/SolutionGenerator.py:2292
+#: SolutionGenerator/SolutionGenerator.py:2923
+msgid ""
+"In this case there are no multiplication or division operations within "
+"the parenthesis.\n"
+"\n"
+msgstr ""
+"在这种情况下，括号内没有乘法或除法操作。\n"
+"\n"
+
+#: SolutionGenerator/SolutionGenerator.py:2295
+#, python-format
+msgid ""
+"In this case there are %s multiplication and %s division operations "
+"within the parenthesis and we go from left to right."
+msgstr "在这种情况下，括号内有 %s 次乘法和 %s 次除法操作，我们从左到右进行操作。"
+
+#: SolutionGenerator/SolutionGenerator.py:2326
+#, python-format
+msgid ""
+"**Step %s:** We now check for addition and subtraction operations within "
+"the parenthesis. "
+msgstr "**步骤 %s:** 我们现在检查括号内的加法和减法操作。"
+
+#: SolutionGenerator/SolutionGenerator.py:2330
+msgid ""
+"In this case there are no addition or subtraction operations within the "
+"parenthesis.\n"
+"\n"
+msgstr ""
+"在这种情况下，括号内没有加法或减法操作。\n"
+"\n"
+
+#: SolutionGenerator/SolutionGenerator.py:2332
+#, python-format
+msgid ""
+"In this case there are %s addition and %s subtraction operations within "
+"the parenthesis and we go from left to right."
+msgstr "在这种情况下，括号内有 %s 次加法和 %s 次减法操作，我们从左到右进行。"
+
+#: SolutionGenerator/SolutionGenerator.py:2361
+#, python-format
+msgid ""
+"**Step %s**: Now that we've finished the operations within the "
+"parenthesis, we do operations outside of the parenthesis. Starting with "
+"exponents. "
+msgstr "**步骤 %s:** 现在我们已经完成了括号内的操作，接下来进行括号外的操作，从指数开始。"
+
+#: SolutionGenerator/SolutionGenerator.py:2365
+msgid "In this case there are no exponents left.\n"
+msgstr "在这种情况下，没有剩余的指数。\n"
+
+#: SolutionGenerator/SolutionGenerator.py:2368
+msgid "In this case there is 1 exponent operation left."
+msgstr "在这种情况下，还有 1 个指数操作。"
+
+#: SolutionGenerator/SolutionGenerator.py:2370
+#, python-format
+msgid "In this case there are %s exponent operations left."
+msgstr "在这种情况下，还有 %s 个指数操作。"
+
+#: SolutionGenerator/SolutionGenerator.py:2386
+#, python-format
+msgid "**Step %s:** We now check for multiplication and division operations. "
+msgstr "**步骤 %s:** 我们现在检查乘法和除法操作。"
+
+#: SolutionGenerator/SolutionGenerator.py:2389
+#: SolutionGenerator/SolutionGenerator.py:3123
+msgid ""
+"In this case there are no multiplication or division operations left.\n"
+"\n"
+msgstr ""
+"在这种情况下，没有剩余的乘法或除法操作。\n"
+"\n"
+
+#: SolutionGenerator/SolutionGenerator.py:2391
+#, python-format
+msgid ""
+"In this case there are %s multiplication and %s division operations and "
+"we go from left to right."
+msgstr "在这种情况下，有 %s 次乘法和 %s 次除法操作，我们从左到右进行。"
+
+#: SolutionGenerator/SolutionGenerator.py:2422
+#, python-format
+msgid "**Step %s:** We now check for addition and subtraction operations. "
+msgstr "**步骤 %s:** 我们现在检查加法和减法操作。"
+
+#: SolutionGenerator/SolutionGenerator.py:2425
+#: SolutionGenerator/SolutionGenerator.py:3198
+msgid ""
+"In this case there are no addition or subtraction operations left.\n"
+"\n"
+msgstr ""
+"在这种情况下，没有剩余的加法或减法操作。\n"
+"\n"
+
+#: SolutionGenerator/SolutionGenerator.py:2427
+#, python-format
+msgid ""
+"In this case there are %s addition and %s subtraction operations and we "
+"go from left to right."
+msgstr "在这种情况下，有 %s 次加法和 %s 次减法操作，我们从左到右进行。"
+
+#: SolutionGenerator/SolutionGenerator.py:2481
+msgid "{} {} {} {} {}"
+msgstr "{} {} {} {} {}"
+
+#: SolutionGenerator/SolutionGenerator.py:2484
+msgid ""
+"The numerator in the {} fraction and the denominator in the {} fraction "
+"have a greatest common divisor of {}. We divide these two numbers by {}."
+"\n"
+"$$\n"
+msgstr ""
+"{} 分数的分子和 {} 分数的分母的最大公约数是 {}。我们将这两个数除以 {}。\n"
+"$$\n"
+
+#: SolutionGenerator/SolutionGenerator.py:2555
+msgid "**Step {}:**  "
+msgstr "**步骤 {}:**  "
+
+#: SolutionGenerator/SolutionGenerator.py:2572
+msgid ""
+"**Step {}:** Now all fractions have been simplified to their lowest "
+"terms, multiply them.\n"
+"$$\n"
+msgstr ""
+"**步骤 {}:** 现在所有的分数都已简化为最简形式，进行相乘。\n"
+"$$\n"
+
+#: SolutionGenerator/SolutionGenerator.py:2720
+msgid "**Step {}:** We now check for exponents within the parenthesis."
+msgstr "**步骤 {}:** 我们现在检查括号内的指数操作。"
+
+#: SolutionGenerator/SolutionGenerator.py:2721
+msgid ""
+"In this case, there are no exponents within the parenthesis.\n"
+"\n"
+msgstr ""
+"在这种情况下，括号内没有指数。\n"
+"\n"
+
+#: SolutionGenerator/SolutionGenerator.py:2723
+msgid ""
+"**Step {}:** We now check for multiplication and division operations "
+"within the parenthesis."
+msgstr "**步骤 {}:** 我们现在检查括号内的乘法和除法操作。"
+
+#: SolutionGenerator/SolutionGenerator.py:2728
+msgid ""
+"In this case, there are no multiplication or division operations within "
+"the parenthesis.\n"
+"\n"
+msgstr ""
+"在这种情况下，括号内没有乘法或除法操作。\n"
+"\n"
+
+#: SolutionGenerator/SolutionGenerator.py:2731
+msgid ""
+"In this case, there are {} multiplication and {} division operations "
+"within the parenthesis, and we simplify them left to right."
+msgstr "在这种情况下，括号内有 {} 次乘法和 {} 次除法操作，我们从左到右进行简化。"
+
+#: SolutionGenerator/SolutionGenerator.py:2764
+#: SolutionGenerator/SolutionGenerator.py:2787
+msgid "[{}\\div{{\\color{{Salmon}}{{{}}}}}|{}\\div{{\\color{{Salmon}}{{{}}}}}]"
+msgstr "[{}\\div{{\\color{{Salmon}}{{{}}}}}|{}\\div{{\\color{{Salmon}}{{{}}}}}]"
+
+#: SolutionGenerator/SolutionGenerator.py:2808
+msgid ""
+"**Step {}:** We now check for addition and subtraction operations within "
+"the parenthesis."
+msgstr "**步骤 {}:** 我们现在检查括号内的加法和减法操作。"
+
+#: SolutionGenerator/SolutionGenerator.py:2813
+#: SolutionGenerator/SolutionGenerator.py:3006
+msgid ""
+"In this case, there are no addition or subtraction operations within the "
+"parenthesis.\n"
+"\n"
+msgstr ""
+"在这种情况下，括号内没有加法或减法操作。\n"
+"\n"
+
+#: SolutionGenerator/SolutionGenerator.py:2816
+msgid ""
+"In this case, there are {} addition and {} subtraction operations, and we"
+" simplify them from left to right."
+msgstr "在这种情况下，有 {} 次加法和 {} 次减法操作，我们从左到右进行简化。"
+
+#: SolutionGenerator/SolutionGenerator.py:2880
+msgid "**Step 1:** First convert all mixed numbers into improper fractions."
+msgstr "**步骤 1:** 首先将所有带分数转换为假分数。"
+
+#: SolutionGenerator/SolutionGenerator.py:2882
+msgid ""
+"In this case, there are no mixed numbers.\n"
+"\n"
+msgstr ""
+"在这种情况下，没有带分数。\n"
+"\n"
+
+#: SolutionGenerator/SolutionGenerator.py:2884
+#: SolutionGenerator/SolutionGenerator.py:2992
+#: SolutionGenerator/SolutionGenerator.py:2994
+#: SolutionGenerator/SolutionGenerator.py:3012
+#: SolutionGenerator/SolutionGenerator.py:3100
+#: SolutionGenerator/SolutionGenerator.py:3101
+#: SolutionGenerator/SolutionGenerator.py:3104
+#: SolutionGenerator/SolutionGenerator.py:3106
+#: SolutionGenerator/SolutionGenerator.py:3128
+#: SolutionGenerator/SolutionGenerator.py:3190
+#: SolutionGenerator/SolutionGenerator.py:3191
+#: SolutionGenerator/SolutionGenerator.py:3203
+#: SolutionGenerator/SolutionGenerator.py:3288
+#: SolutionGenerator/SolutionGenerator.py:3289
+#: SolutionGenerator/SolutionGenerator.py:3291
+#: SolutionGenerator/SolutionGenerator.py:3292
+#: SolutionGenerator/SolutionGenerator.py:3305
+msgid " = "
+msgstr " = "
+
+#: SolutionGenerator/SolutionGenerator.py:2906
+msgid ""
+"**Step 2:** Based on the **Order of Operations**, we evaluate the "
+"equation inside the parenthesis first. "
+msgstr "**步骤 2:** 根据 **运算顺序**，我们首先计算括号内的表达式。"
+
+#: SolutionGenerator/SolutionGenerator.py:2914
+msgid "**Step {}:** We now check for exponents within the parenthesis. "
+msgstr "**步骤 {}:** 我们现在检查括号内的指数。"
+
+#: SolutionGenerator/SolutionGenerator.py:2918
+msgid ""
+"**Step {}:** We now check for multiplication and division operations "
+"within the parenthesis. "
+msgstr "**步骤 {}:** 我们现在检查括号内的乘法和除法操作。"
+
+#: SolutionGenerator/SolutionGenerator.py:2926
+msgid ""
+"In this case there are {} multiplication and {} division operations "
+"within the parenthesis, and we go from left to right. Simplify at the end"
+" if possible. "
+msgstr "在这种情况下，括号内有 {} 次乘法和 {} 次除法操作，我们从左到右进行。若可能，最后简化。"
+
+#: SolutionGenerator/SolutionGenerator.py:3001
+msgid ""
+"**Step {}:** We now check for addition and subtraction operations within "
+"the parenthesis. "
+msgstr "**步骤 {}:** 我们现在检查括号内的加法和减法操作。"
+
+#: SolutionGenerator/SolutionGenerator.py:3009
+msgid ""
+"In this case there are {} addition and {} subtraction operations within "
+"the parenthesis, and we go from left to right. Simplify at the end if "
+"possible. "
+msgstr "在这种情况下，括号内有 {} 次加法和 {} 次减法操作，我们从左到右进行。若可能，最后简化。"
+
+#: SolutionGenerator/SolutionGenerator.py:3113
+msgid ""
+"**Step {}:** Now that we've finished the operations within the "
+"parenthesis, we do operations outside of the parenthesis. Starting with "
+"exponents. "
+msgstr "**步骤 {}:** 现在我们已经完成了括号内的操作，接下来进行括号外的操作，从指数开始。"
+
+#: SolutionGenerator/SolutionGenerator.py:3117
+msgid ""
+"In this case there are no exponents left.\n"
+"\n"
+msgstr ""
+"在这种情况下，没有剩余的指数。\n"
+"\n"
+
+#: SolutionGenerator/SolutionGenerator.py:3120
+msgid "**Step {}:** We now check for multiplication and division operations. "
+msgstr "**步骤 {}:** 我们现在检查乘法和除法操作。"
+
+#: SolutionGenerator/SolutionGenerator.py:3125
+msgid ""
+"In this case there are {} multiplication and {} division operations, and "
+"we go from left to right. Simplify at the end if possible. "
+msgstr "在这种情况下，有 {} 次乘法和 {} 次除法操作，我们从左到右进行。若可能，最后简化。"
+
+#: SolutionGenerator/SolutionGenerator.py:3195
+msgid "**Step {}:** We now check for addition and subtraction operations. "
+msgstr "**步骤 {}:** 我们现在检查加法和减法操作。"
+
+#: SolutionGenerator/SolutionGenerator.py:3200
+msgid ""
+"In this case there are {} addition and {} subtraction operations, and we "
+"go from left to right. "
+msgstr "在这种情况下，有 {} 次加法和 {} 次减法操作，我们从左到右进行。"
+
+#: SolutionGenerator/SolutionGenerator.py:3296
+msgid "**Step {}:** Simplify if possible. "
+msgstr "**步骤 {}:** 若可能，请简化。"
+
+#: SolutionGenerator/SolutionGenerator.py:3302
+msgid ""
+"In this case, the fraction cannot be further simplified.\n"
+"\n"
+msgstr ""
+"在这种情况下，分数无法进一步简化。\n"
+"\n"
+
