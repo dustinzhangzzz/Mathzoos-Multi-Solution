@@ -1,0 +1,67 @@
+"question_translation_id","knowledge_point_id","language_code","translated_question_text","question_id"
+30864,1,"en","Fill in the total number in the box.\n$2$ tens + $2$ ones = [[ans]]",171
+30995,2,"en","Fill in the total number in the box.\n$7$ tens − $4$ tens = [[ans]]",302
+32358,3,"en","Find the sum.\n47+20[[ans]][[ans]]",1665
+32891,4,"en","Find the difference.\n37−15[[ans]][[ans]]",2196
+33915,5,"en","Fill in the missing numbers.\n4, [[ans]], 14, [[ans]]",3220
+246324,6,"en","Compare the numbers using >, < or =. $6$ [[ans]] $7$",3389
+34148,7,"en","Fill in the number of tens and ones.\n$41$ = [[ans]]tens + [[ans]]ones",3453
+34195,9,"en","Find the sum.\n4+16[[ans]][[ans]]",4097
+35523,10,"en","Find the difference.\n35−6[[ans]][[ans]]",5428
+36532,11,"en","Fill in the missing numbers.\n[[ans]], 36, 37",6431
+246847,12,"en","Compare the numbers using >, < or =. $202$ [[ans]] $202$",6923
+37628,14,"en","Find the sum.\n$213$ + $355$ = [[ans]]",8132
+38031,15,"en","Find the difference.\n$882$ − $281$ = [[ans]]",8535
+39355,16,"en","Fill in the missing numbers.\n1126, [[ans]], 1130",9857
+247756,17,"en","Compare the numbers using >, <, or =. $788$ [[ans]] $788$",10682
+40568,18,"en","Fill in the total number in the box.\n$6$ ones + $5$ tens = [[ans]]",11072
+41163,21,"en","Find the sum.\n$746$ + $856$ = [[ans]]",12867
+42193,22,"en","Find the difference.\n$654$ − $179$ = [[ans]]",14497
+42494,24,"en","Multiply.\n$8$ × $3$ = [[ans]]",14798
+325943,25,"en","$3$ students each buy $7$ cookies. How many cookies do they have altogether?[[ans]]",15109
+42580,26,"en","Divide.\n$40$ ÷ $5$ = [[ans]]",15235
+42731,28,"en","Multiply.\n20×9[[ans]][[ans]][[ans]]",15918
+42756,29,"en","Divide.\n24÷3[[ans]]",15943
+42829,31,"en","Multiply.\n12×7[[ans]][[ans]]",16022
+43286,32,"en","Divide each number or find the quotient.\n$37$ ÷ $8$ = [[ans]] R [[ans]]",17130
+43086,33,"en","Fill in the numerator and denominator box of fraction below.\n$\frac{4}{9}$\nNumerator = [[ans]]\nDenominator = [[ans]]",17299
+45365,34,"en","Multiply.\n34×13[[ans]][[ans]][[ans]]\n[[ans]][[ans]]\n[[ans]][[ans]][[ans]]",19255
+43932,35,"en","Divide.\n43÷10[[ans]]R[[ans]]",17831
+43508,36,"en","Identify the fraction and choose the correct fraction type.\n$\frac{7}{4}$@proper, improper, mixed@[[ans]]",17395
+46441,37,"en","Multiply.\n174×26[[ans]]@",20340
+46959,38,"en","Divide.\n218÷9[[ans]]R[[ans]]@",20858
+46075,39,"en","Reduce the fraction to its lowest term.\n$\frac{6}{8}$ = @![[ans]][[ans]]!@",19962
+47719,40,"en","Multiply.\n194×1289[[ans]]@",21546
+48225,41,"en","Divide.\n1399÷80[[ans]]R[[ans]]@",22045
+47805,42,"en","Reduce the fraction to its lowest term.\n$\frac{2}{10}$ = [[ans]]_fhint_",21572
+47767,43,"en","Convert the fraction to decimal.\n$\frac{4}{20}$ = [[ans]]",21843
+49085,44,"en","Add.\n0.06+0.7[[ans]]",22827
+49839,45,"en","Subtract.\n0.75−0.36[[ans]]",23641
+48896,46,"en","Convert a decimal to a percent.\n0.52 = [[ans]]%",23166
+49440,47,"en","Convert improper fraction to mixed number.\n$\frac{16}{5}$ = @![[ans]][[ans]][[ans]]!@",23717
+49952,48,"en","Change mixed number to improper fraction.\n$7\frac{8}{9}$ = @![[ans]][[ans]]!@",23851
+50571,49,"en","Add.##If your answer is an improper fraction, change it to a mixed number.\n$\frac{5}{7}$ + $\frac{10}{7}$ = [[ans]]_fhint_",24451
+50131,50,"en","Subtract the fractions.##If your answer is an improper fraction, change it to a mixed number.\n$\frac{8}{5}$ − $\frac{1}{5}$ = [[ans]]_fhint_",24029
+51377,51,"en","Multiply.##Reduce the answer to the lowest term.\n$\frac{9}{12}$ × $\frac{3}{4}$ = [[ans]]_fhint_",25257
+51432,52,"en","Divide.##Reduce the answer to the lowest term.\n$\frac{1}{3}$ ÷ $\frac{2}{4}$ = [[ans]]_fhint_",25274
+52237,53,"en","Find the LCM of these numbers.\nLCM of $15$ and $17$ is [[ans]]",26082
+331196,54,"en","Find the GCF of these numbers.\nGCF of $22$ and $42$ is [[ans]]",26471
+53645,55,"en","Add.##If your answer is an improper fraction, write it as a mixed number.\n$\frac{5}{4}$ + $\frac{11}{5}$ = [[ans]]_fhint_",27399
+52909,56,"en","Subtract.##If your answer is an improper fraction, write it as a mixed number.\n$\frac{7}{3}$ − $\frac{7}{8}$ = [[ans]]_fhint_",26750
+54493,57,"en","Solve.##If your answer is an improper fraction, write it as a mixed number.\n$3\frac{3}{7}$ − $1\frac{2}{7}$ = [[ans]]_fhint_",28239
+55361,58,"en","Multiply.\n4×85.76[[ans]]@",29160
+55078,59,"en","Divide.\n59.7÷2[[ans]]@",28829
+55769,60,"en","Multiply.\n$220.757$ × $10$ = [[ans]]",29568
+56198,61,"en","Divide.\n$3442$ ÷ $100$ = [[ans]]",29997
+56423,62,"en","Multiply.\n0.3×0.6[[ans]]@",30222
+57002,63,"en","Divide.\n2.4÷0.6[[ans]]@",30793
+237030,64,"en","Find the mean.##Adding all numbers together and then dividing by the number of terms.\n71, 86, 97, 113, 123\n[[ans]]",31656
+237188,65,"en","Find the middle number by sorting in order.##If there are two middle numbers, take the mean of those two.\n83, 69, 23, 72, 3\n[[ans]]",31813
+237597,66,"en","Identify the number that appears the most.\n89, 53, 53, 30, 8\n[[ans]]",32227
+58557,67,"en","Solve.\n$10^2$ = [[ans]]",32454
+58660,68,"en","Solve.\n$37$ + ($3^3$ − $9$) × $4$ = [[ans]]",32560
+58989,69,"en","Solve.##Reduce the answer to the lowest term.\n$\frac{5}{11}$ × $\frac{1}{2}$ ÷ $\frac{3}{8}$ = [[ans]]_fhint_",32889
+59716,70,"en","Add the Fractions.##If your answer is an improper fraction, write it as a mixed number.\n$\frac{1}{4}$ + $\frac{1}{2}$ + $\frac{4}{9}$ = [[ans]]_fhint_",33616
+60091,71,"en","Solve.##If your answer is an improper fraction, write it as a mixed number.\n$\frac{1}{2}$ + $\frac{3}{8}$ − $\frac{3}{5}$ = [[ans]]_fhint_",33991
+60875,72,"en","Solve.##Reduce the answer to the lowest term.\n$(\frac{5}{6} − \frac{3}{4})$ ÷ $\frac{2}{3}$ = [[ans]]_fhint_",34775
+60996,73,"en","Solve.##If your answer is an improper fraction, write it as a mixed number.\n$2\frac{13}{16}$ × $\frac{13}{15}$ − $\frac{1}{4}$ = [[ans]]_fhint_",34896

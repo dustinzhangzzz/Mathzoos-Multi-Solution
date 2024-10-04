@@ -1,0 +1,1727 @@
+question_translation_id,knowledge_point_id,language_code,translated_question_text,question_id,question_solution
+30864,1,en,Fill in the total number in the box.\n$2$ tens + $2$ ones = [[ans]],171,"<div class=""ex-text"" align=""center"">
+2 十位 + 2 个位
+</div>
+
+让我们看看 **2 十位** 和 **2 个位** 的含义。
+
+-  2 十位 = 20
+-  2 个位 = 2
+<div class=""ex-text"" align=""center"">
+2 十位 + 2 个位 = 20 + 2 = 22
+</div>"
+30995,2,en,Fill in the total number in the box.\n$7$ tens − $4$ tens = [[ans]],302,"<div class=""ex-text"" align=""center"">
+7 十位 - 4 十位
+</div>
+
+让我们看看 **7 十位** 和 **4 十位** 的含义。
+
+-  7 十位 = 70
+-  4 十位 = 40
+<div class=""ex-text"" align=""center"">
+7 十位 - 4 十位 = 70 - 40 = 30
+</div>"
+32358,3,en,Find the sum.\n47+20[[ans]][[ans]],1665,"<div class=""ex-text"" align=""center"">
+
+$47 + 20$
+</div>
+
+**第一步：** 先写下数字 $47$，然后在下面写下数字 $20$。确保 $7$ 和 $0$ 对齐。始终从右侧，也就是个位开始加法。
+$$
+
+\begin{array}{l r}
+& {\color{#21ABCD}十位}\:\:\:{\color{#8DB600}个位}\\
+&{\color{#21ABCD}4}\:\:\:\:\:\:\:\:\:\:{\color{#8DB600}7}\:\:\:\\
++&{\color{#21ABCD}2}\:\:\:\:\:\:\:\:\:\:{\color{#8DB600}0}\:\:\:\\
+\hline
+\end{array}
+$$
+
+**第二步：** 先加个位上的数字。 $7  + 0  =7$ 并将其写在个位上。
+$$
+\begin{array}{l r}
+&4{\color{Salmon}7}\\
++&2{\color{Salmon}0}\\
+\hline
+&{\color{Salmon}7}\\
+\end{array}
+$$
+
+**第三步：** 然后加十位上的数字。 4 + 2 = 6。 在十位写下 6。
+$$
+\begin{array}{l r}
+&{\color{Salmon} 4} 7\\
++&{\color{Salmon}2}0\\
+\hline
+& {\color{Salmon}6}7\\
+\end{array}
+$$
+
+所以答案是 67。"
+32891,4,en,Find the difference.\n37−15[[ans]][[ans]],2196,"<div class=""ex-text"" align=""center"">
+
+$37 - 15$
+</div>
+
+**步骤 1：** 首先写下数字 $37$，并在下面写下数字 $15$。确保将 $7$ 和 $5$ 对齐。总是从右侧或从个位开始减法。
+
+$$
+\begin{array}{l r}
+& {\color{#21ABCD}十位}\:\:\:{\color{#8DB600}个位}\\
+&{\color{#21ABCD}3}\:\:\:\:\:\:\:\:\:\:{\color{#8DB600}7}\:\:\:\\
+-&{\color{#21ABCD}1}\:\:\:\:\:\:\:\:\:\:{\color{#8DB600}5}\:\:\:\\
+\hline
+\end{array}
+$$
+
+**步骤 2：** 然后计算个位上的数字：$7 - 5 = 2$。将 $2$ 写在个位上。
+$$
+\begin{array}{l r}
+&3{\color{Salmon}7}\\
+-&1{\color{Salmon}5}\\
+\hline
+&{\color{Salmon}2}\\
+\end{array}
+$$
+
+**步骤 3：** 接下来，计算十位数字，$3 - 1 = 2$。在十位写下 2。
+$$
+\begin{array}{l r}
+&{\color{Salmon}3}7\\
+-&{\color{Salmon}1}5\\
+\hline
+& {\color{Salmon}2}2\\
+\end{array}
+$$
+
+所以答案是 $22$。"
+33915,5,en,"Fill in the missing numbers.\n4, [[ans]], 14, [[ans]]",3220,"<div class=""ex-text"" align=""center"">
+
+缺失的数字是什么？
+
+$4$, $\underline{\quad}$, $14$, $\underline{\quad}$
+
+</div>
+
+**步骤 1：** 找出规律！我们可以看看现有的数字，看看是否有一个模式可以用来找到缺失的数字。在这种情况下，我们可以看到数字每次增加 5，所以模式是 ${\color{#8DB600}5}$。
+
+**步骤 2:** 我们知道数字每次增加 5，因此 4 后面的数字应该是 9。
+**步骤 3:** 现在我们需要找到 14 后面的数字。我们知道每次数字增加 5，因此 14 后面的数字应该是 19。
+
+
+所以缺失的数字是 9 和 19。 完整的序列是
+
+$$
+4, {\color{Salmon}9}, 14, {\color{Salmon}19}
+$$"
+246324,6,en,"Compare the numbers using >, < or =. $6$ [[ans]] $7$",3389,"<div class=""ex-text"" align=""center"">
+
+$6$ ? $7$
+
+</div>
+
+:::number-line compare 6,7:::
+
+你看到数字 7 在 6 的右边，因此 7 大于 6。
+$$
+6 {\color{Salmon}\:<\:} 7
+$$"
+34148,7,en,Fill in the number of tens and ones.\n$41$ = [[ans]]tens + [[ans]]ones,3453,"<div class=""ex-text"" align=""center"">
+
+$41$ $=$ __十位$+$ __个位
+
+</div>
+
+:::3d-cubes 4 + 1 :::
+
+**步骤 1:** “十”部分告诉我们41中有多少个十位。在这种情况下，只有4个十位。
+<div align=""center"">
+
+$4$ 十 = $40$
+</div>
+
+**步骤 2:** “个位”部分告诉我们41中有多少个个位。在这种情况下，有1个个位。
+<div align=""center"">
+
+$1$ 个位 = $1$
+</div>
+
+**步骤 3:** 当我们将十位的数量和个位的数量相加时，我们得到原来的数字，即41。
+
+所以，**41 = __十位 + __个位** 只是帮助我们理解数字41是由两个较小的部分构成的，以及这两个部分是如何加起来得到41的。
+<div align=""center"">
+
+$41$ $=$ ${\color{Salmon}4}$ 十 $+$ ${\color{Salmon} 1 }$ 个位数
+</div>"
+34195,9,en,Find the sum.\n4+16[[ans]][[ans]],4097,"<div class=""ex-text"" align=""center"">
+
+$4 + 16$
+</div>
+
+**步骤 1：** 让我们按数字的位值进行排序。4 是一位数，我们将 4 放在个位。, 和 16 有个位和十位数字，因此我们根据其个位和十位的数字将其写在正确的列中。.
+$$
+\begin{array}{l r}
+& {\color{#21ABCD}十位}\:\:\:{\color{#8DB600}个位}\\
+&{\color{#21ABCD}}\:\:\:\:\:\:\:\:\:\:{\color{#8DB600}4}\:\:\:\\
++&{\color{#21ABCD}1}\:\:\:\:\:\:\:\:\:\:{\color{#8DB600}6}\:\:\:\\
+\hline
+\end{array}
+$$
+
+**步骤 2：**  先将个位上的数字相加： $4+6$，结果为 10。由于 10 超过了 $9$，需要进行进位。换句话说，$10$ 是一个两位数，因此我们将其重新拆分为十位和个位。这意味着我们将十位数进位到前一列，并把个位数保留在当前列中。在此例中，个位数为$0$ 将其写在个位列，进位 $1$ 到十位列。                                            
+$$
+\begin{array}{l r}
+& \tiny1\:\:\:\:\\[-3pt]
+&{\color{Salmon}4}\\
++&1{\color{Salmon}6}\\
+\hline
+& 0\\
+\end{array}
+$$
+
+**步骤 3：** 继续将十位数上的数字相加，$1+1$ 的结果是 $2$。因此，这一列的总和将是 $2$。最终，$4+16 = 20$ 的和为：
+$$
+\begin{array}{l r}
+& \tiny{\color{Salmon}1}\:\:\:\:\\[-3pt]
+&{\color{Salmon}}4\\
++&{\color{Salmon}1}6\\
+\hline
+& 20\\
+\end{array}
+$$"
+35523,10,en,Find the difference.\n35−6[[ans]][[ans]],5428,"<div class=""ex-text"" align=""center"">
+
+$35 - 6$
+</div>
+
+**步骤 1:** 让我们比较两个数字，$35$ 和 $6$。 35 有个位和十位数字，因此我们根据其个位和十位的数字将其写在正确的列中。, 和 6 是一位数，我们将 6 放在个位。。
+$$
+\begin{array}{l r}
+& {\color{#21ABCD}十位}\:\:\:{\color{#8DB600}个位}\\
+&{\color{#21ABCD}3}\:\:\:\:\:\:\:\:\:\:{\color{#8DB600}5}\:\:\:\\
+-&{\color{#21ABCD}}\:\:\:\:\:\:\:\:\:\:{\color{#8DB600}6}\:\:\:\\
+\hline
+\end{array}
+$$
+
+**步骤 2:**  减法总是从个位开始。在这个例子中，我们可以看到 $5$ 小于 $6$。所以，我们将从十位借 $1$，这将使它变成 $15$。现在，$15 - 6 = 9$。
+$$
+\begin{array}{l r}
+& \tiny2\:{\color{Salmon}15}\\[-3pt]
+&\cancel3\cancel5\\
+-&{\color{Salmon}6}\\
+\hline
+& {\color{Salmon}9}\\
+\end{array}
+$$
+
+**步骤 3:** 在 **步骤 2** 中将 $1$ 给了个位后，十位的 $3$ 变成了 $2$。现在，让我们从十位数字中减去 $0$。如果我们从 $2$ 减去 $0$，这将使其变成 $2$。所以，$35-6=29$
+
+$$
+\begin{array}{l r}
+& \tiny{\color{Salmon}2}\:15\\[-3pt]
+&\cancel3\cancel5\\
+-&{\color{Salmon}}6\\
+\hline
+& {\color{Salmon}2}9\\
+\end{array}
+$$"
+36532,11,en,"Fill in the missing numbers.\n[[ans]], 36, 37",6431,"<div class=""ex-text"" align=""center"">
+
+缺失的数字是什么？
+
+$\underline{\quad}$, $36$, $37$
+
+</div>
+
+**步骤 1:** 找到规律！我们可以查看现有的数字，看看是否有可以用来找出缺失数字的方法。在这种情况下，我们可以看到数字每次增加 1，所以规律是 ${\color{#8DB600}1}$。
+
+**步骤2:** 我们知道数字每次减少 1，因此 36 前面的数字应该是 35。
+所以缺失的数字是 35 完成的序列是
+
+$$
+{\color{Salmon}35}, 36, 37
+$$"
+246847,12,en,"Compare the numbers using >, < or =. $202$ [[ans]] $202$",6923,"<div class=""ex-text"" align=""center"">
+
+$202$ ? $202$
+
+</div>
+
+由于这两个数字位数相同，我们从左到右比较每位数字，考虑它们的位置值。
+
+**步骤 1:** 两个数字中的最左边的数字是2，它们相同。
+
+<div align=""center"">
+
+${\color{#8DB600}2}02$ ? ${\color{#8DB600}2}02$
+</div>
+
+**步骤 2:** 两个数字中的从左边数第二个数字是0，它们相同。
+
+<div align=""center"">
+
+$2{\color{#8DB600}0}2$ ? $2{\color{#8DB600}0}2$
+</div>
+
+**步骤 3:** 两个数字中的我们比较从左边数第三个数字是2，它们相同。
+
+<div align=""center"">
+
+$20{\color{#8DB600}2}$ ? $20{\color{#8DB600}2}$
+</div>
+
+由于所有数字都相同，我们可以得出结论，数字 202 等于数字 202。
+"
+37628,14,en,Find the sum.\n$213$ + $355$ = [[ans]],8132,"<div class=""ex-text"" align=""center"">
+
+$213 + 355$
+
+</div>
+
+**第 1 步：** 让我们先写下数字 $213$，然后在下面写下数字 $355$。确保个位上的数字对齐，即 $3$ 和 $5$。始终从右侧开始相加，这也叫个位。
+$$
+\begin{array}{l r}
+& {\color{#C4A680}百位}\:\:\:{\color{#21ABCD}十位}\:\:\:{\color{#8DB600}个位}\\
+&{\color{#C4A680}2}\:\:\:\:\:\:\:\:\:\:\:\:\:\:{\color{#21ABCD}1}\:\:\:\:\:\:\:\:\:\:{\color{#8DB600}3}\:\:\:\\
++&{\color{#C4A680}3}\:\:\:\:\:\:\:\:\:\:\:\:\:\:{\color{#21ABCD}5}\:\:\:\:\:\:\:\:\:\:{\color{#8DB600}5}\:\:\:\\
+\hline
+\end{array}
+$$
+
+**第 2 步：** 首先加个位上的数字。 $3 + 5 =8$ 并将其写在个位上。
+$$
+\begin{array}{l r}
+&21{\color{Salmon}3}\\
++&35{\color{Salmon}5}\\
+\hline
+&{\color{Salmon}8}\\
+\end{array}
+$$
+
+**第 3 步：** 然后加十位上的数字 $1 + 5 = 6$ 并将其写在十位上。
+$$
+\begin{array}{l r}
+&2{\color{Salmon}1}3\\
++&3{\color{Salmon}5}5\\
+\hline
+& {\color{Salmon}6}8\\
+\end{array}
+$$
+
+**第 4 步：** 加百位上的数字。 $2 + 3 =5$ 并将其写在百位上。
+$$
+\begin{array}{l r}
+&{\color{Salmon}2}13\\
++&{\color{Salmon}3}55\\
+\hline
+& {\color{Salmon}5}68\\
+\end{array}
+$$
+
+所以答案是 $568$。"
+38031,15,en,Find the difference.\n$882$ − $281$ = [[ans]],8535,"<div class=""ex-text"" align=""center"">
+
+$882-281$
+
+</div>
+
+**步骤 1:** 让我们先写下数字 $882$，在它的下方写下数字 $281$。确保对齐个位数，即 $2$ 和 $1$。始终从右侧开始减法，也就是个位数。
+$$
+\begin{array}{l r}
+& {\color{#C4A680}百} \:\:\:{\color{#21ABCD}十} \:\:\:{\color{#8DB600}个位}\\
+& {\color{#C4A680}8}\:\:\:\:\:\:\:\:\:\:\:\:\:\:{\color{#21ABCD}8}\:\:\:\:\:\:\:\:\:\:{\color{#8DB600}2}\:\:\:\\
+-& {\color{#C4A680}2}\:\:\:\:\:\:\:\:\:\:\:\:\:\:{\color{#21ABCD}8}\:\:\:\:\:\:\:\:\:\:{\color{#8DB600}1}\:\:\:\\
+\hline
+\end{array}
+$$
+**步骤 2:** 先减去个位数的数字。 $2 - 1 = 1$，并将其写在个位数的位置。
+$$
+\begin{array}{l r}
+& 88{\color{Salmon}2}\\
+-& 28{\color{Salmon}1}\\
+\hline
+& {\color{Salmon}1}\\
+\end{array}
+$$
+**步骤 3:** 然后减去十位数的数字 $8 - 8 = 0$，并将它们写在十位数的位置。
+$$
+\begin{array}{l r}
+& 8{\color{Salmon}8}2\\
+-& 2{\color{Salmon}8}1\\
+\hline
+& {\color{Salmon}0}1\\
+\end{array}
+$$
+**步骤 4:** 减去百位数的数字。 $8 - 2 = 6$，并将它们写在百位数的位置。
+$$
+\begin{array}{l r}
+& {\color{Salmon}8}82\\
+-& {\color{Salmon}2}81\\
+\hline
+& {\color{Salmon}6}01\\
+\end{array}
+$$
+
+所以答案是 $601$。"
+39355,16,en,"Fill in the missing numbers.\n1126, [[ans]], 1130",9857,"<div class=""ex-text"" align=""center"">
+
+缺失的数字是什么？
+
+$1126$, $\underline{\quad}$, $1130$
+
+</div>
+
+**步骤 1：** 找到规律！我们可以查看我们已有的数字，看看是否可以找到一个可以用来找出缺失数字的规律。在这种情况下，我们可以看到每次数字都增加了 2，所以这个规律是 ${\color{#8DB600}2}$。
+
+**步骤 2:** 我们知道数字每次增加 2，因此 1126 后面的数字应该是 1128。
+
+
+所以缺失的数字是 1128 完整的序列是
+
+$$
+1126, {\color{Salmon}1128}, 1130
+$$"
+247756,17,en,"Compare the numbers using >, <, or =. $788$ [[ans]] $788$",10682,"<div class=""ex-text"" align=""center"">
+
+$788$ ? $788$
+</div>
+
+由于这两个数字位数相同，我们从左到右比较每位数字，考虑它们的位置值。
+
+**步骤 1:** 两个数字中的最左边的数字是7，它们相同。
+
+<div align=""center"">
+
+${\color{#8DB600}7}88$ ? ${\color{#8DB600}7}88$
+</div>
+
+**步骤 2:** 两个数字中的从左边数第二个数字是8，它们相同。
+
+<div align=""center"">
+
+$7{\color{#8DB600}8}8$ ? $7{\color{#8DB600}8}8$
+</div>
+
+**步骤 3:** 两个数字中的我们比较从左边数第三个数字是8，它们相同。
+
+<div align=""center"">
+
+$78{\color{#8DB600}8}$ ? $78{\color{#8DB600}8}$
+</div>
+
+由于所有数字都相同，我们可以得出结论，数字 788 等于数字 788。
+"
+40568,18,en,Fill in the total number in the box.\n$6$ ones + $5$ tens = [[ans]],11072,"
+            <div class=""ex-yellow"">
+            <div class=""title"">
+            Solution
+            </div>
+            <div class=""ex-text"" align=""center"">
+            6 个位 + 5 十位
+
+
+            Let us see what **6 个位** and **5 十位** mean.
+
+            -  6 个位 = 6
+            -  5 十位 = 50
+            <div class=""ex-text"" align=""center"">
+            6 个位 + 5 十位 = 6 + 50 = 56
+            </div>
+            </div>"
+41163,21,en,Find the sum.\n$746$ + $856$ = [[ans]],12867,No solution found for this knowledge point.
+42193,22,en,Find the difference.\n$654$ − $179$ = [[ans]],14497,No solution found for this knowledge point.
+42494,24,en,Multiply.\n$8$ × $3$ = [[ans]],14798,"<div class=""ex-text"" align=""center"">
+
+$$
+8 × 3 = 24
+$$
+
+</div>
+
+如果你有 3 组 8 饼干，你可以挨个计数，得到 24 饼干。实际上，你可以用乘法更快地得到答案。你只需要知道 3 组 8 饼干 等于 24 饼干，或者 3 乘以 8 等于 24。"
+325943,25,en,$3$ students each buy $7$ cookies. How many cookies do they have altogether?[[ans]],15109,No solution found for this knowledge point.
+42580,26,en,Divide.\n$40$ ÷ $5$ = [[ans]],15235,"<div class=""ex-text"" align=""center"">
+
+$$
+
+40÷5 = 8
+
+$$
+
+</div>
+
+$40 ÷ 5 = 8$，这意味着40可以容纳5八次。"
+42731,28,en,Multiply.\n20×9[[ans]][[ans]][[ans]],15918,"<div class=""ex-text"">
+
+$$
+20 × 9
+$$
+
+</div>
+
+**第 1 步：** 在下面的例子中，首先乘以个位数
+$$
+\begin{array}{l r}
+&2{\color{Salmon}{0}}\\
+\times  &{\color{Salmon}9}\\
+\hline
+&{\color{Salmon}{0}}\\
+\end{array}
+$$
+
+**第 2 步：** 接下来乘以十位数
+$$
+\begin{array}{l r}
+&{\color{Salmon}{2}}0\\
+\times &{\color{Salmon}9}\\
+\hline
+&{\color{Salmon}{18}}{0}\\
+\end{array}
+$$
+
+所以答案是 $180$."
+42756,29,en,Divide.\n24÷3[[ans]],15943,"
+    $$  
+    24 ÷ 3  
+    $$  
+
+    我们可以除以个位上的数字  
+    $$  
+    \begin{array}{r}  
+    8\phantom{)}   \\  
+    3\overline{\smash{\big)}\,24\phantom{)}}\\  
+    \underline{-24\phantom{)}}\\  
+    0\phantom{)}\\  
+    \end{array}  
+    $$  
+
+    所以答案是 $8$。  
+                "
+42829,31,en,Multiply.\n12×7[[ans]][[ans]],16022,"<div class=""ex-text"">
+
+$$
+12 × 7
+$$
+
+</div>
+
+**步骤 1:** 首先比较数字，12 的位数比 7 多，先放置较大的数字，然后放置第二个数字。
+
+$$
+\begin{array}{l r}
+& {\color{#21ABCD}十位}\:\:\:{\color{#8DB600}个位}\\
+&{\color{#21ABCD}1}\:\:\:\:\:\:\:\:\:\:{\color{#8DB600}2}\:\:\:\\
+×&{\color{#21ABCD}}\:\:\:\:\:\:\:\:\:\:{\color{#8DB600}7}\:\:\:\\
+\hline
+\end{array}
+$$
+
+
+**步骤 2:** 接下来将 7 乘以 2 （第一个数字的个位），得到的积是 14，如果大于 9，则进位 1 十位到十位列。
+
+$$
+\begin{array}{l r}
+& \tiny1\:\:\:\:\\[-3pt]
+&1{\color{Salmon}2}\\
+×&{\color{Salmon}7}\\
+\hline
+& {\color{Salmon}4}\\
+\end{array}
+$$
+
+**步骤 3:** 现在，将 7 乘以 1 （第一个数字的十位）。
+
+$$
+\begin{array}{l r}
+& \tiny1\:\:\:\:\\[-3pt]
+&{\color{Salmon}1}2\\
+×&{\color{Salmon}7}\\
+\hline
+&4\\
+&{\color{Salmon}7}\phantom{0}\\
+\hline
+\end{array}
+$$
+
+**步骤 4:** 最后，加上进位。
+
+$$
+\begin{array}{l r}
+& {\color{Salmon}\tiny1}\:\:\:\\[-3pt]
+&12\\
+×&7\\
+\hline
+&4\\
+&{\color{Salmon}7}\phantom{0}\\
+\hline
+&{\color{Salmon}8}4
+\end{array}
+$$
+
+所以答案是 $84$."
+43286,32,en,Divide each number or find the quotient.\n$37$ ÷ $8$ = [[ans]] R [[ans]],17130,"<div class=""ex-text"">
+
+$$
+37 ÷ 8
+$$
+
+</div>
+
+除以每个数字或找出商
+
+**步骤 1：** 首先我们问自己：37 可以容纳 8 几次？答案是 4。因此，我们可以将 4 写在数字 7 的上方，如下所示：
+
+$$
+\begin{array}{r}
+4\phantom{)}   \\
+8{\overline{\smash{\big)}\,37\phantom{)}}}\\
+\end{array}
+$$
+
+**步骤 2：** 现在，我们需要将 $4$ 乘以 8 得到 32，并将结果写在 37 下方：
+$$
+\begin{array}{r}
+{\color{Salmon}4}\phantom{)}   \\
+{\color{Salmon}8}{\overline{\smash{\big)}\,37\phantom{)}}}\\
+\underline{{\color{Salmon}-32}\phantom{)}}\\
+5\phantom{)}\\
+\end{array}
+$$
+
+所以商是 4，余数是 $5$。
+</div>"
+43086,33,en,Fill in the numerator and denominator box of fraction below.\n$\frac{4}{9}$\nNumerator = [[ans]]\nDenominator = [[ans]],17299,"<div class=""ex-text"">
+
+$$
+\frac{4}{9}
+$$
+
+</div>
+
+$4$ 是分子，$9$ 是分母。"
+45365,34,en,Multiply.\n34×13[[ans]][[ans]][[ans]]\n[[ans]][[ans]]\n[[ans]][[ans]][[ans]],19255,"<div class=""ex-text"">
+
+$$
+34 × 13
+$$
+
+</div>
+
+**步骤 1:** 首先比较这两个数字，34 大于 13 **因为十位数 3 大于 1**。首先将较大的数字作为 **被乘数**，然后将第二个数字作为 **乘数**。
+
+$$
+\begin{array}{l r}
+& {\color{#21ABCD}十位}\:\:\:{\color{#8DB600}个位}\\
+&{\color{#21ABCD}3}\:\:\:\:\:\:\:\:\:\:{\color{#8DB600}4}\:\:\:\\
+×&{\color{#21ABCD}1}\:\:\:\:\:\:\:\:\:\:{\color{#8DB600}3}\:\:\:\\
+\hline
+\end{array}
+$$
+
+**步骤 2:** 将被乘数与乘数的个位数相乘。将这些数字写在横线下。
+
+$$
+\begin{array}{l r}
+&{\color{Salmon}34}\\
+×&1{\color{Salmon}3}\\
+\hline
+& {\color{Salmon}102}\\
+\end{array}
+$$
+
+**步骤 3:** 接下来，将被乘数与乘数的十位数相乘。将这些数字写在个位数值下。
+
+$$
+\begin{array}{l r}
+&{\color{Salmon}34}\\
+×&{\color{Salmon}1}3\\
+\hline
+&102\\
+&{\color{Salmon}34}\phantom{0}\\
+\hline
+\end{array}
+$$
+
+**步骤 4:** 最后，将这些数字相加即可得到。
+
+$$
+\begin{array}{l r}
+&34\\
+×&13\\
+\hline
+&{\color{Salmon}102}\\
++&{\color{Salmon}34}\phantom{0}\\
+\hline
+&{\color{Salmon}442}
+\end{array}
+$$
+
+所以，答案是 $442$。
+</div>
+</div>"
+43932,35,en,Divide.\n43÷10[[ans]]R[[ans]],17831,"<div class=""ex-text"">
+
+$$
+43 ÷ 10
+$$
+
+
+将每个数字相除或找到商
+
+</div>
+
+**步骤 1:** 我们首先要问自己：43 可以容纳 10 几次？答案是 4。因此，我们可以把 4 写在数字 43 上方，然后我们将 4 乘以 10 得到 40，并把结果写在 43 的下面：
+
+$$
+\begin{array}{r}
+{\color{Salmon}4}\phantom{)}   \\
+{\color{Salmon}10}{\overline{\smash{\big)}\,43 \phantom{)}}}\\
+\underline{{\color{Salmon}-40}\phantom{)}}\\
+3\phantom{)}\\
+\end{array}
+$$
+
+所以商是 $4$，余数是 $3$。"
+43508,36,en,"Identify the fraction and choose the correct fraction type.\n$\frac{7}{4}$@proper, improper, mixed@[[ans]]",17395,"
+<div class=""ex-text"">
+
+$$
+\frac{7}{4}
+$$
+
+</div>
+
+7/4 是一个假分数，因为 7 > 4。
+"
+46441,37,en,Multiply.\n174×26[[ans]]@,20340,No solution found for this knowledge point.
+46959,38,en,Divide.\n218÷9[[ans]]R[[ans]]@,20858,"<div class=""ex-text"" align=""center"">
+
+$218 \div 9 =?$
+</div>
+
+当你解决除法问题时，你需要从左到右进行运算。你首先从**最大**的位值开始，在这种情况下是**百位**。
+
+
+当你在长除法中遇到除数大于当前被除数的情况时，你需要在商中写入一个零。
+
+
+**步骤 1:**
+9 中有多少个 2？因为答案是 0，我们继续下一个位值。
+
+**步骤 1.2:** 我们计算 2 × 9 = 18，并将其写在 21 下方。
+
+**步骤 1.3:** 我们将 18 减去 21，并写下 3。
+
+
+**步骤 2:**
+我们将个位上的数字带下来。
+
+**步骤 2.2:** 9 中有多少个 38？我们估算出 4，并将其写在个位上方。
+
+**步骤 2.3:** 我们计算 9 × 4 = 36，并将其写在 36 下方。
+
+
+**步骤 3：在商的旁边写下余数并检查**
+
+
+
+<div class=""ex-text"" align=""center"">
+
+${\color{#8DB600}除数}$ × ${\color {Salmon}商}$ + ${\color{#21ABCD}余数}$ = ${\color{#C4A680}被除数}$
+$$
+
+9 \times 24  + 2 = 216 + 2 = 218
+$$
+</div>"
+46075,39,en,Reduce the fraction to its lowest term.\n$\frac{6}{8}$ = @![[ans]][[ans]]!@,19962,"将分数 $\large\frac{6}{8}$ 的简化形式写出来
+
+**步骤 1：** 列出所有可以完全整除分子和分母的数字，也就是说没有留下任何余数。
+
+$$
+\begin{aligned}
+&6: 1, 2, 3, 6 \\
+&8: 1, 2, 4, 8 \\
+\end{aligned}
+$$
+
+**步骤 2：** 确定分子和分母的共同因子。
+
+$$
+\begin{aligned}
+&6: \bold{1, 2} \\
+&8: \bold{1, 2} \\
+\end{aligned}
+$$
+**步骤 3：** 两个整数的最大公约数（GCD）是能够整除这两个整数的最大整数。我们必须在这一步中将分子和分母除以最大公因子。
+
+$$
+ \frac{6\color{Salmon}\div2}{8\color{Salmon}\div2} = \frac{{\color{salmon}3}}{{\color{salmon}4}}
+$$
+
+因此，$\large\frac{{6}}{{8}}$ 的最简形式是 $\large\frac{{3}}{{4}}$。"
+47719,40,en,Multiply.\n194×1289[[ans]]@,21546,No solution found for this knowledge point.
+48225,41,en,Divide.\n1399÷80[[ans]]R[[ans]]@,22045,"<div class=""ex-text"" align=""center"">
+
+$1399 \div 80 =?$
+</div>
+
+当你解决除法问题时，你是从左到右进行计算的。你从**最高**位开始。
+当你在长除法中遇到除数大于当前工作被除数的步骤时，你需要在商中填入一个零。
+
+$$
+\begin{aligned}
+&\underline{\text{ }\text{ }\text{ }\text{ }\text{ }\text{ }\small\:\:\:}\\[-5pt]
+80&\big)1399\\[-4pt]
+\end{aligned}
+\:\:\:\longrightarrow    \:\:
+\begin{aligned}
+&\underline{\text{ }\:\!\:{\color {Salmon}0}\text{ }\text{ }\small\:\:\:}\\[-5pt]
+80&\big)1399\\[-4pt]
+\end{aligned}
+$$
+
+**步骤 1:**
+简短的思考方式是：在 13 中有多少个 80？由于答案是 0，我们继续到下一个位值。
+
+**步骤 1.1:** 在 13 中有多少个 80？我们估算 0 并将其写在十位上方。
+$$
+\begin{aligned}
+&\underline{\text{ }\:0\text{ }\text{ }\:\:\small\:\:\:}\\[-5pt]
+80&\big)1399\\[-4pt]
+\end{aligned}
+\:\:\:\longrightarrow    \:\:
+\begin{aligned}
+&\underline{\text{ }\:0{\color {Salmon}0}\text{ }\text{ }\:\:\small\:\:\:}\\[-5pt]
+80&\big)1399\\[-4pt]
+\end{aligned}
+$$
+
+
+**步骤 2:**
+**步骤 2.1:** 80 中有多少个 139？我们估算出 1 并将其写在十位上方。
+
+**Step 2.2:** We calculate $1 \times 80 = 80$ and write 80 below 139.
+
+**步骤 2.3:** 我们从 80 中减去 139 并写下 59。
+
+
+**步骤 3:**
+**步骤 3.1:** 80 中有多少个 599？我们估算出 7 并将其写在个位上方。
+
+**Step 3.2:** We calculate $7 \times 80 = 560$ and write 560 below 599.
+
+**步骤 3.3:** 我们从 560 中减去 599 并写下 39。
+
+
+**步骤 4：在商的旁边写下余数并检查**
+
+
+${\color{#8DB600}除数}$ × ${\color {Salmon}商}$ + ${\color{#21ABCD}余数}$ = ${\color{#C4A680}被除数}$
+
+$$
+17 \times 80 + 39 = 1399
+$$
+
+</div>"
+47805,42,en,Reduce the fraction to its lowest term.\n$\frac{2}{10}$ = [[ans]]_fhint_,21572,"将分数 $\large\frac{2}{10}$ 化简。
+
+**步骤 1:** 列出所有可以整除分子和分母的数字，也就是说，不留任何余数。
+
+$$
+\begin{aligned}
+&2: 1, 2 \\
+&10: 1, 2, 5, 10 \\
+\end{aligned}
+$$
+**步骤 2:** 确定分子和分母的共同因子。
+
+$$
+\begin{aligned}
+&2: \bold{1, 2} \\
+&10: \bold{1, 2} \\
+\end{aligned}
+$$
+**步骤 3:** 两个整数的最大公约数 (GCD) ，即可以整除这两个整数的最大整数。在这一步中，我们要用最大的公因子分母和分子。
+
+$$
+ \frac{2\color{Salmon}\div2}{10\color{Salmon}\div2} = \frac{{\color{salmon}1}}{{\color{salmon}5}}
+$$
+
+因此，$\large\frac{{2}}{{10}}$ 的最简形式为 $\large\frac{{1}}{{5}}$。"
+47767,43,en,Convert the fraction to decimal.\n$\frac{4}{20}$ = [[ans]],21843,"<div class=""ex-text"" align=""center"">
+
+$\frac{4}{20} =?$
+
+</div>
+
+我们首先将除数20放在除法括号外，将被除数4放在括号内。
+
+$$
+\begin{aligned}
+&\underline{\text{ }\text{ }\text{ }\text{ }\text{ }\small}\\[-5pt]
+20&\big)4\\[-4pt]
+\end{aligned}
+$$
+
+**步骤 1:** 我们注意到4无法被20整除，这意味着答案将是小于1的数字。由于不能为这个问题找到一个整数答案，我们需要在4后面添加一个小数点和一个零，使其变为4.0。同样，我们也在商的后面添加一个小数点。
+$$
+\begin{aligned}
+&\underline{\text{ }\text{ }\text{ }\text{ }\text{ }\small}\\[-5pt]
+20&\big)4\\[-4pt]
+\end{aligned}
+\:\:\:\longrightarrow    \:\:
+\begin{aligned}
+&\underline{\:\:{\color {Salmon} 0}{\color {Salmon}.}\:\:\:\:}\\[-5pt]
+20&\big)4{\color {Salmon}.}{\color {Salmon}0}\\[-4pt]
+\end{aligned}
+$$
+
+**步骤 2:** 为了更容易理解和计算，我们在除法时将'4.0'视为'40'。20能整除40多少次？$20\times2 = 40$，我们将数字2放在商的旁边的小数点后面。然后我们将40写在被除数下方并进行减法以获得余数，即0。
+$$
+\begin{aligned}
+&\underline{\:\:0.\:\:\:\:}\\[-5pt]
+20&\big)4.0\\[-4pt]
+\end{aligned}
+\:\:\:\longrightarrow    \:\:
+\begin{aligned}
+&\underline{\:\,0.{\color {Salmon} 2 }\:}\\[-5pt]
+20&\big)4\:0\\[-4pt]
+-&{\:\:{\color {Salmon} 4}{\:\:\!\color {Salmon} 0}\:\:}\\[-4pt]
+\hline
+&\text{ }\:\:\:{\:\:\!\color {Salmon} 0}\\[-4pt]
+\end{aligned}
+$$
+
+
+**步骤 3:** 由于没有剩余，我们已经完成了计算。
+$$
+\begin{aligned}
+&\underline{\: 0.{\color {Salmon} 2 }\:} \\[-5pt]
+20 &\big)4 \:0 \\[-4pt]
+-&{\:{\color {Salmon} 4 }{\:\!\color {Salmon} 0 }\:} \\[-4pt]
+\hline
+&\text{ }\: \:\:{\!\color {Salmon} 0}\[-4pt]
+\end{aligned}
+\: \longrightarrow \:
+0.2
+$$
+因此，最终答案是 0.2
+
+"
+49085,44,en,Add.\n0.06+0.7[[ans]],22827,"<div class=""ex-text"" align=""center"">
+0.06 + 0.7
+</div>
+
+**步骤 1：** 对齐每个小数，确保**小数点**对齐。我们先写下数字 0.06，然后在下面写上数字 0.7。
+$$
+\begin{array}{l l}
+& 0.06 \phantom{0} \\
++& 0.7 \phantom{0} \\
+\hline
+\end{array}
+$$
+
+
+**Step 2:** Add zeros in the places where the length of the decimal numbers is not the same.
+$$
+\begin{array}{r c r}
+&0.7\phantom{0}\\
++&0.06 \\
+\hline
+\end{array}
+\:\:\:\longrightarrow\:\:
+\begin{array}{r c r}
+&0.7{\color {Salmon} 0}\\
++&0.06 \\
+\hline
+\end{array}
+$$
+*Note: When we line up the decimal points in decimal addition, we want to make sure that each digit is in the correct place. To add numbers accurately, equalize the digits after the decimal point by adding zeros.*
+
+
+**Step 3:** We start with the rightmost column. In this case, it's the hundredths column. We add the digits in that column: $0 + 6 = 6$ and write it in the hundredths column.
+$$
+\begin{array}{r c r}
+&0.70\\
++&0.06 \\
+\hline
+\end{array}
+\:\:\:\longrightarrow\:\:
+\begin{array}{r c r}
+\\
+&0.7{\color {Salmon} 0}\\
++&0.{0}{\color{Salmon} 6} \\
+\hline
+&\phantom{0}\phantom{0}\:\,{\color {Salmon} 6}
+\end{array}
+$$
+
+
+**Step 4:** Next, we move to the left column. In this case, it's the tenths column. We add the digits in that column: $7 + 0 = 7$ and write 7 in the tenths column.
+$$
+\begin{array}{r c r}
+&0.70\\
++&0.06 \\
+\hline
+&\phantom{0}\phantom{0}\:\,6\\
+\end{array}
+\:\:\:\longrightarrow\:\:
+\begin{array}{r c r}
+& \tiny0\:\:\:\:\:\:\:\,\\[-3pt]
+&0.{\color {Salmon} 7}0\\
++&0.{\color {Salmon} 0}6 \\
+\hline
+&\phantom{0}\:{\color {Salmon} 7}6
+\end{array}
+$$
+
+
+**Step 5:** Then, we continue to move to the left column. In this case, it's the ones column. We add the digits in that column: $0 + 0 + 0 = 0$ and write it in the ones column. And don't forget to add the decimal point after the ones column.
+$$
+\begin{array}{l l}
+\\
+&0.70\\
++&0.06 \\
+\hline
+&{\color {Salmon} 0}.76
+\end{array}
+\:\:\:\longrightarrow\:\:
+\begin{array}{l l}
+\\
+&0.70\\
++&0.06 \\
+\hline
+&0.76\\
+\end{array}
+$$
+
+因此，最终的解是 0.76。
+</div>"
+49839,45,en,Subtract.\n0.75−0.36[[ans]],23641,"<div class=""ex-text"" align=""center"">
+0.75 - 0.36
+</div>
+
+**步骤 1：** 对齐每个十进制数字，确保 **小数点** 对齐。我们先写下数字 0.75，然后在下面写下数字 0.36。
+$$
+\begin{array}{l l}
+&0{\color {Salmon} .}75\\
+-&0.36 \\
+\hline
+\end{array}
+$$
+
+
+**Step 2:** We start with the rightmost column. In the rightmost column, the first number in this column is 5. We can see that 5 is smaller than 6. So, we need borrow 1 from the left column which will make it 15. And the 7 in the left column becomes 6. Now we have $15 - 6 = 9$ in this column and write it in the hundredths column.
+$$
+\begin{array}{r c r}
+&0.75\\
+-&0.36 \\
+\hline
+\end{array}
+\:\:\:\longrightarrow    \:\:
+\begin{array}{r c r}
+& \:\:\:\:\tiny{\color{Salmon} 6}\:\tiny{\color{Salmon} 15}\\[-3pt]
+&0.{\color {Salmon} \cancel7 }{\color {Salmon}\cancel5 }\\
+-&0.3{\color {Salmon} 6} \\
+\hline
+&\phantom{0}\phantom{0}\:\,{\color {Salmon} 9 }
+\end{array}
+$$
+
+
+**Step 3:** Next, we move to the left column. After giving 1 to the rightmost column in step 3, the 7 in this column becomes 6. Now we have $6 - 3 = 3$ in this column and write it in the tenths column.
+$$
+\begin{array}{r c r}
+& \:\:\:\:\tiny{6}\:\tiny{15}\\[-3pt]
+&0.{\cancel{7}}{\cancel{5}}\\
+-&0.36\\
+\hline
+&\phantom{0}\phantom{0}\:\, {9}
+\end{array}
+\:\:\:\longrightarrow    \:\:
+\begin{array}{r c r}
+& \:\:\:\:\tiny{\color{Salmon} 6}\:\tiny{15}\\[-3pt]
+&0.{\cancel{7}}{\cancel{5}}\\
+-&0.{\color{Salmon} 3}{6}\\
+\hline
+&\:\,\,.{\color{Salmon} 3}{9}
+\end{array}
+$$
+
+
+**Step 4:** Then, we continue to move to the left column, the first number in this column is 0. We have $0 - 0 = 0$ in this column and write it in the ones column. And don't forget to add the decimal point after the ones column.
+
+$$
+\begin{array}{l l}\\
+&0.75\\
+-&0.36\\
+\hline
+&\:\,\,.39\\
+\end{array}
+\:\:\:\longrightarrow    \:\:
+\begin{array}{l l}\\
+&0.75\\
+-&0.36\\
+\hline
+&0.39\\
+\end{array}
+$$
+
+
+
+因此，最终解是 0.39。
+</div>"
+48896,46,en,Convert a decimal to a percent.\n0.52 = [[ans]]%,23166,"<div class=""ex-text"" align=""center"">
+
+$0.52 = \underline{\quad}\%$
+
+</div>
+
+**步骤 1：** 要将小数转换为百分数，我们只需将数字乘以 100。在这种情况下，我们有 0.52。当我们将其乘以 100 时，它变为 52.0。
+
+$$
+0.52 \times 100 = 52
+$$
+**步骤 2：** 然后我们将百分号 **%** 加到结果上。我们读作 ""百分之52""。
+
+$$
+52
+\:\:\:\longrightarrow    \:\:
+52\%
+$$"
+49440,47,en,Convert improper fraction to mixed number.\n$\frac{16}{5}$ = @![[ans]][[ans]][[ans]]!@,23717,"<div class=""ex-text"" align=""center"">
+
+$\frac{16}{5} =?$
+
+</div>
+
+**步骤 1：** 将分子除以分母。16 除以 5 等于 $3$，余数为 $1$。
+
+$$
+\begin{aligned}
+&\underline{\text{ }\text{ }\text{ }\text{ }\text{ }\small}\\[-5pt]
+5&\big)16\\[-4pt]
+\end{aligned}
+\:\:\:\longrightarrow    \:\:
+\begin{aligned}
+&\underline{\:\:{\color {Salmon} 3}\:\:}\\[-5pt]
+5&\big)16\:\\[-4pt]
+-&{\:\:15\:\:\,}\\[-4pt]
+\hline
+&\:\:{\color {Salmon} 1}\\[-4pt]
+\end{aligned}
+$$
+
+**步骤 2：** 然后将整数答案写在余数在分子、原始分母在分母的分数旁边。
+
+$$
+\begin{aligned}
+&\underline{\:\:{\color {Salmon} 3}\:\:}\\[-5pt]
+5&\big)16\:\\[-4pt]
+-&{\:\:15\:\:\,}\\[-4pt]
+\hline
+&\:\:{\color {Salmon} 1}\\[-4pt]
+\end{aligned}
+\:\:\:\longrightarrow    \:\:
+{\color {Salmon} 3}\frac{{\color {Salmon} 1}}{5}
+$$
+因此，最终解是 $3\large\frac{1}{5}$。
+</div>
+</div>"
+49952,48,en,Change mixed number to improper fraction.\n$7\frac{8}{9}$ = @![[ans]][[ans]]!@,23851,"<div class=""ex-text"" align=""center"">
+
+$7\frac{8}{9} =?$
+
+</div>
+
+**步骤 1：** 将分母（分数中的下方数字）与整数相乘。
+
+$$
+{\color {salmon}7}\frac{8}{{\color {salmon}9}} \text{}\:\:\:\:\:\:\:\:\:\:\:\text{}
+{\color {salmon}7}  \: \times \: {\color {salmon}9}\  = \: {\color {salmon}63}
+$$
+**步骤 2：** 将步骤 1 的答案加到分子（分数中的上方数字）上。
+
+$$
+7\frac{{\color {salmon}8}}{9} \text{}\:\:\:\:\:\:\:\:\:\:\:\text{}
+{\color {salmon}63}  \: + \: {{\color {salmon}8}}\  = \: {\color {salmon}71}
+$$
+**步骤 3：** 将步骤 2 的答案写在分母上。
+
+$$
+\frac{{\color {salmon}71}}{9}
+$$"
+50571,49,en,"Add.##If your answer is an improper fraction, change it to a mixed number.\n$\frac{5}{7}$ + $\frac{10}{7}$ = [[ans]]_fhint_",24451,"<div class=""ex-text"" align=""center"">
+
+$\frac{5}{7} + \frac{10}{7}\text{}=?$
+
+</div>
+
+**步骤 1:** 要相加分母相同的分数，只需将所有分数的分子相加，并保持共同的分母。在这种情况下，我们将分子相加，即 5 和 10，得到 15。
+
+$$
+\frac{{\color {Salmon} 5}}{7} + \frac{{\color {Salmon} 10}}{7}\text{}=\frac{{\color {Salmon} 15}}{ }
+$$
+
+**步骤 2:** 分母保持不变。
+
+$$
+\frac{5}{{\color {Salmon} 7}} + \frac{10}{{\color {Salmon} 7}}\text{}=\frac{15}{{\color {Salmon} 7}}
+$$
+
+错误: 'NoneType' object is not subscriptable
+错误: 'NoneType' object is not subscriptable
+
+</div>
+</div>"
+50131,50,en,"Subtract the fractions.##If your answer is an improper fraction, change it to a mixed number.\n$\frac{8}{5}$ − $\frac{1}{5}$ = [[ans]]_fhint_",24029,"<div class=""ex-text"" align=""center"">
+
+$\frac{8}{5} - \frac{1}{5}\text{}=?$
+
+</div>
+
+**步骤 1:** 要减去具有 **相同分母** 的分数，只需减去所有分数的分子，保持共同的分母。在这种情况下，我们减去分子，即 8 减去 1，我们得到 7。
+
+$$
+\frac{{\color {Salmon} 8}}{5} - \frac{{\color {Salmon} 1}}{5}\text{}=\frac{{\color {Salmon} 7}}{ }
+$$
+
+**步骤 2:** 当你减去具有相同分母的分数时，等分的大小不会改变。
+
+$$
+\frac{8}{{\color {Salmon} 5}} - \frac{1}{{\color {Salmon} 5}}\text{}=\frac{7}{{\color {Salmon} 5}}
+$$
+
+错误: 'NoneType' object is not subscriptable
+错误: 'NoneType' object is not subscriptable
+
+</div>
+</div>"
+51377,51,en,Multiply.##Reduce the answer to the lowest term.\n$\frac{9}{12}$ × $\frac{3}{4}$ = [[ans]]_fhint_,25257,"<div class=""ex-text"" align=""center"">
+
+$\frac{9}{12} \times \frac{3}{4}\text{}=?$
+
+</div>
+
+**第一步：** 将分数的上面的数字（分子）相乘。在这种情况下，9 乘以 3 等于 27。然后我们将分数的下面数字（分母）相乘。在这种情况下，12 乘以 4 等于 48。
+
+$$
+\frac{9}{12} \times \frac{3}{4}\text{}=  \frac{9\times3}{12\times4} = \frac{27}{48}
+$$
+**第二步：** 始终将你的最终答案简化为它的 **最简形式**。由于 27 和 48 的最大公约数是 3, $\large\frac{27÷3}{48÷3}$ 等于 $\large\frac{9}{16}$. 所以 $\large\frac{9}{16}$ 是我们的最终答案。
+
+因此，最终的解是 $\large\frac{9}{16}$。
+</div>
+</div>"
+51432,52,en,Divide.##Reduce the answer to the lowest term.\n$\frac{1}{3}$ ÷ $\frac{2}{4}$ = [[ans]]_fhint_,25274,"<div class=""ex-text"" align=""center"">
+
+$\frac{1}{3} \div \frac{2}{4}\text{}=?$
+
+</div>
+
+**步骤 1：** 将第二个分数（你想要除的分数）上下反转过来。
+
+$$
+\frac{2}{4}
+\:\:\:\longrightarrow    \:\:
+\frac{\color {salmon}4}{\color {salmon}2}
+$$
+**步骤 2：** 将两个分数的分子相乘。在这种情况下，1 乘以 4 等于 4。然后我们将两个分数的分母相乘。在这种情况下，3 乘以 2 等于 6。
+
+$$
+\frac{1}{3} \times \frac{4}{2}\text{}=  \frac{1\times4}{3\times2} = \frac{4}{6}
+$$
+**步骤 3：** 始终将你的最终答案简化为 **最简形式**。由于 4 和 6 的最大公约数是 2, $\large\frac{4÷2}{6÷2}$ 等于 $\large\frac{2}{3}$. 所以 $\large\frac{2}{3}$ 是我们最终的答案。
+$$
+\frac{4}{6} =
+ \frac{4\color {Salmon}\div2}{6\color {Salmon}\div2}= \frac{\color {Salmon}2}{\color {Salmon}3}
+$$
+因此，最终的解是 $\large\frac{2}{3}$."
+52237,53,en,Find the LCM of these numbers.\nLCM of $15$ and $17$ is [[ans]],26082,"<div class=""ex-text"" align=""center"">
+
+找到 $15$ 和 $17$ 的最小公倍数
+
+</div>
+
+**第 1 步：** 我们将首先找到 15 和 17 的质因数。这意味着我们将每个数字分解成最小的“质数因子”组合。质因数就像构成这个数字的最小拼图块。
+
+- 15 的质因数：
+
+    - 从小的开始，能整除 15 的最小数是 3，所以我们写下 3。然后 $15 / 3 = 5$。
+    - 注意 5 也是一个质数，因此我们写下 5。
+    - 因此，15 的质因数是 3, 和 5。($15 = 3 \times 5$).
+
+- 17 的质因数：
+
+    - 17 是质数，因此它是唯一的因数
+
+
+**第 2 步：** 接下来，我们找到两个数字的所有因数。这些是 15 和 17 的“质数因子”组合。
+
+    - 15 和 17 没有共同的质因数。
+    - 15 和 17 的唯一质因数是 3, 5 和 17.
+
+
+**第 3 步：** 然后，我们将所有共同因数与两个数字的非共同因数相乘，以得到最小公倍数。
+
+所以答案是 $3 \times 5 \times 17 = 255$。
+</div>
+</div>"
+331196,54,en,Find the GCF of these numbers.\nGCF of $22$ and $42$ is [[ans]],26471,"<div class=""ex-text"" align=""center"">
+
+找到 $22$ 和 $42$ 的最大公因数
+
+</div>
+
+**步骤 1：** 我们先找到 22 和 42 的质因数。这意味着我们将每个数字分解成最小的“质数因子”组合。质因数就像构成该数字的最小拼图块。
+
+-   22 的质因数：
+    - 从小的开始，能整除 22 的最小数是 2，所以我们写下 2。然后 $22 / 2 = 11$。
+    - 注意 11 也是一个质数，因此我们写下 11。
+    - 因此，22 的质因数是 2,  和 1。($22 = 2 \times 11$).
+
+- 42 的质因数：
+    - 从小的开始，能整除 42 的最小数是 2，所以我们写下 2。然后 $42 / 2 = 21$。
+    - 现在，能整除 21 的最小数是 3，所以我们写下 3。然后 $21 / 3 = 7$。
+    - 注意 7 也是一个质数，因此我们写下 7。
+    - 因此，42 的质因数是 2, 3, 和 7。($42 = 2 \times 3 \times 7$).
+
+
+**步骤 2：** 接下来，我们找到共同的质因数。这些是 22 和 42 共享的“质数因子”组合。
+
+-   22 和 42 的共同质因数 factor is 2。
+
+**步骤 3：** 最后，我们将共同质因数相乘以找到最大公因数。
+
+所以答案是 $2 = 2$。"
+53645,55,en,"Add.##If your answer is an improper fraction, write it as a mixed number.\n$\frac{5}{4}$ + $\frac{11}{5}$ = [[ans]]_fhint_",27399,"<div class=""ex-text"" align=""center"">
+
+$$
+\frac{5}{4} + \frac{11}{5}
+$$
+
+</div>
+
+**步骤 1:** 分数需要有相同的分母。找到两个分母的最小公倍数。
+
+4和5的最小公倍数是 **20**。
+
+**步骤 2:** 对于每个分数，调整分子。将每个分数的分子和分母乘以相同的因子，以使分母匹配。
+
+$$
+\frac{5}{4} + \frac{11}{5} = \frac{5}{4} \times \frac{5}{5} + \frac{11}{5} \times \frac{4}{4} = \frac{25}{20} + \frac{44}{20}
+$$
+
+**步骤 3:** 将分子相加，并始终将最终答案简化到 **最简形式**。在这种情况下，结果是 $\large\frac{69}{20}$  
+
+$$
+\frac{25}{20} + \frac{44}{20} = \frac{69}{20}
+
+$$
+
+由于答案是一个假分数，我们可以将其简化为带分数 $3\frac{9}{20}$
+
+所以答案是 $3\frac{9}{20}$。"
+52909,56,en,"Subtract.##If your answer is an improper fraction, write it as a mixed number.\n$\frac{7}{3}$ − $\frac{7}{8}$ = [[ans]]_fhint_",26750,"<div class=""ex-text"" align=""center"">
+
+$$
+\frac{7}{3} - \frac{7}{8}
+$$
+
+</div>
+
+**步骤 1：** 分数需要有相同的分母。寻找两个分母的最小公倍数。
+
+3 和 8 的最小公倍数是 **24**。
+
+**步骤 2：** 对于每个分数，调整分子。将每个分数的分子和分母都乘以相同的因子，以使分母匹配。
+$$
+\frac{7}{3} - \frac{7}{8} = \frac{7}{3} \times \frac{8}{8} - \frac{7}{8} \times \frac{3}{3} = \frac{56}{24} - \frac{21}{24}
+$$
+
+**步骤 3：** 减去分子，并始终将最终答案简化到其 **最简形式**。
+
+$$
+\frac{56}{24} - \frac{21}{24} = \frac{35}{24}
+
+$$
+
+结果是 $\large\frac{35}{24}$ 
+
+由于答案是一个假分数，我们可以将其简化为带分数 $1\frac{11}{24}$
+
+所以答案是 $1\frac{11}{24}$。"
+54493,57,en,"Solve.##If your answer is an improper fraction, write it as a mixed number.\n$3\frac{3}{7}$ − $1\frac{2}{7}$ = [[ans]]_fhint_",28239,"<div class=""ex-text"" align=""center"">
+
+$$
+3\frac{3}{7} - 1\frac{2}{7}
+$$
+
+</div>
+
+**步骤 1:** 减 分数部分。
+$$
+\frac{3}{7} - \frac{2}{7} = \frac{1}{7}
+$$
+
+**步骤 2:** 减 整数部分。
+$$
+3 - 1 = 2
+$$
+
+**步骤 3:** 组合分数和整数。
+$$
+2 + \frac{1}{7} = 2\frac{1}{7}
+$$
+
+所以答案是 2\frac{1}{7}。"
+55361,58,en,Multiply.\n4×85.76[[ans]]@,29160,"<div class=""ex-text"" align=""center"">
+
+$$
+4 \times 85.76
+$$
+
+</div>
+
+**步骤 1：** 先忽略小数点，将这两个数字当作整数进行相乘。
+$$
+\begin{array}{l r}
+&4\:\:\:\\
+\times&8576\:\:\:\\
+\hline
+&{\color{Salmon}34304}\:\:\:\\
+\end{array}
+$$
+
+**步骤 2：** 确定原始小数中小数点后的位数。在这个例子中，位数为 2。
+
+**步骤 3：** 将小数点向左移动 二 位 位，以调整乘积。
+$$
+\begin{array}{l r}
+&{\color{Salmon}4}\:\:\:\\
+\times&85.{\color{Salmon}76}\:\:\:\\
+\hline
+&{\color{Salmon}343.04}\:\:\:\\
+\end{array}
+$$
+
+
+所以 $4 \times 85.76 = 343.04$
+
+</div>
+</div>"
+55078,59,en,Divide.\n59.7÷2[[ans]]@,28829,No solution found for this knowledge point.
+55769,60,en,Multiply.\n$220.757$ × $10$ = [[ans]],29568,"<div class=""ex-text"" align=""center"">
+
+$$
+220.757 \times 10
+$$
+
+</div>
+
+**步骤 1：** 首先，确定小数点的位置。
+$$
+220{\color{Salmon}.}757
+$$
+
+小数点在 220 之后。
+
+**步骤 2：** 当我们乘以 10 时，我们将小数点向右移动 一 位。
+$$
+\begin{array}{lr}
+&220{\color{Salmon}.}757×10\\
+\end{array}
+\longrightarrow
+\begin{array}{lr}
+&2207{\color{Salmon}.}57\\
+\end{array}
+$$
+
+所以答案是 $2207.57$"
+56198,61,en,Divide.\n$3442$ ÷ $100$ = [[ans]],29997,"<div  class=""ex-text""  align=""center"">
+
+$$
+3442 \div 100
+$$
+
+</div>
+
+**步骤 1：** 首先，识别小数点的位置。
+$$
+3442{\color{Salmon}.}
+$$
+
+在 $3442$ 中，小数点位于数字的末尾。
+
+**步骤 2：** 当我们用 100 相除时，移动小数点 二 位 向左。
+$$
+\begin{array}{lr}
+&3442{\color{Salmon}.}\\
+\end{array}
+\longrightarrow
+\begin{array}{lr}
+&34{\color{Salmon}.}42\\
+\end{array}
+$$
+
+所以答案是 $34.42$"
+56423,62,en,Multiply.\n0.3×0.6[[ans]]@,30222,"<div  class=""ex-text""  align=""center"">
+
+$$
+0.3 \times 0.6
+$$
+
+</div>
+
+**第一步：** 先忽略小数点，把两个数字当成整数相乘。
+$$
+\begin{array}{l r}
+&3\:\:\:\\
+\times&6\:\:\:\\
+\hline
+&{\color{Salmon}18}\:\:\:\\
+\end{array}
+$$
+
+**第二步：** 确定原始小数中小数点后的位数。在这个例子中，位数为 2。
+
+**第三步：**将小数点向左移动 二 位 位，以调整乘积。
+$$
+\begin{array}{l r}
+&0.{\color{Salmon}3}\:\:\:\\
+\times&0.{\color{Salmon}6}\:\:\:\\
+\hline
+&{\color{Salmon}0.18}\:\:\:\\
+\end{array}
+$$
+
+所以 $0.3 \times 0.6 = 0.18$"
+57002,63,en,Divide.\n2.4÷0.6[[ans]]@,30793,No solution found for this knowledge point.
+237030,64,en,"Find the mean.##Adding all numbers together and then dividing by the number of terms.\n71, 86, 97, 113, 123\n[[ans]]",31656,"<div  class=""ex-text""  align=""center"">
+
+找到 $71,86,97,113,123$ 的平均值
+
+</div>
+
+**第1步:** 将所有数字加在一起计算出总和。
+
+$$
+71 + 86 + 97 + 113 + 123 = 490
+$$
+
+**第2步:** 计算数字的个数。这种情况下，一共有 是 5 个数字 个数字。
+
+**第3步:** 将数字的总和除以数字的个数。
+
+$$
+490 \div 5 = 98
+$$
+
+所以答案是 $98$。"
+237188,65,en,"Find the middle number by sorting in order.##If there are two middle numbers, take the mean of those two.\n83, 69, 23, 72, 3\n[[ans]]",31813,"<div  class=""ex-text""  align=""center"">
+
+找到 $83,69,23,72,3$ 的中位数
+
+</div>
+
+**步骤 1：** 将数字按升序或降序排列均可。
+$$
+23,3,69,72,83
+$$
+
+**步骤 2：** 找到中间数字。
+
+在这种情况下，中间数在位置 3。
+$$
+23, 3, {\color{salmon}69},72, 83
+$$
+
+
+所以答案是 $69$。"
+237597,66,en,"Identify the number that appears the most.\n89, 53, 53, 30, 8\n[[ans]]",32227,"<div  class=""ex-text""  align=""center"">
+
+找到 $89,53,53,30,8$ 的众数
+
+</div>
+
+**步骤 1：**可以将数字按升序或降序排序，这样有助于计数更加简单和准确，但这并不是必须的。
+$$
+8, 30, 53, 53, 89
+$$
+
+**步骤 2：** 找到出现次数最多的数字。
+$$
+89, {\color{salmon}53}, {\color{salmon}53}, 30, 8
+$$
+
+所以答案是 $53$。"
+58557,67,en,Solve.\n$10^2$ = [[ans]],32454,"<div class=""ex-text"">
+
+$$
+10^2 = ?
+$$
+
+</div>
+
+数字 十 的指数为 二。这意味着你将数字 10 乘以它自己 二 次。 $10^2$ 读作 ""十 的 二 次方"" 或 “十 的平方”。
+$$
+10×10 = 100
+$$"
+58660,68,en,Solve.\n$37$ + ($3^3$ − $9$) × $4$ = [[ans]],32560,"<div class=""ex-text"">
+
+$$
+37+(3^3-9)\times4 = ?
+$$
+
+</div>
+
+**步骤 1:** 根据 **运算顺序**，我们首先计算括号内的表达式。
+$$
+(3^3-9)
+$$
+**步骤 2:** 我们现在检查括号内是否有指数。在这种情况下，括号内有 1 个指数。
+$$
+37+(3^3-9)\times4 = 37+(27-9)\times4
+$$
+**步骤 3:** 我们现在检查括号内是否有乘法和除法操作。在这种情况下，括号内没有乘法或除法操作。
+
+**步骤 4:** 我们现在检查括号内的加法和减法操作。在这种情况下，括号内有 0 次加法和 1 次减法操作，我们从左到右进行。
+$$
+37+(27-9)\times4 = 37+18\times4
+$$
+**步骤 5:** 现在我们已经完成了括号内的操作，接下来进行括号外的操作，从指数开始。在这种情况下，没有剩余的指数。
+**步骤 6:** 我们现在检查乘法和除法操作。在这种情况下，有 1 次乘法和 0 次除法操作，我们从左到右进行。
+$$
+37+18\times4 = 37+72
+$$
+**步骤 7:** 我们现在检查加法和减法操作。在这种情况下，有 1 次加法和 0 次减法操作，我们从左到右进行。
+$$
+37+72 = 109
+$$
+
+
+因此，该表达式的最终答案是 109。
+</div>
+</div>"
+58989,69,en,Solve.##Reduce the answer to the lowest term.\n$\frac{5}{11}$ × $\frac{1}{2}$ ÷ $\frac{3}{8}$ = [[ans]]_fhint_,32889,"<div class=""ex-text"">
+
+$$
+\frac{5}{11} \times \frac{1}{2} \div \frac{3}{8}
+$$
+
+</div>
+
+**步骤 1:** 将任何除法转换为乘法
+$$
+\frac{5}{11} \times \frac{1}{2} \div \frac{3}{8} = \frac{5}{11} \times \frac{1}{2} \times \frac{8}{3}
+$$
+
+**步骤 2:** 检查是否有分数可以简化。如果可以，寻找分子和分母之间的最大公约数。 third 分数的分子和 second 分数的分母的最大公约数是 2。我们将这两个数除以 2。
+$$
+\frac{5}{11} \times \frac{1}{2\div{\color{Salmon}{2}}} \times \frac{8\div{\color{Salmon}{2}}}{3} = \frac{5}{11} \times \frac{1}{{\color{Salmon}{1}}} \times \frac{{\color{Salmon}{4}}}{3}
+$$
+**步骤 3:** 现在所有的分数都已简化为最简形式，进行相乘。
+$$
+\frac{5}{11} \times 1 \times \frac{4}{3} = \frac{20}{33}
+$$
+
+答案是 $\frac{20}{33}$.
+</div>
+</div>"
+59716,70,en,"Add the Fractions.##If your answer is an improper fraction, write it as a mixed number.\n$\frac{1}{4}$ + $\frac{1}{2}$ + $\frac{4}{9}$ = [[ans]]_fhint_",33616,"<div class=""ex-text"">
+
+$$
+\frac{1}{4} +  \frac{1}{2} +  \frac{4}{9} = ?
+$$
+
+</div>
+
+**步骤 1：** 要使所有分数具有相同的分母，我们首先需要计算这三个分母的最小公倍数。
+
+4、2 和 9 共享一个公分母 **36**。
+
+
+**步骤 2：**对每个分数，调整其分子和分母。将分子和分母同时乘以相同的因数，使所有分数的分母相同。
+$$
+\frac{1}{4} +  \frac{1}{2} +  \frac{4}{9} = \frac{1×9}{4×9} +  \frac{1×18}{2×18} +  \frac{4×4}{9×4} =  \frac{9}{36} +  \frac{18}{36} +  \frac{16}{36}
+$$
+
+**步骤 3：** 相加分子，并在需要时简化。
+检查分数是否处于最简形式。
+$$
+\frac{9}{36} +  \frac{18}
+{36} +  \frac{16}{36} = 1\frac{7}{36}
+
+$$
+
+答案是 $1\frac{7}{36}$."
+60091,71,en,"Solve.##If your answer is an improper fraction, write it as a mixed number.\n$\frac{1}{2}$ + $\frac{3}{8}$ − $\frac{3}{5}$ = [[ans]]_fhint_",33991,"<div class=""ex-text"">
+
+$$
+\frac{1}{2} + \frac{3}{8} − \frac{3}{5} = ?
+$$
+
+</div>
+
+**步骤 1：** 要使所有分数具有相同的分母，我们首先需要计算这三个分母的最小公倍数。
+
+我们可以看到 2、8 和 5 的最小公倍数是 **40**。
+
+**步骤 2：** 对每个分数，调整其分子和分母。将分子和分母同时乘以相同的因数，使所有分数的分母相同。
+$$
+\frac{1}{2} + \frac{3}{8} − \frac{3}{5} = \frac{1×20}{2×20} + \frac{3×5}{8×5} − \frac{3×8}{5×8} = \frac{20}{40} + \frac{15}{40} − \frac{24}{40}
+$$
+
+**步骤 3：** 从左到右，根据符号进行加法或减法。如果结果为假分数，再进行简化。
+$$
+\frac{20}{40} + \frac{15}{40} − \frac{24}{40} = \frac{59}{40} = 1\frac{19}{40}
+$$
+答案是 $1\frac{19}{40}$。
+</div>"
+60875,72,en,Solve.##Reduce the answer to the lowest term.\n$(\frac{5}{6} − \frac{3}{4})$ ÷ $\frac{2}{3}$ = [[ans]]_fhint_,34775,"<div class=""ex-text"">
+
+$$
+(\frac{5}{6}-\frac{3}{4}\div\frac{2}{3}) = ?
+$$
+
+</div>
+
+None
+
+答案是 $0$。"
+60996,73,en,"Solve.##If your answer is an improper fraction, write it as a mixed number.\n$2\frac{13}{16}$ × $\frac{13}{15}$ − $\frac{1}{4}$ = [[ans]]_fhint_",34896,"<div class=""ex-text"">
+
+$$
+(\frac{13}{16}\times\frac{13}{15}-\frac{1}{4}) = ?
+$$
+
+</div>
+
+**步骤 1:** 首先将所有带分数转换为假分数。在这种情况下，没有带分数。
+
+**步骤 2:** 根据 **运算顺序**，我们首先计算括号内的表达式。
+$$
+(\frac{13}{16}\times\frac{13}{15}-\frac{1}{4})
+$$
+**步骤 3:** 我们现在检查括号内的指数。在这种情况下，括号内没有指数。
+
+**步骤 4:** 我们现在检查括号内的乘法和除法操作。在这种情况下，括号内有 1 次乘法和 0 次除法操作，我们从左到右进行。若可能，最后简化。
+$$
+(\frac{13}{16}\times\frac{13}{15}-\frac{1}{4}) = (\frac{169}{240}-\frac{1}{4})
+$$
+**步骤 5:** 我们现在检查括号内的加法和减法操作。在这种情况下，括号内有 0 次加法和 1 次减法操作，我们从左到右进行。若可能，最后简化。
+$$
+(\frac{169}{240}-\frac{1}{4}) = (\frac{169\times{\color{Salmon}{1}}}{240\times{\color{Salmon}{1}}}-\frac{1\times{\color{Salmon}{60}}}{4\times{\color{Salmon}{60}}}) = (\frac{169-60}{240}) = \frac{109}{240}
+$$
+**步骤 6:** 现在我们已经完成了括号内的操作，接下来进行括号外的操作，从指数开始。在这种情况下，没有剩余的指数。
+
+**步骤 7:** 我们现在检查乘法和除法操作。在这种情况下，没有剩余的乘法或除法操作。
+
+**步骤 8:** 我们现在检查加法和减法操作。在这种情况下，没有剩余的加法或减法操作。
+
+**步骤 9:** 若可能，请简化。在这种情况下，分数无法进一步简化。
+
+
+
+答案是 $\frac{109}{240}$."

@@ -9,7 +9,7 @@ import pandas as pd
 app = Flask(__name__)
 
 # Configure Babel for the default language (e.g., Chinese)
-app.config['BABEL_DEFAULT_LOCALE'] = 'zh'
+app.config['BABEL_DEFAULT_LOCALE'] = 'zh_Hans'
 
 # Initialize Babel
 babel = Babel(app)
@@ -32,15 +32,16 @@ class Solution:
 
         solution_template = solution_template_dict[knowledgepoint_id]
         solution = generator().get_solution(solution_template, args_dict)
+        print("knowledgepoint_id: " + str(knowledgepoint_id))
         print(solution)
         return solution
 
 
 def main():
     with app.app_context():  # Flask Babel needs an app context
-        question_df = pd.read_csv("QuestionTranslation-en.csv")
+        question_df = pd.read_csv("EachQuestion.csv")
         question_df = question_df.astype({"knowledge_point_id": int})
-        template_df = pd.read_csv("SolutionTemplate _translated_Chinese.csv")
+        template_df = pd.read_csv("SolutionTemplate_translated_Chinese.csv")
 
         # Create dictionary mapping knowledge_point_id to template text
         template_dict = dict(zip(template_df['knowledge_point_id'], template_df['template_text_zh-Hans']))

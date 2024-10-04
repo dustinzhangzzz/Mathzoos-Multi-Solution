@@ -1,6 +1,7 @@
 import re
 import psycopg2
 import unicodedata
+from flask_babel import _
 
 class ArgumentsExtractor:
     # code with pattern matching using regular expression
@@ -244,7 +245,7 @@ class ArgumentsExtractor:
             counter = 1
             for match in matches1:
                 args_dict["arg" + str(counter)] = int(match[0])
-                args_dict["arg" + str(counter + 1)] = match[1]
+                args_dict["arg" + str(counter + 1)] = _(match[1])
                 counter += 2
             return args_dict
 

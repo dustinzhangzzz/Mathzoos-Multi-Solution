@@ -25,7 +25,6 @@ class SolutionGenerator(ABC):
     @abstractmethod
     def get_solution(self, template: str, args: dict) -> str:
         """Generate solution for a knowledge_point"""
-
     def custom_format(self, template, **values):
         # Regex pattern to match complex placeholders including nested brackets
         pattern = re.compile(r'\[\[((?:[^\[\]]|\[[^\[\]]*\])+)\]\]')
