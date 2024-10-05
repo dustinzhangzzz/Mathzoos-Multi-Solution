@@ -1,89 +1,37 @@
 question_translation_id,knowledge_point_id,language_code,translated_question_text,question_id,question_solution
-49839,45,en,Subtract.\n0.75−0.36[[ans]],23641,"<div class=""ex-text"" align=""center"">
-0.75 - 0.36
+55361,58,en,Multiply.\n4×85.76[[ans]]@,29160,"<div class=""ex-text"" align=""center"">
+
+$$
+4 \times 85.76
+$$
+
 </div>
 
-**步骤 1：** 对齐每个十进制数字，确保 **小数点** 对齐。我们先写下数字 0.75，然后在下面写下数字 0.36。
+**步骤 1：** 先忽略小数点，将这两个数字当作整数进行相乘。
 $$
-\begin{array}{l l}
-&0{\color {Salmon} .}75\\
--&0.36 \\
+\begin{array}{l r}
+&4\:\:\:\\
+\times&8576\:\:\:\\
 \hline
+&{\color{Salmon}34304}\:\:\:\\
+\end{array}
+$$
+
+**步骤 2：** 确定原始小数中小数点后的位数。在这个例子中，位数为 2。
+
+**步骤 3：** 将小数点向左移动 二 位 位，以调整乘积。
+$$
+\begin{array}{l r}
+&{\color{Salmon}4}\:\:\:\\
+\times&85.{\color{Salmon}76}\:\:\:\\
+\hline
+&{\color{Salmon}343.04}\:\:\:\\
 \end{array}
 $$
 
 
-$$
-\begin{array}{r c r}
-&5\\
--&5 \\
-\hline
-\end{array}
-\:\:\:\longrightarrow    \:\:
-\begin{array}{r c r}
-& \:\:\:\:\tiny{\color{Salmon} 6}\:\tiny{\color{Salmon} 15}\\[-3pt]
-&0.{\color {Salmon} \cancel7 }{\color {Salmon}\cancel6 }\\
--&0.15{\color {Salmon} 6} \\
-\hline
-&\phantom{0}\phantom{0}\:\,{\color {Salmon} 9 }
-\end{array}
-$$
+所以 $4 \times 85.76 = 343.04$
 
-**步骤 3:** 我们从最右边的列开始。在本例中，这是百分位。我们将该列中的数字相加：$0 + 7 = 7$，并将其写在百分位上。$$
-$$
-\begin{array}{r c r}
-& \:\:\:\:\tiny{7}\:\tiny{6}\\[-3pt]
-&0.{\cancel{6}}{\cancel{3}}\\
--&3\\
-\hline
-&\phantom{0}\phantom{0}\:\, {6}
-\end{array}
-\:\:\:\longrightarrow    \:\:
-\begin{array}{r c r}
-& \:\:\:\:\tiny{\color{Salmon} 15}\:\tiny{7}\\[-3pt]
-&0.{\cancel{5}}{\cancel{0.36}}\\
--&0.{\color{Salmon} 9}{6}\\
-\hline
-&\:\,\,.{\color{Salmon} 15}{7}
-\end{array}
-$$
-
-
-**步骤 3:** 移动到个位。在此列中，我们有 $0 - 0 = 0$。将结果写在个位列，并记得加上小数点。
-$$
-\begin{{array}}{{l l}}\
-&0.{0}\
--&0.{1}\
-\hline
-&\:\,\,.{2}\
-\end{{array}}
-\:\:\longrightarrow\:\:  
-\begin{{array}}{{l l}}\
-&0.{0}\
--&0.{1}\
-\hline
-&{3}\
-\end{{array}}
-$$
-
-
-$$
-\begin{array}{l l}\\
-&0.75\\
--&0.36\\
-\hline
-&\:\,\,.39\\
-\end{array}
-\:\:\:\longrightarrow    \:\:
-\begin{array}{l l}\\
-&0.75\\
--&0.36\\
-\hline
-&0.39\\
-\end{array}
-$$
-
-
-
-因此，最终解是 0.39。
+</div>
 </div>"
+55078,59,en,Divide.\n59.7÷2[[ans]]@,28829,抱歉，本题的答案解析暂不支持

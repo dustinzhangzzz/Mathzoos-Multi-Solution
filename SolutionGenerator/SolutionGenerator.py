@@ -1619,24 +1619,151 @@ class BabelStepGenerator:
                                                                                                            denominator)
 
 
-class KnowledgePoint49Solution(SolutionGenerator, BabelStepGenerator):
+class KnowledgePoint49Solution(SolutionGenerator):
     def get_solution(self, template: str, args: dict) -> str:
-        numerator = args['arg2'] + args['arg3']
-        denominator = args['arg1']
+        # Extract arguments
+        arg1 = args['arg1']
+        arg2 = args['arg2']
+        arg3 = args['arg3']
+        args["gcd"] = gcd(arg2 + arg3, arg1)
 
-        args["step3_statement"] = self.simplified_statement(numerator, denominator)
-        args["step4_statement"] = self.improper_fraction_statement(numerator, denominator)
+        def is_lowest_term(a, b):
+            return gcd(a, b) == 1
+
+        # simplify
+        def simplified_statement(arg1, arg2, arg3, gcd):
+            if is_lowest_term(arg2 + arg3, arg1):
+                step3_statement = _(r"""**Step 3:** Always reduce your final answer to its **lowest term**. And $\large\frac{{{}}}{{{}}}$ is already the lowest term.
+                """).format(arg2 + arg3, arg1)
+            else:
+                step3_illustration = _(r"""**Step 3:** Always reduce your final answer to its **lowest term**. In this case, the fraction $\large\frac{{{}}}{{{}}}$ can be simplified. Both {} and {} are divisible by {}. When we divide both {} and {} by their greatest common divisor {}, we get {} and {} respectively.""").format(arg2 + arg3, arg1, arg2 + arg3, arg1, gcd, arg2 + arg3, arg1, gcd, (arg2 + arg3) // gcd,
+                       arg1 // gcd)
+                step3_equation = """
+    $$
+    \frac{{{}}}{{{}}} + \frac{{{}}}{{{}}} = \frac{{{}}}{{{}}}=
+    \frac{{{}\color{{Salmon}}\div{}}}{{{}\color{{Salmon}}\div{}}}= \frac{{\color{{Salmon}}{}}}{{\color{{Salmon}}{}}}
+    $$
+            """.format(
+                       arg2, arg1, arg3, arg1, arg2 + arg3, arg1, arg2 + arg3, gcd, arg1, gcd, (arg2 + arg3) // gcd,
+                       arg1 // gcd)
+                step3_statement = step3_illustration + step3_equation
+            return step3_statement
+
+        args["simplified_statement"] = lambda arg1, arg2, arg3: simplified_statement(arg1, arg2, arg3, args["gcd"])
+
+        # covert improper fraction to a mixed number
+        def improper_fraction_statement(arg1, arg2, arg3, gcd):
+            if arg2 + arg3 > arg1:
+                step4_illustration = _("**Step 4:** Since our answer in the previous step is in the form of an improper fraction, we can further simplify it and convert it into a mixed number.")
+                step4_equation = r"""
+    $$
+    \begin{{aligned}}
+    &\underline{{\text{{ }}\text{{ }}\text{{ }}\text{{ }}\text{{ }}\small}}\\[-5pt]
+    {}&\big){}\\[-4pt]
+    \end{{aligned}}
+    \:\:\:\longrightarrow    \:\:
+    \begin{{aligned}}
+    &\underline{{\:\:{{\color{{Salmon}}{}}}\:\:}}\\[-5pt]
+    {}&\big){}\\[-4pt]
+    -&{{\:\:{}\:\:}}\\[-4pt]
+    \hline
+    &\:\:{{\color{{Salmon}}{}}}\\[-4pt]
+    \end{{aligned}}
+    \:\:\:\longrightarrow    \:\:
+    {{\color{{Salmon}}{}}}\frac{{\color{{Salmon}}{}}}{}
+    $$
+    """.format(
+                    arg1 // gcd, (arg2 + arg3) // gcd, (arg2 + arg3) // arg1, arg1 // gcd, (arg2 + arg3) // gcd,
+                    (arg2 + arg3) // arg1 * (arg1 // gcd), (arg2 + arg3) % arg1 // gcd,
+                    (arg2 + arg3) // arg1, (arg2 + arg3) % arg1 // gcd, arg1 // gcd
+                )
+                step4_result =  _("Therefore, the final solution is ${}\large\frac{{{}}}{{{}}}$.").format((arg2 + arg3) // arg1, (arg2 + arg3) % arg1 // gcd, arg1 // gcd)
+                step4_statement = step4_illustration + step4_equation + step4_result
+            else:
+                step4_statement = _(r"""Therefore, the final solution is $\large\frac{{{}}}{{{}}}$.""").format(
+                    (arg2 + arg3) // gcd, arg1 // gcd)
+
+            return step4_statement
+
+        args["improper_fraction_statement"] = lambda arg1, arg2, arg3: improper_fraction_statement(arg1, arg2, arg3,
+                                                                                                   args["gcd"])
 
         return self.custom_format(template, **args)
 
 
-class KnowledgePoint50Solution(SolutionGenerator, BabelStepGenerator):
+class KnowledgePoint50Solution(SolutionGenerator):
     def get_solution(self, template: str, args: dict) -> str:
-        numerator = args['arg2'] - args['arg3']
-        denominator = args['arg1']
+        # Extract arguments
+        arg1 = args['arg1']
+        arg2 = args['arg2']
+        arg3 = args['arg3']
+        args["gcd"] = gcd(arg2 - arg3, arg1)
 
-        args["step3_statement"] = self.simplified_statement(numerator, denominator)
-        args["step4_statement"] = self.improper_fraction_statement(numerator, denominator)
+        def is_lowest_term(a, b):
+            return gcd(a, b) == 1
+
+        # simplify
+        def simplified_statement(arg1, arg2, arg3, gcd):
+            if is_lowest_term(arg2 - arg3, arg1):
+                step3_statement = _(r"""**Step 3:** Always reduce your final answer to its **lowest term**. And $\large\frac{{{}}}{{{}}}$ is already the lowest term.
+                """).format(arg2 - arg3, arg1)
+            else:
+                step3_illustration = _(r"""**Step 3:** Always reduce your final answer to its **lowest term**. In this case, the fraction $\large\frac{{{}}}{{{}}}$ can be simplified. Both {} and {} are divisible by {}. When we divide both {} and {} by their greatest common divisor {}, we get {} and {} respectively.""").format(arg2 - arg3, arg1, arg2 - arg3, arg1, gcd, arg2 - arg3, arg1, gcd, (arg2 - arg3) // gcd,
+                       arg1 // gcd,
+                       arg2, arg1, arg3, arg1, arg2 - arg3, arg1, arg2 - arg3, gcd, arg1, gcd, (arg2 - arg3) // gcd,
+                       arg1 // gcd)
+
+                step3_fraction = """
+    $$
+    \frac{{{}}}{{{}}} - \frac{{{}}}{{{}}} = \frac{{{}}}{{{}}}=
+    \frac{{{}\color{{Salmon}}\div{}}}{{{}\color{{Salmon}}\div{}}}= \frac{{\color{{Salmon}}{}}}{{\color{{Salmon}}{}}}
+    $$
+            """.format(arg2 - arg3, arg1, arg2 - arg3, arg1, gcd, arg2 - arg3, arg1, gcd, (arg2 - arg3) // gcd,
+                       arg1 // gcd,
+                       arg2, arg1, arg3, arg1, arg2 - arg3, arg1, arg2 - arg3, gcd, arg1, gcd, (arg2 - arg3) // gcd,
+                       arg1 // gcd)
+                step3_statement = step3_illustration + step3_fraction
+            return step3_statement
+
+        args["simplified_statement"] = lambda arg1, arg2, arg3: simplified_statement(arg1, arg2, arg3, args["gcd"])
+
+        # covert improper fraction to a mixed number
+        def improper_fraction_statement(arg1, arg2, arg3, gcd):
+            if arg2 - arg3 > arg1:
+                step4_illustration = _("**Step 4:** Since our answer in the previous step is in the form of an improper fraction, we can further simplify it and convert it into a mixed number.")
+
+                step4_equation = r"""
+    $$
+    \begin{{aligned}}
+    &\underline{{\text{{ }}\text{{ }}\text{{ }}\text{{ }}\text{{ }}\small}}\\[-5pt]
+    {}&\big){}\\[-4pt]
+    \end{{aligned}}
+    \:\:\:\longrightarrow    \:\:
+    \begin{{aligned}}
+    &\underline{{\:\:{{\color{{Salmon}}{}}}\:\:}}\\[-5pt]
+    {}&\big){}\\[-4pt]
+    -&{{\:\:{}\:\:}}\\[-4pt]
+    \hline
+    &\:\:{{\color{{Salmon}}{}}}\\[-4pt]
+    \end{{aligned}}
+    \:\:\:\longrightarrow    \:\:
+    {{\color{{Salmon}}{}}}\frac{{\color{{Salmon}}{}}}{}
+    $$
+    """.format(
+                    arg1 // gcd, (arg2 - arg3) // gcd, (arg2 - arg3) // arg1, arg1 // gcd, (arg2 - arg3) // gcd,
+                    (arg2 - arg3) // arg1 * (arg1 // gcd), (arg2 - arg3) % arg1 // gcd,
+                    (arg2 - arg3) // arg1, (arg2 - arg3) % arg1 // gcd, arg1 // gcd
+                )
+                step4_result = _("Therefore, the final solution is ${}\large\frac{{{}}}{{{}}}$.").format((arg2 - arg3) // arg1, (arg2 - arg3) % arg1 // gcd, arg1 // gcd)
+                step4_statement = step4_illustration + step4_equation + step4_result
+            else:
+                step4_statement = r"""Therefore, the final solution is $\large\frac{{{}}}{{{}}}$.""".format(
+                    (arg2 - arg3) // gcd, arg1 // gcd)
+
+            return step4_statement
+
+        args["improper_fraction_statement"] = lambda arg1, arg2, arg3: improper_fraction_statement(arg1, arg2, arg3,
+                                                                                                   args["gcd"])
 
         return self.custom_format(template, **args)
 

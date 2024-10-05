@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2024-10-05 02:29-0400\n"
+"POT-Creation-Date: 2024-10-05 03:16-0400\n"
 "PO-Revision-Date: 2024-10-03 00:27-0400\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: zh_Hans\n"
@@ -23,7 +23,6 @@ msgstr "抱歉，本题的答案解析暂不支持"
 
 msgid "No solution generator available for this knowledge point."
 msgstr "抱歉，本题的答案解析暂不支持"
-
 
 msgid ""
 "\n"
@@ -66,7 +65,6 @@ msgstr ""
 "\\end{{array}}\n"
 "$$\n"
 
-
 msgid ""
 "\n"
 "**Step 3:** Then, we continue to move to the left column. In this case, "
@@ -108,7 +106,6 @@ msgstr ""
 "&{3}\\\n"
 "\\end{{array}}\n"
 "$$\n"
-
 
 msgid ""
 "\n"
@@ -158,7 +155,6 @@ msgstr ""
 "\n"
 "步骤 3: 我们从最右边的列开始。在这个例子中，是百分位。我们将该列中的数字相加: $0 + {0} = {0}$，并将其写在百分位。"
 
-
 msgid ""
 "\n"
 "$$\n"
@@ -194,7 +190,6 @@ msgstr ""
 "&\\phantom{{0}}\\phantom{{0}}\\,{{\\color{{Salmon}} {2}}}\n"
 "\\end{{array}}\n"
 "$$\n"
-
 
 msgid ""
 "\n"
@@ -234,7 +229,6 @@ msgstr ""
 "&\\phantom{{0}}\\,{{\\color{{Salmon}} {2}}}\n"
 "\\end{{array}}\n"
 "$$\n"
-
 
 msgid ""
 "\n"
@@ -1052,7 +1046,6 @@ msgstr ""
 "**步骤 4:** 我们将 {0} 从十分位进位到下一个列，即整数位或个位。在这一列中，我们将进位的 {0} 与数字 0 "
 "相加（因为个位上没有可以相加的数字）。当我们将 {0} 和 0 相加时，我们得到 {0}，并将其写在个位上。最后一步，我们在个位之后添加小数点。"
 
-
 msgid ""
 "**Step 2:** We start with the rightmost column. In the rightmost column, "
 "the first number in this column is {0}. We have ${0} - {1} ={2}$\n"
@@ -1082,14 +1075,12 @@ msgstr ""
 "\\end{{array}}\n"
 "$$\n"
 
-
 msgid ""
 "*Note: When we line up the decimal points in decimal subtraction, we want"
 " to make sure that each digit is in the correct place. To subtract "
 "numbers accurately, equalize the digits after the decimal point by adding"
 " zeros.*"
 msgstr "注意：当我们对小数进行加法时，必须确保每个数字都在正确的位置。为了准确地加法运算，通过添加零来使小数点后的数字位数相等。"
-
 
 msgid ""
 "**Step 3:** We start with the rightmost column. In the rightmost column, "
@@ -1122,7 +1113,6 @@ msgid ""
 "have ${0} - {2} = {3}$ in this column and write it in the tenths column."
 msgstr "**步骤 3:** 我们从最右边的列开始。在本例中，这是百分位。我们将该列中的数字相加：$0 + {0} = {0}$，并将其写在百分位上。$$"
 
-
 msgid ""
 "**Step 5:** Then, we continue to move to the left column, the first "
 "number in this column is 0. We have $0 - 0 = 0$ in this column and write "
@@ -1153,7 +1143,6 @@ msgid ""
 " ${} - {} = {}$ in this column and write it in the tenths column."
 msgstr "**步骤 3:** 我们从最右边的列开始。在本例中，这是百分位。我们将该列中的数字相加：$0 + {0} = {0}$，并将其写在百分位上。$$"
 
-
 msgid ""
 "**Step 4:** Then, we continue to move to the left column, the first "
 "number in this column is 0. We have $0 - 0 = 0$ in this column and write "
@@ -1178,13 +1167,11 @@ msgstr ""
 "\\end{{array}}\n"
 "$$\n"
 
-
 msgid ""
 "**Step 2:** We start with the rightmost column. In the rightmost column, "
 "the first number in this column is {0}. We have ${0} - {1} = {2}$ in this"
 " column and write it in the hundredths column."
 msgstr "**步骤 3:** 我们从最右边的列开始。在本例中，这是百分位。我们将该列中的数字相加：$0 + {0} = {0}$，并将其写在百分位上。$$"
-
 
 msgid ""
 "**Step 3:** Next, we move to the left column, the first number in this "
@@ -1211,6 +1198,34 @@ msgid ""
 "**Step 4:** The fraction is already a proper fraction: "
 "$\\frac{{{}}}{{{}}}$"
 msgstr "**步骤 4:** 该分数已经是一个真分数: $\\frac{{{}}}{{{}}}$"
+
+msgid ""
+"**Step 3:** Always reduce your final answer to its **lowest term**. And "
+"$\\large\\frac{{{}}}{{{}}}$ is already the lowest term.\n"
+"                "
+msgstr "步骤 3: 始终将最终答案化简为最简形式。而 $\\large\\frac{{{}}}{{{}}}$ 已经是最简形式。\n"
+
+msgid ""
+"**Step 3:** Always reduce your final answer to its **lowest term**. In "
+"this case, the fraction $\\large\\frac{{{}}}{{{}}}$ can be simplified. "
+"Both {} and {} are divisible by {}. When we divide both {} and {} by "
+"their greatest common divisor {}, we get {} and {} respectively."
+msgstr "结果可以简化。当我们用最大公约数 {} 同时除以 {} 和 {} 时，得到 {} 和 {}。"
+
+msgid ""
+"**Step 4:** Since our answer in the previous step is in the form of an "
+"improper fraction, we can further simplify it and convert it into a mixed"
+" number."
+msgstr "步骤 4: 由于上一步的答案是一个假分数，我们可以进一步将其化简为带分数。"
+
+msgid ""
+"Therefore, the final solution is ${}\\large"
+"rac{{{}}}{{{}}}$."
+msgstr "因此，最终的解是 ${}\\large\\frac{{{}}}{{{}}}$。"
+
+#, fuzzy
+msgid "Therefore, the final solution is $\\large\\frac{{{}}}{{{}}}$."
+msgstr "因此，最终的解是 ${}\\large\\frac{{{}}}{{{}}}$。"
 
 msgid "    - {} is prime. So it is the only factor"
 msgstr "    - {} 是质数，因此它是唯一的因数"
@@ -2693,7 +2708,9 @@ msgstr ""
 #~ " the {0} in the left column "
 #~ "becomes {2}. Now we have $10 - "
 #~ "{1} = {3}$ in this column and "
-#~ "write it in the hundredths column.\n\n"
+#~ "write it in the hundredths column.\n"
+#~ ""
+#~ "\n"
 #~ msgstr ""
 #~ "\n"
 #~ "**步骤 3:** 从最右边的列开始。由于 0 小于 "
