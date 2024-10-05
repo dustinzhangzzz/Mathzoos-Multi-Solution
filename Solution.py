@@ -41,6 +41,7 @@ def main():
     with app.app_context():  # Flask Babel needs an app context
         question_df = pd.read_csv("EachQuestion.csv")
         question_df = question_df.astype({"knowledge_point_id": int})
+        question_df = question_df[question_df['knowledge_point_id'].isin(range(45,46))]
         template_df = pd.read_csv("SolutionTemplate_translated_Chinese.csv")
 
         # Create dictionary mapping knowledge_point_id to template text

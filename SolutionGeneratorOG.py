@@ -1598,6 +1598,9 @@ Therefore, the final solution is {}.""".format(arg2, arg1 * 10 % arg2 * 10, arg2
         return self.custom_format(template, **args)
 
 
+from flask_babel import _
+
+
 class KnowledgePoint44Solution(SolutionGenerator):
     def get_solution(self, template: str, args: dict) -> str:
         arg1 = args['arg1']
@@ -1607,7 +1610,6 @@ class KnowledgePoint44Solution(SolutionGenerator):
             str_num = str(num)
             if '.' in str_num:
                 decimal = str_num.split('.')[1]
-                # print(decimal)
                 return decimal
             else:
                 return '0'
@@ -1616,7 +1618,6 @@ class KnowledgePoint44Solution(SolutionGenerator):
             str_num = str(num)
             if '.' in str_num:
                 decimal = str_num.split('.')[1]
-                # print(decimal)
                 return len(decimal)
             else:
                 return 0
@@ -1643,48 +1644,48 @@ class KnowledgePoint44Solution(SolutionGenerator):
             int_arg2 = int(decimal_arg2)
 
             # template3
-            step2_statement = r"""
+            step2_statement = _(r"""
 **Step 2:** We start with the rightmost column. In this case, it's the tenths column. We add the digits in that column: ${0} + {1} = {2}$ and write {3} in the tenths column.
 $$
-\begin{{array}}{{r c r}}
+\\begin{{array}}{{r c r}}
 \\
 &0.{0}\\
 +&0.{1}\\
-\hline
-&\phantom{{0}}\,{3}
-\end{{array}}
-\:\:\:\longrightarrow\:\:
-\begin{{array}}{{r c r}}
+\\hline
+&\\phantom{{0}}\,{3}
+\\end{{array}}
+\\:\\:\\:\\longrightarrow\\:\\:\\
+\\begin{{array}}{{r c r}}
 \\
-& \tiny{4}\:\:\:\:\:\:\:\,\\[-3pt]
-&0.{{\color {{Salmon}} {0}}}\\
-+&0.{{\color {{Salmon}} {1}}}\\
-\hline
-&\phantom{{0}}\:{{\color {{Salmon}} {3}}}
-\end{{array}}
+& \\tiny{4}\\:\\:\\:\\:\\:\\:\\,\\[-3pt]
+&0.{{\\color {{Salmon}} {0}}}\\
++&0.{{\\color {{Salmon}} {1}}}\\
+\\hline
+&\\phantom{{0}}\\:{{\\color {{Salmon}} {3}}}
+\\end{{array}}
 $$
-""".format(int_arg1, int_arg2, int_arg1 + int_arg2, (int_arg1 + int_arg2) % 10, (int_arg1 + int_arg2) // 10)
+""").format(int_arg1, int_arg2, int_arg1 + int_arg2, (int_arg1 + int_arg2) % 10, (int_arg1 + int_arg2) // 10)
 
-            step3_statement = r"""
+            step3_statement = _(r"""
 **Step 3:** Then, we continue to move to the left column. In this case, it's the ones column. We add the digits in that column: ${0} + 0 + 0 = {0}$ and write it in the ones column. And don't forget to add the decimal point after the ones column.
 $$
-\begin{{array}}{{l l}}
+\\begin{{array}}{{l l}}
 \\
 &0.{1}\\ 
 +&0.{2} \\
-\hline
-&{{\color {{Salmon}} {0}}}.{3}
-\end{{array}}
-\:\:\:\longrightarrow\:\:
-\begin{{array}}{{l l}}
+\\hline
+&{{\\color {{Salmon}} {0}}}.{3}
+\\end{{array}}
+\\:\\:\\:\\longrightarrow\\:\\:\\
+\\begin{{array}}{{l l}}
 \\
 &0.{1}\\
 +&0.{2} \\
-\hline
+\\hline
 &{4}\\
-\end{{array}}
+\\end{{array}}
 $$
-""".format((int_arg1 + int_arg2) // 10, int_arg1, int_arg2, (int_arg1 + int_arg2) % 10, result)
+""").format((int_arg1 + int_arg2) // 10, int_arg1, int_arg2, (int_arg1 + int_arg2) % 10, result)
 
             step4_statement = ""
             step5_statement = ""
@@ -1701,174 +1702,90 @@ $$
                 int_arg2 = int(decimal_arg1)
 
             # Template1
-            step2_statement = r"""
+            step2_statement = _(r"""
 **Step 2:** Add zeros in the places where the length of the decimal numbers is not the same.
 $$
-\begin{{array}}{{r c r}}
-&0.{0}\phantom{{0}}\\
+\\begin{{array}}{{r c r}}
+&0.{0}\\phantom{{0}}\\
 +&0.{3}{4} \\
-\hline
-\end{{array}}
-\:\:\:\longrightarrow\:\:
-\begin{{array}}{{r c r}}
-&0.{0}{{\color {{Salmon}} 0}}\\
+\\hline
+\\end{{array}}
+\\:\\:\\:\\longrightarrow\\:\\:\\
+\\begin{{array}}{{r c r}}
+&0.{0}{{\\color {{Salmon}} 0}}\\
 +&0.{3}{4} \\
-\hline
-\end{{array}}
+\\hline
+\\end{{array}}
 $$
 *Note: When we line up the decimal points in decimal addition, we want to make sure that each digit is in the correct place. To add numbers accurately, equalize the digits after the decimal point by adding zeros.*
-""".format(int_arg1, int_arg2, arg2, int_arg2 // 10, int_arg2 % 10)
+""").format(int_arg1, int_arg2, arg2, int_arg2 // 10, int_arg2 % 10)
 
-            step3_statement = r"""
-**Step 3:** We start with the rightmost column. In this case, it's the hundredths column. We add the digits in that column: $0 + {0} = {0}$ and write it in the hundredths column.
+            step3_illustration = _("""
+**Step 3:** We start with the rightmost column. In this case, it's the hundredths column. We add the digits in that column: $0 + {0} = {0}$ and write it in the hundredths column.""").format(int_arg2 % 10, int_arg1, int_arg2, int_arg2 // 10)
+            step3_equation =_(r"""
 $$
-\begin{{array}}{{r c r}}
+\\begin{{array}}{{r c r}}
 &0.{1}0\\
 +&0.{3}{0} \\
-\hline
-\end{{array}}
-\:\:\:\longrightarrow\:\:
-\begin{{array}}{{r c r}}
+\\hline
+\\end{{array}}
+\\:\\:\\:\\longrightarrow\\:\\:\\
+\\begin{{array}}{{r c r}}
 \\
-&0.{1}{{\color {{Salmon}} 0}}\\
-+&0.{{{3}}}{{\color{{Salmon}} {0}}} \\
-\hline
-&\phantom{{0}}\phantom{{0}}\:\,{{\color {{Salmon}} {0}}}
-\end{{array}}
+&0.{1}{{\\color {{Salmon}} 0}}\\
++&0.{{{3}}}{{\\color{{Salmon}} {0}}} \\
+\\hline
+&\\phantom{{0}}\\phantom{{0}}\\:\\,{{\\color {{Salmon}} {0}}}
+\\end{{array}}
 $$
-""".format(int_arg2 % 10, int_arg1, int_arg2, int_arg2 // 10)
+""").format(int_arg2 % 10, int_arg1, int_arg2, int_arg2 // 10)
 
-            step4_statement = r"""
+            step3_statement = step3_illustration + step3_equation
+            step4_statement = _(r"""
 **Step 4:** Next, we move to the left column. In this case, it's the tenths column. We add the digits in that column: ${0} + {1} = {2}$ and write {3} in the tenths column.
 $$
-\begin{{array}}{{r c r}}
+\\begin{{array}}{{r c r}}
 &0.{0}0\\
 +&0.{1}{4} \\
-\hline
-&\phantom{{0}}\phantom{{0}}\:\,{4}\\
-\end{{array}}
-\:\:\:\longrightarrow\:\:
-\begin{{array}}{{r c r}}
-& \tiny{6}\:\:\:\:\:\:\:\,\\[-3pt]
-&0.{{\color {{Salmon}} {0}}}0\\
-+&0.{{\color {{Salmon}} {1}}}{4} \\
-\hline
-&\phantom{{0}}\:{{\color {{Salmon}} {3}}}{4}
-\end{{array}}
+\\hline
+&\\phantom{{0}}\\phantom{{0}}\\:\\,{4}\\
+\\end{{array}}
+\\:\\:\\:\\longrightarrow\\:\\:\\
+\\begin{{array}}{{r c r}}
+& \\tiny{6}\\:\\:\\:\\:\\:\\:\\,\\[-3pt]
+&0.{{\\color {{Salmon}} {0}}}0\\
++&0.{{\\color {{Salmon}} {1}}}{4} \\
+\\hline
+&\\phantom{{0}}\\:{{\\color {{Salmon}} {3}}}{4}
+\\end{{array}}
 $$
-""".format(int_arg1, int_arg2 // 10, int_arg1 + int_arg2 // 10, (int_arg1 + int_arg2 // 10) % 10, int_arg2 % 10,
-           int_arg2, (int_arg1 + int_arg2 // 10) // 10, arg2)
+""").format(int_arg1, int_arg2 // 10, int_arg1 + int_arg2 // 10, (int_arg1 + int_arg2 // 10) % 10, int_arg2 % 10)
 
-            step5_statement = r"""
+            step5_statement = _(r"""
 **Step 5:** Then, we continue to move to the left column. In this case, it's the ones column. We add the digits in that column: ${0} + 0 + 0 = {0}$ and write it in the ones column. And don't forget to add the decimal point after the ones column.
 $$
-\begin{{array}}{{l l}}
+\\begin{{array}}{{l l}}
 \\
 &0.{1}0\\
 +&0.{5}{4} \\
-\hline
-&{{\color {{Salmon}} {0}}}.{3}{4}
-\end{{array}}
-\:\:\:\longrightarrow\:\:
-\begin{{array}}{{l l}}
+\\hline
+&{{\\color {{Salmon}} {0}}}.{3}{4}
+\\end{{array}}
+\\:\\:\\:\\longrightarrow\\:\\:\\
+\\begin{{array}}{{l l}}
 \\
 &0.{1}0\\
 +&0.{5}{4} \\
-\hline
+\\hline
 &{6}\\
-\end{{array}}
+\\end{{array}}
 $$
-""".format((int_arg1 + int_arg2 // 10) // 10, int_arg1, int_arg2, (int_arg1 + int_arg2 // 10) % 10, int_arg2 % 10,
-           int_arg2 // 10, result)
+""").format((int_arg1 + int_arg2 // 10) // 10, int_arg1, int_arg2, (int_arg1 + int_arg2 // 10) % 10, int_arg2 % 10,
+            int_arg2 // 10, result)
 
-        elif arg1_fraction_digits == 2 and arg2_fraction_digits == 2:
-            int_arg1 = int(decimal_arg1)
-            int_arg2 = int(decimal_arg2)
+        # Add the rest of your code logic here for other cases.
 
-            # template2
-            step2_statement = r"""
-**Step 2:** We start with the rightmost column. In this case, it's the hundredths column. We add the digits in that column: ${0} + {1} = {2}$ and write {3} in the hundredths column.
-$$
-\begin{{array}}{{r c r}}
-&{4} \\
-+&{5} \\
-\hline
-\end{{array}}
-\:\:\:\longrightarrow\:\:
-\begin{{array}}{{r c r}}
-\\
-& \:\:\:\:\:\:\tiny{8}\:\:\:\:\:\:\:\,\\[-3pt]
-&0.{6}{{\color{{Salmon}}{0}}}\\
-+&0.{7}{{\color{{Salmon}}{1}}}\\
-\hline
-&\phantom{{0}}\phantom{{0}}\:\,{{\color{{Salmon}}{3}}}
-\end{{array}}
-$$
-""".format(
-                int_arg1 % 10, int_arg2 % 10, int_arg1 % 10 + int_arg2 % 10, (int_arg1 % 10 + int_arg2 % 10) % 10,
-                arg1, arg2, int_arg1 // 10, int_arg2 // 10, (int_arg1 % 10 + int_arg2 % 10) // 10)
-
-            step3_statement = r"""
-**Step 3:** Next, we move to the left column. In this case, it's the tenths column. We add the digits in that column: ${2} + {1} + {0} = {3}$ and write {4} in the tenths column.
-$$
-\begin{{array}}{{r c r}}
-\\
-&{5} \\
-+&{6}\\
-\hline
-&\phantom{{0}}\phantom{{0}}\:\,{7}
-\end{{array}}
-\:\:\:\longrightarrow\:\:
-\begin{{array}}{{r c r}}
-& \tiny{{\color{{Salmon}}{8}}}\:\:\:\:\:\:\:\,\\[-3pt]
-&0.{{\color {{Salmon}} {0}}}{9}\\
-+&0.{{\color {{Salmon}} {1}}}{10} \\
-\hline
-&\:\,\,.{{\color {{Salmon}} {4}}}{7}\\
-\end{{array}}
-$$
-""".format(int_arg1 // 10, int_arg2 // 10, (int_arg1 % 10 + int_arg2 % 10) // 10,
-           int_arg1 // 10 + int_arg2 // 10 + (int_arg1 % 10 + int_arg2 % 10) // 10,
-           (int_arg1 // 10 + int_arg2 // 10 + (int_arg1 % 10 + int_arg2 % 10) // 10) % 10,
-           arg1, arg2, (int_arg1 % 10 + int_arg2 % 10) % 10,
-           (int_arg1 // 10 + int_arg2 // 10 + (int_arg1 % 10 + int_arg2 % 10) // 10) // 10, int_arg1 % 10,
-           int_arg2 % 10)
-
-            step4_statement = r"""
-**Step 4:**  We carried over the {0} from the tenths column to the next column, which is the whole numbers or ones column.
-
-In this column, we add the carried-over {0} with the digit 0 (since there are no digits in the ones column to add). When we add {0} and 0, we get {0} and write it in the ones column. And we add the decimal point after the ones column as the final step.
-$$
-\begin{{array}}{{l l}}
-& \tiny{{{0}}}\:\:\:\:\:\:\:\,\\[-3pt]
-&{1} \\
-+&{2} \\
-\hline
-&\:\,\,.{3}{4}\\
-\end{{array}}
-\:\:\:\longrightarrow\:\:
-\begin{{array}}{{l l}}
-& \tiny{{\color{{Salmon}}{0}}}\:\:\:\:\:\:\:\,\\[-3pt]
-&{1}\\
-+&{2} \\
-\hline
-&{{\color {{Salmon}}{0}}}.{3}{4}\\
-\end{{array}}
-$$
-""".format(
-                (int_arg1 // 10 + int_arg2 // 10 + (int_arg1 % 10 + int_arg2 % 10) // 10) // 10,
-                arg1, arg2, (int_arg1 // 10 + int_arg2 // 10 + (int_arg1 % 10 + int_arg2 % 10) // 10) % 10,
-                (int_arg1 % 10 + int_arg2 % 10) % 10)
-
-            step5_statement = ""
-
-        else:
-            # Handle cases where the digits are neither 1 nor 2 for both arguments or other undefined cases
-            raise ValueError("Unexpected number of fraction digits in arguments")
-
-        args['int_arg1'] = int_arg1
-        args['int_arg2'] = int_arg2
-        args['get_round_decimal'] = get_round_decimal
+        # Returning the results:
         args["step2_statement"] = step2_statement
         args["step3_statement"] = step3_statement
         args["step4_statement"] = step4_statement

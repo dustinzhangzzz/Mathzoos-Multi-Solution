@@ -953,8 +953,9 @@ class KnowledgePoint44Solution(SolutionGenerator):
             int_arg2 = int(decimal_arg2)
 
             # template3
-            step2_statement = _(r"""
-**Step 2:** We start with the rightmost column. In this case, it's the tenths column. We add the digits in that column: ${0} + {1} = {2}$ and write {3} in the tenths column.
+            step2_statement_illustration = _(r"""
+**Step 2:** We start with the rightmost column. In this case, it's the tenths column. We add the digits in that column: ${0} + {1} = {2}$ and write {3} in the tenths column.""").format(int_arg1, int_arg2, int_arg1 + int_arg2, (int_arg1 + int_arg2) % 10, (int_arg1 + int_arg2) // 10)
+            step2_statement_equation = r"""
 $$
 \begin{{array}}{{r c r}}
 \\
@@ -973,10 +974,11 @@ $$
 &\phantom{{0}}\:{{\color {{Salmon}} {3}}}
 \end{{array}}
 $$
-""").format(int_arg1, int_arg2, int_arg1 + int_arg2, (int_arg1 + int_arg2) % 10, (int_arg1 + int_arg2) // 10)
-
-            step3_statement = _(r"""
-**Step 3:** Then, we continue to move to the left column. In this case, it's the ones column. We add the digits in that column: ${0} + 0 + 0 = {0}$ and write it in the ones column. And don't forget to add the decimal point after the ones column.
+""".format(int_arg1, int_arg2, int_arg1 + int_arg2, (int_arg1 + int_arg2) % 10, (int_arg1 + int_arg2) // 10)
+            step2_statement = step2_statement_illustration + step2_statement_equation
+            step3_statement_illustration = _(r"""
+**Step 3:** Then, we continue to move to the left column. In this case, it's the ones column. We add the digits in that column: ${0} + 0 + 0 = {0}$ and write it in the ones column. And don't forget to add the decimal point after the ones column.""").format((int_arg1 + int_arg2) // 10, int_arg1, int_arg2, (int_arg1 + int_arg2) % 10, result)
+            step3_statement_equation ="""
 $$
 \begin{{array}}{{l l}}
 \\
@@ -994,7 +996,8 @@ $$
 &{4}\\
 \end{{array}}
 $$
-""").format((int_arg1 + int_arg2) // 10, int_arg1, int_arg2, (int_arg1 + int_arg2) % 10, result)
+""".format((int_arg1 + int_arg2) // 10, int_arg1, int_arg2, (int_arg1 + int_arg2) % 10, result)
+            step3_statement = step3_statement_illustration + step3_statement_equation
 
             step4_statement = ""
             step5_statement = ""
@@ -1011,8 +1014,9 @@ $$
                 int_arg2 = int(decimal_arg1)
 
             # Template1
-            step2_statement = _(r"""
-**Step 2:** Add zeros in the places where the length of the decimal numbers is not the same.
+            step2_illustration = _("**Step 2:** Add zeros in the places where the length of the decimal numbers is not the same.").format(int_arg1, int_arg2, arg2, int_arg2 // 10, int_arg2 % 10)
+
+            step2_equation = _(r"""
 $$
 \begin{{array}}{{r c r}}
 &0.{0}\phantom{{0}}\\
@@ -1026,30 +1030,36 @@ $$
 \hline
 \end{{array}}
 $$
-*Note: When we line up the decimal points in decimal addition, we want to make sure that each digit is in the correct place. To add numbers accurately, equalize the digits after the decimal point by adding zeros.*
 """).format(int_arg1, int_arg2, arg2, int_arg2 // 10, int_arg2 % 10)
-
-            step3_statement = _(r"""
+            step2_illustration_2 = _("*Note: When we line up the decimal points in decimal addition, we want to make sure that each digit is in the correct place. To add numbers accurately, equalize the digits after the decimal point by adding zeros.*").format(int_arg1, int_arg2, arg2, int_arg2 // 10, int_arg2 % 10)
+            step2_statement = step2_illustration + step2_equation + step2_illustration_2
+            step3_illustration = _("""
 **Step 3:** We start with the rightmost column. In this case, it's the hundredths column. We add the digits in that column: $0 + {0} = {0}$ and write it in the hundredths column.
-$$
-\begin{{array}}{{r c r}}
+$$""").format(int_arg2 % 10, int_arg1, int_arg2, int_arg2 // 10)
+
+            step3_equation = """         
+\\begin{{array}}{{r c r}}
 &0.{1}0\\
 +&0.{3}{0} \\
-\hline
-\end{{array}}
-\:\:\:\longrightarrow\:\:
-\begin{{array}}{{r c r}}
+\\hline
+\\end{{array}}
+\\:\\:\\:\\longrightarrow\\:\\:\\
+\\begin{{array}}{{r c r}}
 \\
-&0.{1}{{\color {{Salmon}} 0}}\\
-+&0.{{{3}}}{{\color{{Salmon}} {0}}} \\
-\hline
-&\phantom{{0}}\phantom{{0}}\:\,{{\color {{Salmon}} {0}}}
-\end{{array}}
+&0.{1}{{\\color {{Salmon}} 0}}\\
++&0.{{{3}}}{{\\color{{Salmon}} {0}}} \\
+\\hline
+&\\phantom{{0}}\\phantom{{0}}\\:\\,{{\\color {{Salmon}} {0}}}
+\\end{{array}}
 $$
-""").format(int_arg2 % 10, int_arg1, int_arg2, int_arg2 // 10)
+""".format(int_arg2 % 10, int_arg1, int_arg2, int_arg2 // 10)
 
-            step4_statement = _(r"""
-**Step 4:** Next, we move to the left column. In this case, it's the tenths column. We add the digits in that column: ${0} + {1} = {2}$ and write {3} in the tenths column.
+            step3_statement = step3_illustration + step3_equation
+
+            step4_illustration = _(r"""
+**Step 4:** Next, we move to the left column. In this case, it's the tenths column. We add the digits in that column: ${0} + {1} = {2}$ and write {3} in the tenths column.""").format(int_arg1, int_arg2 // 10, int_arg1 + int_arg2 // 10, (int_arg1 + int_arg2 // 10) % 10, int_arg2 % 10,
+           int_arg2, (int_arg1 + int_arg2 // 10) // 10, arg2)
+            step4_equation = """
 $$
 \begin{{array}}{{r c r}}
 &0.{0}0\\
@@ -1066,11 +1076,10 @@ $$
 &\phantom{{0}}\:{{\color {{Salmon}} {3}}}{4}
 \end{{array}}
 $$
-""").format(int_arg1, int_arg2 // 10, int_arg1 + int_arg2 // 10, (int_arg1 + int_arg2 // 10) % 10, int_arg2 % 10,
-           int_arg2, (int_arg1 + int_arg2 // 10) // 10, arg2)
-
-            step5_statement = _(r"""
-**Step 5:** Then, we continue to move to the left column. In this case, it's the ones column. We add the digits in that column: ${0} + 0 + 0 = {0}$ and write it in the ones column. And don't forget to add the decimal point after the ones column.
+""".format(int_arg1, int_arg2 // 10, int_arg1 + int_arg2 // 10, (int_arg1 + int_arg2 // 10) % 10, int_arg2 % 10,int_arg2, (int_arg1 + int_arg2 // 10) // 10, arg2)
+            step4_statement = step4_illustration + step4_equation
+            step5_illustration = _("**Step 5:** Then, we continue to move to the left column. In this case, it's the ones column. We add the digits in that column: ${0} + 0 + 0 = {0}$ and write it in the ones column. And don't forget to add the decimal point after the ones column.").format((int_arg1 + int_arg2 // 10) // 10, int_arg1, int_arg2, (int_arg1 + int_arg2 // 10) % 10, int_arg2 % 10,int_arg2 // 10, result)
+            step5_equation = """
 $$
 \begin{{array}}{{l l}}
 \\
@@ -1088,16 +1097,17 @@ $$
 &{6}\\
 \end{{array}}
 $$
-""").format((int_arg1 + int_arg2 // 10) // 10, int_arg1, int_arg2, (int_arg1 + int_arg2 // 10) % 10, int_arg2 % 10,
-           int_arg2 // 10, result)
-
+""".format((int_arg1 + int_arg2 // 10) // 10, int_arg1, int_arg2, (int_arg1 + int_arg2 // 10) % 10, int_arg2 % 10, int_arg2 // 10, result)
+            step5_statement = step5_illustration + step5_equation
         elif arg1_fraction_digits == 2 and arg2_fraction_digits == 2:
             int_arg1 = int(decimal_arg1)
             int_arg2 = int(decimal_arg2)
 
+            step2_illustration = _("""
+**Step 2:** We start with the rightmost column. In this case, it's the hundredths column. We add the digits in that column: ${0} + {1} = {2}$ and write {3} in the hundredths column.""").format(int_arg1 % 10, int_arg2 % 10, int_arg1 % 10 + int_arg2 % 10, (int_arg1 % 10 + int_arg2 % 10) % 10,
+                arg1, arg2, int_arg1 // 10, int_arg2 // 10, (int_arg1 % 10 + int_arg2 % 10) // 10)
             # template2
-            step2_statement = _(r"""
-**Step 2:** We start with the rightmost column. In this case, it's the hundredths column. We add the digits in that column: ${0} + {1} = {2}$ and write {3} in the hundredths column.
+            step2_equation = """
 $$
 \begin{{array}}{{r c r}}
 &{4} \\
@@ -1114,12 +1124,12 @@ $$
 &\phantom{{0}}\phantom{{0}}\:\,{{\color{{Salmon}}{3}}}
 \end{{array}}
 $$
-""").format(
-                int_arg1 % 10, int_arg2 % 10, int_arg1 % 10 + int_arg2 % 10, (int_arg1 % 10 + int_arg2 % 10) % 10,
+""".format(int_arg1 % 10, int_arg2 % 10, int_arg1 % 10 + int_arg2 % 10, (int_arg1 % 10 + int_arg2 % 10) % 10,
                 arg1, arg2, int_arg1 // 10, int_arg2 // 10, (int_arg1 % 10 + int_arg2 % 10) // 10)
 
-            step3_statement = _(r"""
-**Step 3:** Next, we move to the left column. In this case, it's the tenths column. We add the digits in that column: ${2} + {1} + {0} = {3}$ and write {4} in the tenths column.
+            step2_statement = step2_illustration + step2_equation
+            step3_illustration = "**Step 3:** Next, we move to the left column. In this case, it's the tenths column. We add the digits in that column: ${2} + {1} + {0} = {3}$ and write {4} in the tenths column."
+            step3_equation = _("""
 $$
 \begin{{array}}{{r c r}}
 \\
@@ -1143,11 +1153,15 @@ $$
            arg1, arg2, (int_arg1 % 10 + int_arg2 % 10) % 10,
            (int_arg1 // 10 + int_arg2 // 10 + (int_arg1 % 10 + int_arg2 % 10) // 10) // 10, int_arg1 % 10,
            int_arg2 % 10)
-
-            step4_statement = _(r"""
+            step3_statement = step3_illustration + step3_equation
+            step4_illustration = _("""
 **Step 4:**  We carried over the {0} from the tenths column to the next column, which is the whole numbers or ones column.
-
 In this column, we add the carried-over {0} with the digit 0 (since there are no digits in the ones column to add). When we add {0} and 0, we get {0} and write it in the ones column. And we add the decimal point after the ones column as the final step.
+""").format(
+                (int_arg1 // 10 + int_arg2 // 10 + (int_arg1 % 10 + int_arg2 % 10) // 10) // 10,
+                arg1, arg2, (int_arg1 // 10 + int_arg2 // 10 + (int_arg1 % 10 + int_arg2 % 10) // 10) % 10,
+                (int_arg1 % 10 + int_arg2 % 10) % 10)
+            step4_equation = """
 $$
 \begin{{array}}{{l l}}
 & \tiny{{{0}}}\:\:\:\:\:\:\:\,\\[-3pt]
@@ -1165,11 +1179,11 @@ $$
 &{{\color {{Salmon}}{0}}}.{3}{4}\\
 \end{{array}}
 $$
-""").format(
+""".format(
                 (int_arg1 // 10 + int_arg2 // 10 + (int_arg1 % 10 + int_arg2 % 10) // 10) // 10,
                 arg1, arg2, (int_arg1 // 10 + int_arg2 // 10 + (int_arg1 % 10 + int_arg2 % 10) // 10) % 10,
                 (int_arg1 % 10 + int_arg2 % 10) % 10)
-
+            step4_statement = step4_illustration + step4_equation
             step5_statement = ""
 
         else:
@@ -1185,8 +1199,6 @@ $$
         args["step5_statement"] = step5_statement
 
         return self.custom_format(template, **args)
-
-
 class KnowledgePoint45Solution(SolutionGenerator):
     def get_solution(self, template: str, args: dict) -> str:
         arg1 = args['arg1']
@@ -1233,9 +1245,10 @@ class KnowledgePoint45Solution(SolutionGenerator):
                 int_arg2 = int(decimal_arg2)
 
                 # template1
-                step2_statement = r"""
-**Step 2:** We start with the rightmost column. In the rightmost column, the first number in this column is {0}. We have ${0} - {1} ={2}$
-in this column and write it in the tenths column.
+                step2_illustration = _("""**Step 2:** We start with the rightmost column. In the rightmost column, the first number in this column is {0}. We have ${0} - {1} ={2}$
+in this column and write it in the tenths column.""").format(int_arg1 % 10, int_arg2 % 10, int_arg1 % 10 - int_arg2 % 10,
+           int_arg1, int_arg2)
+                step2_equation = r"""
 $$
 \begin{{array}}{{r c r}}
 &0.{3}\\
@@ -1253,10 +1266,10 @@ $$
 $$
 """.format(int_arg1 % 10, int_arg2 % 10, int_arg1 % 10 - int_arg2 % 10,
            int_arg1, int_arg2)
+                step2_statement = step2_illustration + step2_equation
+                step3_illustration = _("**Step 3:** Next, we move to the left column. The first number in this column is 0. We have $0 - 0 = 0$ in this column and write it in the ones column. And don't forget to add the decimal point after the ones column.")
 
-                step3_statement = r"""
-**Step 3:** Next, we move to the left column. The first number in this column is 0. We have $0 - 0 = 0$ in this column and write it in the ones column. And don't forget to add the decimal point after the ones column.
-
+                step3_equation = r"""
 $$
 \begin{{array}}{{l l}}\\
 &0.{0}\\
@@ -1273,7 +1286,7 @@ $$
 \end{{array}}
 $$
 """.format(int_arg1, int_arg2, int_arg1 - int_arg2, result)
-
+                step3_statement = step3_illustration + step3_equation
                 step4_statement = ""
                 step5_statement = ""
 
@@ -1282,8 +1295,8 @@ $$
                 int_arg2 = int(decimal_arg2)
 
                 # template2
-                step2_statement = r"""
-**Step 2:** Add zeros in the places where the length of the decimal numbers is not the same.
+                step2_illustration = _("**Step 2:** Add zeros in the places where the length of the decimal numbers is not the same.")
+                step2_equation = r"""
 $$
 \begin{{array}}{{r c r}}
 &{0}{{ }}\phantom{{0}}\\
@@ -1298,11 +1311,12 @@ $$
 \end{{array}}
 $$
 
-*Note: When we line up the decimal points in decimal subtraction, we want to make sure that each digit is in the correct place. To subtract numbers accurately, equalize the digits after the decimal point by adding zeros.*
 """.format(arg1, arg2)
-
-                step3_statement = r"""
-**Step 3:** We start with the rightmost column. In the rightmost column, the first number in this column is {1}. We can see that 0 is smaller than {1}. So, we need to borrow 1 from the left column which will make it 10. And the {0} in the left column becomes {2}. Now we have $10 - {1} = {3}$ in this column and write it in the hundredths column.
+                step2_illustration_2 = _("*Note: When we line up the decimal points in decimal subtraction, we want to make sure that each digit is in the correct place. To subtract numbers accurately, equalize the digits after the decimal point by adding zeros.*")
+                step2_statement = step2_illustration + step2_equation + step2_illustration_2
+                step3_illustration = _("**Step 3:** We start with the rightmost column. In the rightmost column, the first number in this column is {1}. We can see that 0 is smaller than {1}. So, we need to borrow 1 from the left column which will make it 10. And the {0} in the left column becomes {2}. Now we have $10 - {1} = {3}$ in this column and write it in the hundredths column.").format(arg1, int_arg2 % 10, int_arg1 - 1, 10 - int_arg2 % 10, int_arg1, int_arg2 // 10, arg2)
+                step3_equation = r"""
+                
 $$
 \begin{{array}}{{r c r}}
 &{0}0\\
@@ -1319,9 +1333,11 @@ $$
 \end{{array}}
 $$
 """.format(arg1, int_arg2 % 10, int_arg1 - 1, 10 - int_arg2 % 10, int_arg1, int_arg2 // 10, arg2)
+                step3_statement = step3_illustration + step3_equation
+                step4_illustration = _("**Step 4:** Next, we move to the left column. After giving 1 to the rightmost column in step 3, the {0} in this column becomes {1}. Now we have ${0} - {2} = {3}$ in this column and write it in the tenths column.").format(int_arg1, int_arg1 - 1, int_arg2 // 10, (int_arg1 - 1) - int_arg2 // 10,
+           arg2, 10 - int_arg2 % 10, int_arg2 % 10)
+                step4_equation = r"""
 
-                step4_statement = r"""
-**Step 4:** Next, we move to the left column. After giving 1 to the rightmost column in step 3, the {0} in this column becomes {1}. Now we have ${0} - {2} = {3}$ in this column and write it in the tenths column.
 
 $$
 \begin{{array}}{{r c r}}
@@ -1342,9 +1358,10 @@ $$
 $$
 """.format(int_arg1, int_arg1 - 1, int_arg2 // 10, (int_arg1 - 1) - int_arg2 // 10,
            arg2, 10 - int_arg2 % 10, int_arg2 % 10)
-
-                step5_statement = r"""
-**Step 5:** Then, we continue to move to the left column, the first number in this column is 0. We have $0 - 0 = 0$ in this column and write it in the ones column. And don't forget to add the decimal point after the ones column.
+                step4_statement = step4_illustration + step4_equation
+                step5_illustration = _("**Step 5:** Then, we continue to move to the left column, the first number in this column is 0. We have $0 - 0 = 0$ in this column and write it in the ones column. And don't forget to add the decimal point after the ones column.")
+                step5_equation = r"""
+                
 $$
 \begin{{array}}{{l l}}
 & \:\:\:\:\tiny{0}\:\tiny{{10}}\\[-3pt]
@@ -1363,7 +1380,7 @@ $$
 \end{{array}}
 $$
 """.format(int_arg1 - 1, int_arg1, arg2, int_arg1 * 10 - int_arg2, result)
-
+            step5_statement = step5_illustration + step5_equation
         else:
             int_arg1 = int(args['arg1'] * 100)
             int_arg2 = int(args['arg2'] * 100)
@@ -1371,7 +1388,6 @@ $$
             if int_arg1 % 10 < int_arg2 % 10:
                 ##template3
                 step2_statement = r"""
-**Step 2:** We start with the rightmost column. In the rightmost column, the first number in this column is {}. We can see that {} is smaller than {}. So, we need borrow 1 from the left column which will make it {}. And the {} in the left column becomes {}. Now we have ${} - {} = {}$ in this column and write it in the hundredths column.
 $$
 \begin{{array}}{{r c r}}
 &{}\\
@@ -1391,9 +1407,13 @@ $$
            (int_arg1 % 10) + 10, int_arg2 % 10, (int_arg1 - int_arg2) % 10,
            arg1, arg2, int_arg1 // 10 - 1, (int_arg1 % 10) + 10, int_arg1 // 10, int_arg1 % 10, int_arg2 // 10,
            int_arg2 % 10, (int_arg1 % 10 + 10) - int_arg2 % 10)
-
-                step3_statement = r"""
-**Step 3:** Next, we move to the left column. After giving 1 to the rightmost column in step 3, the {} in this column becomes {}. Now we have ${} - {} = {}$ in this column and write it in the tenths column.
+                step3_illustration = _("**Step 3:** Next, we move to the left column. After giving 1 to the rightmost column in step 3, the {} in this column becomes {}. Now we have ${} - {} = {}$ in this column and write it in the tenths column.").format(int_arg1 // 10, int_arg1 // 10 - 1, int_arg1 // 10 - 1, int_arg2 // 10,
+           (int_arg1 // 10 - 1) - int_arg2 // 10,
+           int_arg1 // 10 - 1, int_arg1 % 10 + 10, int_arg1 // 10, int_arg1 % 10, arg2, (int_arg1 - int_arg2) % 10,
+           int_arg1 // 10 - 1,
+           int_arg1 % 10 + 10, int_arg1 // 10, int_arg1 % 10, int_arg2 // 10, int_arg2 % 10,
+           (int_arg1 - int_arg2) // 10, (int_arg1 - int_arg2) % 10)
+                step3_equation = r"""
 $$
 \begin{{array}}{{r c r}}
 & \:\:\:\:\tiny{{{}}}\:\tiny{{{}}}\\[-3pt]
@@ -1417,9 +1437,9 @@ $$
            int_arg1 // 10 - 1,
            int_arg1 % 10 + 10, int_arg1 // 10, int_arg1 % 10, int_arg2 // 10, int_arg2 % 10,
            (int_arg1 - int_arg2) // 10, (int_arg1 - int_arg2) % 10)
-
-                step4_statement = r"""
-**Step 4:** Then, we continue to move to the left column, the first number in this column is 0. We have $0 - 0 = 0$ in this column and write it in the ones column. And don't forget to add the decimal point after the ones column.
+                step3_statement = step3_illustration + step3_equation
+                step4_illustration = _("**Step 4:** Then, we continue to move to the left column, the first number in this column is 0. We have $0 - 0 = 0$ in this column and write it in the ones column. And don't forget to add the decimal point after the ones column.")
+                step4_equation = r"""
 
 $$
 \begin{{array}}{{l l}}\\
@@ -1437,13 +1457,14 @@ $$
 \end{{array}}
 $$
 """.format(int_arg1, int_arg2, int_arg1 - int_arg2, result, arg1, arg2)
-
+                step4_statement = step4_illustration + step4_equation
                 step5_statement = ""
 
             ##template4
             else:
-                step2_statement = r"""
-**Step 2:** We start with the rightmost column. In the rightmost column, the first number in this column is {0}. We have ${0} - {1} = {2}$ in this column and write it in the hundredths column.
+                step2_illustration = _("**Step 2:** We start with the rightmost column. In the rightmost column, the first number in this column is {0}. We have ${0} - {1} = {2}$ in this column and write it in the hundredths column.").format(int_arg1 % 10, int_arg2 % 10, int_arg1 % 10 - int_arg2 % 10,
+           int_arg1, int_arg2, int_arg1 // 10, int_arg2 // 10, arg1, arg2)
+                step2_equation = r"""
 $$
 \begin{{array}}{{r c r}}
 &{7}\\
@@ -1461,9 +1482,10 @@ $$
 $$
 """.format(int_arg1 % 10, int_arg2 % 10, int_arg1 % 10 - int_arg2 % 10,
            int_arg1, int_arg2, int_arg1 // 10, int_arg2 // 10, arg1, arg2)
-
-                step3_statement = r"""
-**Step 3:** Next, we move to the left column, the first number in this column is {0}. We have ${0} - {1} = {2}$ in this column and write it in the tenths column.
+                step2_statement = step2_illustration + step2_equation
+                step3_illustration = _("**Step 3:** Next, we move to the left column, the first number in this column is {0}. We have ${0} - {1} = {2}$ in this column and write it in the tenths column.").format(int_arg1 // 10, int_arg2 // 10, int_arg1 // 10 - int_arg2 // 10,
+           int_arg1, int_arg2, int_arg1 % 10 - int_arg2 % 10, int_arg1 % 10, int_arg2 % 10, arg1, arg2)
+                step3_equation = r"""
 $$
 \begin{{array}}{{r c r}}
 \\
@@ -1482,10 +1504,9 @@ $$
 $$
 """.format(int_arg1 // 10, int_arg2 // 10, int_arg1 // 10 - int_arg2 // 10,
            int_arg1, int_arg2, int_arg1 % 10 - int_arg2 % 10, int_arg1 % 10, int_arg2 % 10, arg1, arg2)
-
-                step4_statement = r"""
-**Step 4:** Then, we continue to move to the left column, the first number in this column is 0. We have $0 - 0 = 0$ in this column and write it in the ones column. And don't forget to add the decimal point after the ones column.
-
+                step3_statement = step3_illustration + step3_equation
+                step4_illustration = _("**Step 4:** Then, we continue to move to the left column, the first number in this column is 0. We have $0 - 0 = 0$ in this column and write it in the ones column. And don't forget to add the decimal point after the ones column.")
+                step4_equation = r"""
 $$
 \begin{{array}}{{l l}}\\
 &{4}\\
@@ -1502,7 +1523,7 @@ $$
 \end{{array}}
 $$
 """.format(int_arg1, int_arg2, int_arg1 - int_arg2, result, arg1, arg2)
-
+                step4_statement = step4_equation + step4_illustration
                 step5_statement = ""
 
         args['int_arg1'] = int_arg1
@@ -1514,6 +1535,9 @@ $$
         args["step5_statement"] = step5_statement
 
         return self.custom_format(template, **args)
+
+
+
 
 
 class KnowledgePoint46Solution(SolutionGenerator):
@@ -1531,9 +1555,6 @@ class KnowledgePoint47Solution(SolutionGenerator):
 class KnowledgePoint48Solution(SolutionGenerator):
     def get_solution(self, template: str, args: dict) -> str:
         return self.custom_format(template, **args)
-
-
-from flask_babel import _
 
 
 class BabelStepGenerator:
